@@ -10,4 +10,6 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [DHT22 | température & humidité](<https://www.didel.com/DHT22.pdf>)
+
 # Documentation horticole
