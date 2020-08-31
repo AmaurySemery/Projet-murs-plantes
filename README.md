@@ -15,6 +15,7 @@ Arrosage automatique des murs végétalisés
 * [Eeca | Comparatif des meilleurs capteurs d'humidité du sol](<https://www.eeca.eu/meilleur-capteur-humidite-au-sol/>)
 * [DHT22 | température & humidité](<https://www.didel.com/DHT22.pdf>)
 * [HTU21D(F) Sensor | température & humidité](<https://cdn-shop.adafruit.com/datasheets/1899_HTU21D.pdf>)
+* [OLLIVAN Intelligent Xiaomi Plant Monitor Bluetooth 4 en 1 Testeur Sol pour Nutrition des Plantes](<http://www.startman.fr/soil-tester-ollivan-intelligent-xiaomi-plant-monitor-bluetooth-4-en-1-testeur-sol-pour-nutrition-des-plantes-capteur-d-humidite-du-sol-temperature-lumiere-plantes-moniteur-b01lxojswa-contenants-et-accessoires-pour-plantes.html>)
 
 
 # Documentation horticole
