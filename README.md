@@ -3,6 +3,8 @@ Arrosage automatique des murs végétalisés
 
 # Documentation sur les murs végétalisés
 
+* [Mur végétal : Tous les systèmes pour faire un jardin vertical](<http://www.jardinsdebabylone.fr/blog/mur-vegetal-jardin-vertical/>)
+
 # Ce qui se fait à côté (concurrence ou expériences diverses)
 
 * [Meteogyre](<http://www.sciencesalecole.org/wp-content/uploads/2019/10/LYC19_CR.pdf>)
@@ -27,3 +29,5 @@ Arrosage automatique des murs végétalisés
 * [Arduino: Mesurer l’humidité du sol avec le YL-69](<http://raspblog.fr/arduino-mesurer-lhumidite-sol-yl-69>)
 
 # Documentation horticole
+
+* [Comment fonctionne la culture hydroponique ?](<https://www.futura-sciences.com/planete/questions-reponses/eau-fonctionne-culture-hydroponique-4828/>)
