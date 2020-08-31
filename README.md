@@ -4,6 +4,7 @@ Arrosage automatique des murs végétalisés
 # Documentation sur les murs végétalisés
 
 * [Mur végétal : Tous les systèmes pour faire un jardin vertical](<http://www.jardinsdebabylone.fr/blog/mur-vegetal-jardin-vertical/>)
+* [Isolants en laines végétales](<https://www.samse.fr/isolation-combles-amenageables/laine-vegetale>)
 
 # Ce qui se fait à côté (concurrence ou expériences diverses)
 
