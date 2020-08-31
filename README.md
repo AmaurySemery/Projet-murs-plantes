@@ -38,3 +38,9 @@ Arrosage automatique des murs végétalisés
 # Liens intéressants
 
 * [Gestion intégrée de l'eau en milieu urbain : une série de fiches du Cerema](<https://www.cerema.fr/fr/actualites/gestion-integree-eau-milieu-urbain-serie-fiches-du-cerema>)
+* [Mieux vivre en période de fortes chaleurs](<https://www.caissedesdepots.fr/sites/default/files/2020-07/Synth%C3%A8se%20du%20rapport%20final%20CDC-Mieux%20vivre%20en%20ville%20en%20p%C3%A9riode%20de%20fortes%20chaleurs.pdf>)
+* [Pluie - inondation : se protéger, connaître les bons comportements](<https://www.ecologie.gouv.fr/pluie-inondation-se-proteger-connaitre-bons-comportements>)
+* [Plan de rebond Eau, Climat, Biodiversité – 180 millions pour le bassin Rhône Méditerranée](<http://www.chantiersdefrance.fr/marches/plan-de-rebond-eau-climat-biodiversite-180-millions-bassin-rhone-mediterranee/>)
+* [Caractériser le confort d’été des espaces publics et de la ville](<http://contact.cstb.fr/4-confort-ete/caracteriser-le-confort-dete-des-espaces-publics-et-de-la-ville/>)
+* [Un lycée rénové en intégrant la gestion des eaux pluviales à Lyon](<https://www.cerema.fr/fr/actualites/lycee-renove-integrant-gestion-eaux-pluviales-lyon>)
+* [Les super pouvoirs des sols en BD](<https://www.cerema.fr/fr/actualites/super-pouvoirs-sols-bd>)
