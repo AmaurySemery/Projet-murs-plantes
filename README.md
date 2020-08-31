@@ -5,6 +5,7 @@ Arrosage automatique des murs végétalisés
 
 * [Mur végétal : Tous les systèmes pour faire un jardin vertical](<http://www.jardinsdebabylone.fr/blog/mur-vegetal-jardin-vertical/>)
 * [Isolants en laines végétales](<https://www.samse.fr/isolation-combles-amenageables/laine-vegetale>)
+* [Que valent les isolants végétaux ?](<https://www.quelleenergie.fr/magazine/isolation/que-valent-isolants-vegetaux-27198/>)
 
 # Ce qui se fait à côté (concurrence ou expériences diverses)
 
@@ -32,3 +33,7 @@ Arrosage automatique des murs végétalisés
 # Documentation horticole
 
 * [Comment fonctionne la culture hydroponique ?](<https://www.futura-sciences.com/planete/questions-reponses/eau-fonctionne-culture-hydroponique-4828/>)
+
+# Liens intéressants
+
+* [Gestion intégrée de l'eau en milieu urbain : une série de fiches du Cerema](<https://www.cerema.fr/fr/actualites/gestion-integree-eau-milieu-urbain-serie-fiches-du-cerema>)
