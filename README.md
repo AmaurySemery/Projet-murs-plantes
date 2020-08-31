@@ -6,6 +6,7 @@ Arrosage automatique des murs végétalisés
 * [Mur végétal : Tous les systèmes pour faire un jardin vertical](<http://www.jardinsdebabylone.fr/blog/mur-vegetal-jardin-vertical/>)
 * [Isolants en laines végétales](<https://www.samse.fr/isolation-combles-amenageables/laine-vegetale>)
 * [Que valent les isolants végétaux ?](<https://www.quelleenergie.fr/magazine/isolation/que-valent-isolants-vegetaux-27198/>)
+* [Titre du programme ou du plan gouvernemental végétaliser : agir pour le rafraichissement urbain, les approches variées de 20 projets d'aménagement](<https://www.ademe.fr/sites/default/files/assets/documents/20projetsdevegetalisation_dossierentier_web.pdf>)
 
 # Ce qui se fait à côté (concurrence ou expériences diverses)
 
