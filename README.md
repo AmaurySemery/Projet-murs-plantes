@@ -38,7 +38,6 @@ Arrosage automatique des murs végétalisés
 # Documentation horticole
 
 * [Comment fonctionne la culture hydroponique ?](<https://www.futura-sciences.com/planete/questions-reponses/eau-fonctionne-culture-hydroponique-4828/>)
-* [
 
 # Liens intéressants
 
