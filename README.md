@@ -34,6 +34,12 @@ Arrosage automatique des murs végétalisés
 * [Quel réseau IoT choisir en fonction de ses besoins ?](<https://blog.iot-valley.fr/fr/quel-reseau-internet-objets-choisir-besoins>)
 * [Passerelles IoT](<https://www.cisco.com/c/fr_fr/solutions/internet-of-things/iot-gateways.html>)
 * [Quelle technologie choisir pour connecter les objets ?](<https://www.matooma.com/fr/s-informer/actualites-iot-m2m/m2m-comment-connecter-vos-objets>)
+* [M2M : les clés pour comprendre](<https://www.journaldunet.com/ebusiness/internet-mobile/1100536-m2m-les-cles-pour-comprendre/>)
+* [Le M2M au service de la communication entre vos objets](<Le M2M au service de la communication entre vos objets>)
+* [Comparaison des offres cellulaires M2M](<http://www.yoctopuce.com/FR/article/comparaison-des-offres-cellulaires-m2m>)
+* [Le guide complet pour connecter vos objets IoT avec la carte SIM M2M](<https://www.matooma.com/fr/s-informer/actualites-iot-m2m/quest-ce-quune-carte-sim-m2m>)
+* [Comment s’y retrouver dans les réseaux M2M ? 1/2](<https://www.oezratty.net/wordpress/2015/reseaux-m2m-1/>)
+
 
 # Tutoriels
 
