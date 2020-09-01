@@ -41,6 +41,7 @@ Arrosage automatique des murs végétalisés
 * [Comment s’y retrouver dans les réseaux M2M ? 1/2](<https://www.oezratty.net/wordpress/2015/reseaux-m2m-1/>)
 * [Qu'est-ce que les réseaux LPWA et quels sont leurs intérêts ?](<https://fr.slideshare.net/RobertVivancoSalcedo/comprendre-les-technologies-lpwa-sigfox-et-lora>)
 * [Les technologies de communication des objets connectés](<http://www.smartgrids-cre.fr/index.php?p=objets-connectes-technologies>)
+* [Double level sensor : niveau d’un fluide](<https://www.adeunis.com/produit/double-level-sensor-niveau-dun-fluide/>)
 
 
 # Tutoriels
