@@ -33,6 +33,7 @@ Arrosage automatique des murs végétalisés
 * [Création d’une passerelle pour l’Internet des objets](<https://www.arrow.com/fr-fr/research-and-events/articles/building-a-gateway-to-the-internet-of-things>)
 * [Quel réseau IoT choisir en fonction de ses besoins ?](<https://blog.iot-valley.fr/fr/quel-reseau-internet-objets-choisir-besoins>)
 * [Passerelles IoT](<https://www.cisco.com/c/fr_fr/solutions/internet-of-things/iot-gateways.html>)
+* [Quelle technologie choisir pour connecter les objets ?](<https://www.matooma.com/fr/s-informer/actualites-iot-m2m/m2m-comment-connecter-vos-objets>)
 
 # Tutoriels
 
