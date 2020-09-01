@@ -39,6 +39,7 @@ Arrosage automatique des murs végétalisés
 * [Comparaison des offres cellulaires M2M](<http://www.yoctopuce.com/FR/article/comparaison-des-offres-cellulaires-m2m>)
 * [Le guide complet pour connecter vos objets IoT avec la carte SIM M2M](<https://www.matooma.com/fr/s-informer/actualites-iot-m2m/quest-ce-quune-carte-sim-m2m>)
 * [Comment s’y retrouver dans les réseaux M2M ? 1/2](<https://www.oezratty.net/wordpress/2015/reseaux-m2m-1/>)
+* [Qu'est-ce que les réseaux LPWA et quels sont leurs intérêts ?](<https://fr.slideshare.net/RobertVivancoSalcedo/comprendre-les-technologies-lpwa-sigfox-et-lora>)
 
 
 # Tutoriels
