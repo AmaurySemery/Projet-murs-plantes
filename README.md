@@ -56,6 +56,10 @@ Arrosage automatique des murs végétalisés
 * [Niveau d’eau dans la citerne](<http://domoenergytics.com/domo.energy/Niveau-d-eau-dans-la-citerne>)
 * [Capteur Ultrason HC-SR04](<https://www.ihm3d.fr/httpwww-ihm3d-frcapteur-ultrason-hc-sr04.html>)
 * [Mesurer une distance avec un capteur à ultrason HC-SR04 et une carte Arduino / Genuino](<https://www.carnetdumaker.net/articles/mesurer-une-distance-avec-un-capteur-ultrason-hc-sr04-et-une-carte-arduino-genuino/>)
+* [Débuter avec le HC-SR04, mesure de distance par ultrason. Exemple de code Arduino](<https://projetsdiy.fr/mesure-distance-ultrason-hc-sr04-arduino/>)
+* [Déploiement d’une architecture LoRa pour l’IoT](<http://cedric.cnam.fr/~bouzefra/cours/Deploiement_Lora_exo.pdf>)
+* [ESP32 with LoRa using Arduino IDE – Getting Started](<https://randomnerdtutorials.com/esp32-lora-rfm95-transceiver-arduino-ide/>)
+* [Connect to TTN | Dragino](<https://wiki.dragino.com/index.php?title=Connect_to_TTN>)
 
 # Documentation horticole
 
