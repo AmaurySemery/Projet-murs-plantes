@@ -50,3 +50,7 @@ Arrosage automatique des murs végétalisés
 * [Caractériser le confort d’été des espaces publics et de la ville](<http://contact.cstb.fr/4-confort-ete/caracteriser-le-confort-dete-des-espaces-publics-et-de-la-ville/>)
 * [Un lycée rénové en intégrant la gestion des eaux pluviales à Lyon](<https://www.cerema.fr/fr/actualites/lycee-renove-integrant-gestion-eaux-pluviales-lyon>)
 * [Les super pouvoirs des sols en BD](<https://www.cerema.fr/fr/actualites/super-pouvoirs-sols-bd>)
+
+# Api météo utilisables
+
+* [OpenWeather](<https://openweathermap.org/api>)
