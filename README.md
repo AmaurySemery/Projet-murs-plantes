@@ -30,6 +30,9 @@ Arrosage automatique des murs végétalisés
 * [IoT : les avantages d’une Gateway sur-mesure](<https://rtone.fr/iot-gateway/>)
 * [8 questions à poser avant de choisir votre Gateway IoT](<https://iotindustriel.com/tendances-de-liot-industriel/8-questions-a-poser-avant-de-choisir-votre-gateway-iiot/>)
 * [Qu’est-ce qu’une passerelle IoT et comment la sécuriser ?](<https://www.globalsign.com/fr/blog/qu-est-ce-qu-une-passerelle-iot>)
+* [Création d’une passerelle pour l’Internet des objets](<https://www.arrow.com/fr-fr/research-and-events/articles/building-a-gateway-to-the-internet-of-things>)
+* [Quel réseau IoT choisir en fonction de ses besoins ?](<https://blog.iot-valley.fr/fr/quel-reseau-internet-objets-choisir-besoins>)
+* [Passerelles IoT](<https://www.cisco.com/c/fr_fr/solutions/internet-of-things/iot-gateways.html>)
 
 # Tutoriels
 
