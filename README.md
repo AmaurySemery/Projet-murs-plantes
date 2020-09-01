@@ -34,6 +34,7 @@ Arrosage automatique des murs végétalisés
 * [Arduino Uno - Capteur d'humidité au sol](<https://ouiaremakers.com/posts/tutoriel-diy-arduino-uno-capteur-d-humidite-au-sol>)
 * [Créer son arrosage automatique avec un Arduino](<https://www.mon-arrosageautomatique.fr/arrosage-automatique-arduino/>)
 * [Cours VBA : utilisations des tableaux](<https://www.excel-pratique.com/fr/vba/tableaux_vba>)
+* [Système d’arrosage automatique](<https://telefab.fr/2018/07/09/systeme-darrosage-automatique/>)
 
 # Documentation horticole
 
