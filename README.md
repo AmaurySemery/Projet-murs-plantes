@@ -55,6 +55,7 @@ Arrosage automatique des murs végétalisés
 * [Domotique et gestion cuve à eau](<https://blognote.jeremyblaizeau.com/domotique-gestion-cuve-a-eau/>)
 * [Niveau d’eau dans la citerne](<http://domoenergytics.com/domo.energy/Niveau-d-eau-dans-la-citerne>)
 * [Capteur Ultrason HC-SR04](<https://www.ihm3d.fr/httpwww-ihm3d-frcapteur-ultrason-hc-sr04.html>)
+* [Mesurer une distance avec un capteur à ultrason HC-SR04 et une carte Arduino / Genuino](<https://www.carnetdumaker.net/articles/mesurer-une-distance-avec-un-capteur-ultrason-hc-sr04-et-une-carte-arduino-genuino/>)
 
 # Documentation horticole
 
