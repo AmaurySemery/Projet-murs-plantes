@@ -41,6 +41,7 @@ Arrosage automatique des murs végétalisés
 * [node-red-node-mysql](<https://flows.nodered.org/node/node-red-node-mysql>)
 * [Comparaison du Xiaomi Mi Plant avec 3 capteurs d’humidité du sol (version low coast FC-28 et anti-corrosion)](<https://projetsdiy.fr/comparaison-xiaomi-mi-plant-capteurs-humidite-sol-fc28-yl69/>)
 * [Comparaison des technologies sans fil basse consommation](<https://www.digikey.fr/fr/articles/comparing-low-power-wireless-technologies>)
+* [Node-Red : l'IoT à portée de tous](<https://blog.ippon.fr/2017/03/28/node-red-liot-a-portee-de-tous/>)
 
 # Matériels
 
@@ -59,6 +60,8 @@ Arrosage automatique des murs végétalisés
 * [Linksys WRT54GL Routeur sans fil Wifi 54G Open source avec switch 4 ports](<https://www.amazon.fr/Linksys-WRT54GL-Routeur-source-switch/dp/B000BZURG6>)
 * [Présentation du Routeur haut débit Sans fil-G Linksys WRT54G](<https://www.linksys.com/fr/support-article?articleNum=140196>)
 * [Quel modèle de Raspberry Pi choisir en 2020 ? Comparatif avec le Raspberry Pi 4 8Go](<https://projetsdiy.fr/quel-modele-raspberry-pi-choisir/>)
+* [1 Module émetteur-récepteur sans fil 868MHz 915MHz LORA SX1276 ORIGINAL](<https://fr.aliexpress.com/item/32993368549.html?src=google&albch=shopping&acnt=631-313-3945&isdl=y&slnk=&plac=&mtctp=&albbt=Gploogle_7_shopping&aff_atform=google&aff_short_key=UneMJZVf&&albagn=888888&albcp=9867207072&albag=103142452067&trgt=897670389793&crea=fr32993368549&netw=u&device=c&albpg=897670389793&albpd=fr32993368549&gclid=EAIaIQobChMI2auN4tjK6wIVUvlRCh1OvQP5EAQYAiABEgKp9PD_BwE&gclsrc=aw.ds>)
+* [Comparaison des protocoles de communication sans fil](<https://www.anixter.com/fr_ca/ressources/documentation/fiches-techniques/2fpjk/comparaison-des-protocoles-de-communication-sans-fil.html>)
 
 # Tutoriels
 
@@ -78,6 +81,7 @@ Arrosage automatique des murs végétalisés
 * [Connect to TTN | Dragino](<https://wiki.dragino.com/index.php?title=Connect_to_TTN>)
 * [Tutoriel Node-Red](<http://silanus.fr/sin/?p=984>)
 * [Débuter avec Node-Red sur Raspberry Pi. Installation, autostart, prise en main](<https://projetsdiy.fr/debuter-node-red-raspberry-pi-installation-autostart/>)
+* [Générer des données pour détecter des anomalies](<https://ibmcloud.developpez.com/tutoriels/deep-learning-detecter-anomalies/>)
 
 # Documentation horticole
 
@@ -93,6 +97,7 @@ Arrosage automatique des murs végétalisés
 * [Caractériser le confort d’été des espaces publics et de la ville](<http://contact.cstb.fr/4-confort-ete/caracteriser-le-confort-dete-des-espaces-publics-et-de-la-ville/>)
 * [Un lycée rénové en intégrant la gestion des eaux pluviales à Lyon](<https://www.cerema.fr/fr/actualites/lycee-renove-integrant-gestion-eaux-pluviales-lyon>)
 * [Les super pouvoirs des sols en BD](<https://www.cerema.fr/fr/actualites/super-pouvoirs-sols-bd>)
+* [IBM en quête d’un nouveau souffle dans le cloud](<https://www.usinenouvelle.com/article/ibm-en-quete-d-un-nouveau-souffle-dans-le-cloud.N885464>)
 
 # Api météo utilisables
 
