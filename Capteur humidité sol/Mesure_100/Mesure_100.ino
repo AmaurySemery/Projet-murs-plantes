@@ -10,13 +10,13 @@ pinMode(PinLed,OUTPUT);
 void loop() {
 // read the input on analog pin 0:
 int sensorValue = analogRead(A0); Serial.println(sensorValue);
-byte a = 43.5;
+// convert 1023 to 100 (((10233x43.5)x20)/8900.1)
+byte a = 23;
 byte b = 20;
 byte c = 8900.1;
-int sensorConvert = sensorValue * a; 
-int sensorConvert1 = sensorConvert * b;
-int sensorConvert2 = sensorConvert1 / c; Serial.println(sensorConvert2);
-if (sensorConvert2 > 60) {digitalWrite(PinLed,HIGH);}
+int sensorConvert = sensorValue - 23; 
+int sensorConvert1 = sensorConvert / 10; Serial.println(sensorConvert1);
+if (sensorConvert1 > 60) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
 delay(10000);
 }
