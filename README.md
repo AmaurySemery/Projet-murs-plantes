@@ -42,6 +42,10 @@ Arrosage automatique des murs végétalisés
 * [Qu'est-ce que les réseaux LPWA et quels sont leurs intérêts ?](<https://fr.slideshare.net/RobertVivancoSalcedo/comprendre-les-technologies-lpwa-sigfox-et-lora>)
 * [Les technologies de communication des objets connectés](<http://www.smartgrids-cre.fr/index.php?p=objets-connectes-technologies>)
 * [Double level sensor : niveau d’un fluide](<https://www.adeunis.com/produit/double-level-sensor-niveau-dun-fluide/>)
+* [IMTC - Unified Communications - IoT](<http://www.mef.net/imtc-unified-communications-iot>)
+* [Marrying IoT and UC](<https://www.mitel.com/learn/resource-center/marrying-iot-and-uc>)
+
+
 
 
 # Tutoriels
