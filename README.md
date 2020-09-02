@@ -17,15 +17,6 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
-* [Eeca | Comparatif des meilleurs capteurs d'humidité du sol](<https://www.eeca.eu/meilleur-capteur-humidite-au-sol/>)
-* [DHT22 | température & humidité](<https://www.didel.com/DHT22.pdf>)
-* [HTU21D(F) Sensor | température & humidité](<https://cdn-shop.adafruit.com/datasheets/1899_HTU21D.pdf>)
-* [OLLIVAN Intelligent Xiaomi Plant Monitor Bluetooth 4 en 1 Testeur Sol pour Nutrition des Plantes](<http://www.startman.fr/soil-tester-ollivan-intelligent-xiaomi-plant-monitor-bluetooth-4-en-1-testeur-sol-pour-nutrition-des-plantes-capteur-d-humidite-du-sol-temperature-lumiere-plantes-moniteur-b01lxojswa-contenants-et-accessoires-pour-plantes.html>)
-* [ARCELI 5 pcs Sol Hygromètre Humidité Détection Capteur d'eau Module YL-69 Capteur et HC-38 Module pour Arduino ](<https://www.amazon.fr/ARCELI-Hygrom%C3%A8tre-Humidit%C3%A9-D%C3%A9tection-Capteur/dp/B07CQT5RC8>)
-* [Capteur d’humidité du sol YL-69 / HL-69 / FC-28 économique pour projets Arduino, Raspberry Pi](<https://projetsdiy.fr/bon-plan-capteur-humidite-sol-yl69-hl69/>)
-* [AZDelivery Capteur d'humidité du sol Module hygromètre V1.2 capacitif pour Arduino](<https://www.amazon.fr/dp/B07HJ6N1S4?tag=eeca-21&linkCode=osi&th=1&psc=1>)
-* [ICQUANZX Capteur d'humidité du sol résistant à la corrosion pour la détection de l'humidité Arduino, arrosage de jardin](<https://www.amazon.fr/dp/B088LPJL7Q?tag=eeca-21&linkCode=osi&th=1&psc=1>)
-* [Kuman 5 PCS Capteur d'humidité de Température pour Arduino Raspberry pi 3, 5PCS Module de Capteur d'humidité du Sol KY71](<https://www.amazon.fr/Kuman-Capteur-dhumidit%C3%A9-Temp%C3%A9rature-Raspberry/dp/B0728GKNSJ/ref=rtpb_1/260-1659632-7357710?_encoding=UTF8&pd_rd_i=B0728GKNSJ&pd_rd_r=eec7fa5d-dc70-46a3-957f-61013d55d1eb&pd_rd_w=n3Zkx&pd_rd_wg=KbIi4&pf_rd_p=ca28279e-6404-4cef-a813-16a5ff933ccd&pf_rd_r=2BR2FGSZ5BQAAE97DXYH&psc=1&refRID=2BR2FGSZ5BQAAE97DXYH>)
 * [Projets IoT : quelles passerelles choisir ?](<https://www.lemagit.fr/conseil/Projets-IoT-quelles-passerelles-choisir-2>)
 * [IoT : les avantages d’une Gateway sur-mesure](<https://rtone.fr/iot-gateway/>)
 * [8 questions à poser avant de choisir votre Gateway IoT](<https://iotindustriel.com/tendances-de-liot-industriel/8-questions-a-poser-avant-de-choisir-votre-gateway-iiot/>)
@@ -44,16 +35,30 @@ Arrosage automatique des murs végétalisés
 * [Double level sensor : niveau d’un fluide](<https://www.adeunis.com/produit/double-level-sensor-niveau-dun-fluide/>)
 * [IMTC - Unified Communications - IoT](<http://www.mef.net/imtc-unified-communications-iot>)
 * [Marrying IoT and UC](<https://www.mitel.com/learn/resource-center/marrying-iot-and-uc>)
-* [ Module de capteur d'humidité de détecteur d'hygromètre d'humidité de sol de 1 pièces avec la sonde anticorrosion pour Arduino ](<https://fr.aliexpress.com/item/33015889778.html?src=google&albch=shopping&acnt=631-313-3945&isdl=y&slnk=&plac=&mtctp=&albbt=Gploogle_7_shopping&aff_atform=google&aff_short_key=UneMJZVf&&albagn=888888&albcp=9867207063&albag=103142451827&trgt=800756789506&crea=fr33015889778&netw=u&device=c&albpg=800756789506&albpd=fr33015889778&gclid=EAIaIQobChMI-a2SppzK6wIVFIfVCh2uhg0vEAQYASABEgKAxvD_BwE&gclsrc=aw.ds>)
-* [Présentation du Routeur haut débit Sans fil-G Linksys WRT54G](<https://www.linksys.com/fr/support-article?articleNum=140196>)
-* [Linksys WRT54GL Routeur sans fil Wifi 54G Open source avec switch 4 ports](<https://www.amazon.fr/Linksys-WRT54GL-Routeur-source-switch/dp/B000BZURG6>)
 * [Raspberry Pi](<https://fr.wikipedia.org/wiki/Raspberry_Pi>)
-* [Quel modèle de Raspberry Pi choisir en 2020 ? Comparatif avec le Raspberry Pi 4 8Go](<https://projetsdiy.fr/quel-modele-raspberry-pi-choisir/>)
 * [Être autonome en eau : récupérer l'eau de pluie et la filtrer](<https://toitsalternatifs.fr/conseils-pratiques/etre-autonome-en-eau/>)
 * [Quel est le prix d’une installation de récupération d’eau de pluie en 2020 ?](<https://www.les-energies-renouvelables.eu/conseils/recuperation-eau-pluie/quel-prix-installation-recuperation-eau-de-pluie/>)
+* [node-red-node-mysql](<https://flows.nodered.org/node/node-red-node-mysql>)
+* [Comparaison du Xiaomi Mi Plant avec 3 capteurs d’humidité du sol (version low coast FC-28 et anti-corrosion)](<https://projetsdiy.fr/comparaison-xiaomi-mi-plant-capteurs-humidite-sol-fc28-yl69/>)
+* [Comparaison des technologies sans fil basse consommation](<https://www.digikey.fr/fr/articles/comparing-low-power-wireless-technologies>)
+
+# Matériels
+
+* [Capteur d’humidité du sol YL-69 / HL-69 / FC-28 économique pour projets Arduino, Raspberry Pi](<https://projetsdiy.fr/bon-plan-capteur-humidite-sol-yl69-hl69/>)
+* [AZDelivery Capteur d'humidité du sol Module hygromètre V1.2 capacitif pour Arduino](<https://www.amazon.fr/dp/B07HJ6N1S4?tag=eeca-21&linkCode=osi&th=1&psc=1>)
+* [ICQUANZX Capteur d'humidité du sol résistant à la corrosion pour la détection de l'humidité Arduino, arrosage de jardin](<https://www.amazon.fr/dp/B088LPJL7Q?tag=eeca-21&linkCode=osi&th=1&psc=1>)
+* [OLLIVAN Intelligent Xiaomi Plant Monitor Bluetooth 4 en 1 Testeur Sol pour Nutrition des Plantes](<http://www.startman.fr/soil-tester-ollivan-intelligent-xiaomi-plant-monitor-bluetooth-4-en-1-testeur-sol-pour-nutrition-des-plantes-capteur-d-humidite-du-sol-temperature-lumiere-plantes-moniteur-b01lxojswa-contenants-et-accessoires-pour-plantes.html>)
+* [Eeca | Comparatif des meilleurs capteurs d'humidité du sol](<https://www.eeca.eu/meilleur-capteur-humidite-au-sol/>)
+* [DHT22 | température & humidité](<https://www.didel.com/DHT22.pdf>)
+* [HTU21D(F) Sensor | température & humidité](<https://cdn-shop.adafruit.com/datasheets/1899_HTU21D.pdf>)
+* [ARCELI 5 pcs Sol Hygromètre Humidité Détection Capteur d'eau Module YL-69 Capteur et HC-38 Module pour Arduino ](<https://www.amazon.fr/ARCELI-Hygrom%C3%A8tre-Humidit%C3%A9-D%C3%A9tection-Capteur/dp/B07CQT5RC8>)
+* [Kuman 5 PCS Capteur d'humidité de Température pour Arduino Raspberry pi 3, 5PCS Module de Capteur d'humidité du Sol KY71](<https://www.amazon.fr/Kuman-Capteur-dhumidit%C3%A9-Temp%C3%A9rature-Raspberry/dp/B0728GKNSJ/ref=rtpb_1/260-1659632-7357710?_encoding=UTF8&pd_rd_i=B0728GKNSJ&pd_rd_r=eec7fa5d-dc70-46a3-957f-61013d55d1eb&pd_rd_w=n3Zkx&pd_rd_wg=KbIi4&pf_rd_p=ca28279e-6404-4cef-a813-16a5ff933ccd&pf_rd_r=2BR2FGSZ5BQAAE97DXYH&psc=1&refRID=2BR2FGSZ5BQAAE97DXYH>)
+* [Module de capteur d'humidité de détecteur d'hygromètre d'humidité de sol de 1 pièces avec la sonde anticorrosion pour Arduino ](<https://fr.aliexpress.com/item/33015889778.html?src=google&albch=shopping&acnt=631-313-3945&isdl=y&slnk=&plac=&mtctp=&albbt=Gploogle_7_shopping&aff_atform=google&aff_short_key=UneMJZVf&&albagn=888888&albcp=9867207063&albag=103142451827&trgt=800756789506&crea=fr33015889778&netw=u&device=c&albpg=800756789506&albpd=fr33015889778&gclid=EAIaIQobChMI-a2SppzK6wIVFIfVCh2uhg0vEAQYASABEgKAxvD_BwE&gclsrc=aw.ds>)
+* [Capteur capacitif d'humidité du sol module résistant à la Corrosion fil large tension capteur capacitif analogique d'humidité du sol V1.2](<https://fr.aliexpress.com/item/32864255890.html?pvid=f8788ee9-106e-48e0-9a21-d517b9b0ff5d&aff_platform=aaf&sk=eqBMVNj&aff_trace_key=ae1977ceb81645b4ab11984b517ec023-1599056427888-00005-eqBMVNj&rmsg=do_not_replacement&scm=1007.23534.124736.0&terminal_id=7c49b76ff069433490fa59c47cd70354&aff_request_id=ae1977ceb81645b4ab11984b517ec023-1599056427888-00005-eqBMVNj>)
 * [ESP32 DHT11 CP2104 WIFI Bluetooth température humidité sol capteur d'humidité Module de détection 18650 batterie bouclier pour Arduino](<https://fr.aliexpress.com/item/32970157921.html>)
-
-
+* [Linksys WRT54GL Routeur sans fil Wifi 54G Open source avec switch 4 ports](<https://www.amazon.fr/Linksys-WRT54GL-Routeur-source-switch/dp/B000BZURG6>)
+* [Présentation du Routeur haut débit Sans fil-G Linksys WRT54G](<https://www.linksys.com/fr/support-article?articleNum=140196>)
+* [Quel modèle de Raspberry Pi choisir en 2020 ? Comparatif avec le Raspberry Pi 4 8Go](<https://projetsdiy.fr/quel-modele-raspberry-pi-choisir/>)
 
 # Tutoriels
 
