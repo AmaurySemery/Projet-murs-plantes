@@ -10,13 +10,15 @@ pinMode(PinLed,OUTPUT);
 void loop() {
 // read the input on analog pin 0:
 int sensorValue = analogRead(A0); Serial.println(sensorValue);
-// convert 1023 to 100 (((10233x43.5)x20)/8900.1)
-byte a = 23;
-byte b = 20;
-byte c = 8900.1;
-int sensorConvert = sensorValue - 23; 
-int sensorConvert1 = sensorConvert / 10; Serial.println(sensorConvert1);
-if (sensorConvert1 > 60) {digitalWrite(PinLed,HIGH);}
+// convert 1023 to 100 (((1023x43.5)x20)/8900.1) => ne fonctionne pas, donc j'ai fait (1023-23)/10)
+int a = 43.5;
+int b = 20;
+int c = 8900.1;
+float sensorConvert = sensorValue * a;
+float sensorConvert1 = sensorConvert * b;
+float sensorConvert2 = sensorConvert1 / c; 
+Serial.println(sensorConvert2 + "% d'humidité");
+if (sensorConvert2 > 50) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
 delay(10000);
 }
