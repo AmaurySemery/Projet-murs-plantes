@@ -22,8 +22,7 @@ float sensorConvert1 = sensorConvert * b;
 float sensorConvert2 = sensorConvert1 / c; 
 Serial.print("Ce qui donne ");
 Serial.print(sensorConvert2);
-Serial.print("% d'humidité");
-Serial.println(".");
+Serial.println("% d'aridité.");
 if (sensorConvert2 > 50) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
 delay(10000);
