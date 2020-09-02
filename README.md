@@ -45,6 +45,10 @@ Arrosage automatique des murs végétalisés
 * [IMTC - Unified Communications - IoT](<http://www.mef.net/imtc-unified-communications-iot>)
 * [Marrying IoT and UC](<https://www.mitel.com/learn/resource-center/marrying-iot-and-uc>)
 * [ Module de capteur d'humidité de détecteur d'hygromètre d'humidité de sol de 1 pièces avec la sonde anticorrosion pour Arduino ](<https://fr.aliexpress.com/item/33015889778.html?src=google&albch=shopping&acnt=631-313-3945&isdl=y&slnk=&plac=&mtctp=&albbt=Gploogle_7_shopping&aff_atform=google&aff_short_key=UneMJZVf&&albagn=888888&albcp=9867207063&albag=103142451827&trgt=800756789506&crea=fr33015889778&netw=u&device=c&albpg=800756789506&albpd=fr33015889778&gclid=EAIaIQobChMI-a2SppzK6wIVFIfVCh2uhg0vEAQYASABEgKAxvD_BwE&gclsrc=aw.ds>)
+* [Présentation du Routeur haut débit Sans fil-G Linksys WRT54G](<https://www.linksys.com/fr/support-article?articleNum=140196>)
+* [Linksys WRT54GL Routeur sans fil Wifi 54G Open source avec switch 4 ports](<https://www.amazon.fr/Linksys-WRT54GL-Routeur-source-switch/dp/B000BZURG6>)
+* [Raspberry Pi](<https://fr.wikipedia.org/wiki/Raspberry_Pi>)
+* [Quel modèle de Raspberry Pi choisir en 2020 ? Comparatif avec le Raspberry Pi 4 8Go](<https://projetsdiy.fr/quel-modele-raspberry-pi-choisir/>)
 
 
 
@@ -64,6 +68,7 @@ Arrosage automatique des murs végétalisés
 * [Déploiement d’une architecture LoRa pour l’IoT](<http://cedric.cnam.fr/~bouzefra/cours/Deploiement_Lora_exo.pdf>)
 * [ESP32 with LoRa using Arduino IDE – Getting Started](<https://randomnerdtutorials.com/esp32-lora-rfm95-transceiver-arduino-ide/>)
 * [Connect to TTN | Dragino](<https://wiki.dragino.com/index.php?title=Connect_to_TTN>)
+* [Tutoriel Node-Red](<http://silanus.fr/sin/?p=984>)
 
 # Documentation horticole
 
