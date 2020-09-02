@@ -51,6 +51,7 @@ Arrosage automatique des murs végétalisés
 * [Quel modèle de Raspberry Pi choisir en 2020 ? Comparatif avec le Raspberry Pi 4 8Go](<https://projetsdiy.fr/quel-modele-raspberry-pi-choisir/>)
 * [Être autonome en eau : récupérer l'eau de pluie et la filtrer](<https://toitsalternatifs.fr/conseils-pratiques/etre-autonome-en-eau/>)
 * [Quel est le prix d’une installation de récupération d’eau de pluie en 2020 ?](<https://www.les-energies-renouvelables.eu/conseils/recuperation-eau-pluie/quel-prix-installation-recuperation-eau-de-pluie/>)
+* [ESP32 DHT11 CP2104 WIFI Bluetooth température humidité sol capteur d'humidité Module de détection 18650 batterie bouclier pour Arduino](<https://fr.aliexpress.com/item/32970157921.html>)
 
 
 
