@@ -49,6 +49,8 @@ Arrosage automatique des murs végétalisés
 * [Linksys WRT54GL Routeur sans fil Wifi 54G Open source avec switch 4 ports](<https://www.amazon.fr/Linksys-WRT54GL-Routeur-source-switch/dp/B000BZURG6>)
 * [Raspberry Pi](<https://fr.wikipedia.org/wiki/Raspberry_Pi>)
 * [Quel modèle de Raspberry Pi choisir en 2020 ? Comparatif avec le Raspberry Pi 4 8Go](<https://projetsdiy.fr/quel-modele-raspberry-pi-choisir/>)
+* [Être autonome en eau : récupérer l'eau de pluie et la filtrer](<https://toitsalternatifs.fr/conseils-pratiques/etre-autonome-en-eau/>)
+* [Quel est le prix d’une installation de récupération d’eau de pluie en 2020 ?](<https://www.les-energies-renouvelables.eu/conseils/recuperation-eau-pluie/quel-prix-installation-recuperation-eau-de-pluie/>)
 
 
 
@@ -69,6 +71,7 @@ Arrosage automatique des murs végétalisés
 * [ESP32 with LoRa using Arduino IDE – Getting Started](<https://randomnerdtutorials.com/esp32-lora-rfm95-transceiver-arduino-ide/>)
 * [Connect to TTN | Dragino](<https://wiki.dragino.com/index.php?title=Connect_to_TTN>)
 * [Tutoriel Node-Red](<http://silanus.fr/sin/?p=984>)
+* [Débuter avec Node-Red sur Raspberry Pi. Installation, autostart, prise en main](<https://projetsdiy.fr/debuter-node-red-raspberry-pi-installation-autostart/>)
 
 # Documentation horticole
 
