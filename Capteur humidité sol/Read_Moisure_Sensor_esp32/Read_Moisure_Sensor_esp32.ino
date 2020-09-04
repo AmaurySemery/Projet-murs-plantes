@@ -26,7 +26,7 @@ float sensorConvert1 = b - sensorConvert;
 Serial.print("Ce qui donne ");
 Serial.print(sensorConvert1);
 Serial.println("% d'humidité.");
-if (sensorConvert < 35) {digitalWrite(PinLed,HIGH);}
+if (sensorConvert1 < 35) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
 delay(10000);
 }
