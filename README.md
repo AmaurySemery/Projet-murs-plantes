@@ -17,6 +17,9 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [Le M2M (Machine to Machine),IoT et forfaits Bouygues Telecom Entreprises à Lyon dans le Rhône](<https://www.iko-solutions.com/details-le+m2m+machine+to+machine+iot+et+forfaits+bouygues+telecom+entreprises+a+lyon+dans+le+rhone-157.html>)
+* [La carte SIM signée Matooma](<https://www.matooma.com/fr/>)
+* [Comment utiliser les objets connectés (montres…) et comment fonctionnent-ils ?](<https://www.monpetitforfait.com/toutes-les-aides/quel-forfait-objet-connecte>)
 * [Projets IoT : quelles passerelles choisir ?](<https://www.lemagit.fr/conseil/Projets-IoT-quelles-passerelles-choisir-2>)
 * [IoT : les avantages d’une Gateway sur-mesure](<https://rtone.fr/iot-gateway/>)
 * [8 questions à poser avant de choisir votre Gateway IoT](<https://iotindustriel.com/tendances-de-liot-industriel/8-questions-a-poser-avant-de-choisir-votre-gateway-iiot/>)
@@ -66,6 +69,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Connect to TTN | Dragino](<https://wiki.dragino.com/index.php?title=Connect_to_TTN>)
 * [Utiliser un LCD, montage électronique](<https://www.scriptol.fr/montages/salut-le-monde.php>)
 * [Arduino: Mesurer l’humidité du sol avec le YL-69](<http://raspblog.fr/arduino-mesurer-lhumidite-sol-yl-69>)
 * [Capteur d'humidité du sol (analogique et numérique) avec Arduino](<http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=50>)
