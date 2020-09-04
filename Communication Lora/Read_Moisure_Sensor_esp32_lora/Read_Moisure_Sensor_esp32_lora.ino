@@ -86,9 +86,7 @@ float sensorConvert1 = b - sensorConvert;
       USE_SERIAL.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
     }
 
-    http.end();}
-    
+    http.end();    }
 
-
+    delay(5000);
 }
-}  }
