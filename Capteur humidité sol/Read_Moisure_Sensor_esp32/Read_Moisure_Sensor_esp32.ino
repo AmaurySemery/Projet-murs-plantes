@@ -1,4 +1,4 @@
-int PinLed=3;
+int PinLed=2;
 
 void setup() {
 // initialize serial communication at 9600 bits per second:
