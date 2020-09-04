@@ -66,6 +66,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Utiliser un LCD, montage électronique](<https://www.scriptol.fr/montages/salut-le-monde.php>)
 * [Arduino: Mesurer l’humidité du sol avec le YL-69](<http://raspblog.fr/arduino-mesurer-lhumidite-sol-yl-69>)
 * [Capteur d'humidité du sol (analogique et numérique) avec Arduino](<http://tiptopboards.free.fr/arduino_forum/viewtopic.php?f=2&t=50>)
 * [Arduino Uno - Capteur d'humidité au sol](<https://ouiaremakers.com/posts/tutoriel-diy-arduino-uno-capteur-d-humidite-au-sol>)
