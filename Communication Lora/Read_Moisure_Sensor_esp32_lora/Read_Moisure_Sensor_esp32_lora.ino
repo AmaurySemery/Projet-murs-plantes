@@ -44,10 +44,16 @@ if (sensorConvert1 < 35) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}}
 
 void loop() { 
+fonction();
+while(1);
 
 if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
     HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre de lancer des requêtes en HTTP
-
+int sensorValue = analogRead(entreeAnalogique); 
+int a = 40.95;
+int b = 100;
+float sensorConvert = sensorValue / a;
+float sensorConvert1 = b - sensorConvert;
     float h = sensorConvert1;
     USE_SERIAL.println("[DEBG] " + String(h));
 
@@ -85,7 +91,4 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
 
 
 }
-
-
-    delay(5000);
-  }
+}  }
