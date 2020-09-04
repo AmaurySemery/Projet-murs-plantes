@@ -1,14 +1,10 @@
-int analogPin = A3; // potentiometer wiper (middle terminal) connected to analog pin 3
-                    // outside leads to ground and +5V
-int val = 0;  // variable to store the value read
-
+const int entreeAnalogique = 15;  // GPIO 33
+      
 void setup() {
-  Serial.begin(9600);           //  setup serial
+  Serial.begin(9600);
 }
 
 void loop() {
-  int sensorValue = analogRead(A0);
-  val = analogRead(sensorValue);  // read the input pin
-  Serial.println(val);          // debug value
-  delay(5000);
+  Serial.println(analogRead(entreeAnalogique));
+  delay(500);
 }
