@@ -17,6 +17,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [Comment utiliser les objets connectés (montres…) et comment fonctionnent-ils ?](<https://www.monpetitforfait.com/toutes-les-aides/quel-forfait-objet-connecte>)
 * [Projets IoT : quelles passerelles choisir ?](<https://www.lemagit.fr/conseil/Projets-IoT-quelles-passerelles-choisir-2>)
 * [IoT : les avantages d’une Gateway sur-mesure](<https://rtone.fr/iot-gateway/>)
 * [8 questions à poser avant de choisir votre Gateway IoT](<https://iotindustriel.com/tendances-de-liot-industriel/8-questions-a-poser-avant-de-choisir-votre-gateway-iiot/>)
