@@ -11,7 +11,7 @@ pinMode(PinLed,OUTPUT);
 void loop() {
 // read the input on analog pin 0:
 int sensorValue = analogRead(entreeAnalogique); 
-Serial.print("La valeur retenue par A0 [de 0 (humide) à 4095 (sec)] est de "); 
+Serial.print("La valeur retenue par A0 [de 0 (sec) à 4095 (humide)] est de "); 
 Serial.print(sensorValue); 
 Serial.println(".");
 // convert 4095 to 100 (4095/40.95=100)
@@ -19,10 +19,10 @@ int a = 40.95;
 float sensorConvert = sensorValue / a;
 Serial.print("Ce qui donne ");
 Serial.print(sensorConvert);
-Serial.println("% d'aridité.");
-if (sensorConvert > 50) {digitalWrite(PinLed,HIGH);}
+Serial.println("% d'humidité.");
+if (sensorConvert < 35) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
 delay(10000);
 }
 
-// Plus la terre sera humide, plus la valeur s’approchera de 0, plus elle sera sèche, plus la valeur s’approchera de 4095.
+// Plus la terre sera humide, plus la valeur s’approchera de 4095, plus elle sera sèche, plus la valeur s’approchera de 0.
