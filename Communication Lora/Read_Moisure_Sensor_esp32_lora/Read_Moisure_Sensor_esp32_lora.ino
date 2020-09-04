@@ -28,7 +28,7 @@ Serial.print(sensorConvert1);
 Serial.println("% d'humidité.");
 if (sensorConvert1 < 35) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
-delay(10000);
+delay(500000);
 }
 
 // Plus la terre sera humide, plus la valeur s’approchera de 0, plus elle sera sèche, plus la valeur s’approchera de 4095.
