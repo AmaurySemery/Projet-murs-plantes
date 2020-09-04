@@ -28,4 +28,4 @@ else {digitalWrite(PinLed,LOW);}
 delay(10000);
 }
 
-// Plus la terre sera humide, plus la valeur s’approchera de 0, plus elle sera sèche, plus la valeur s’approchera de 1023.
+// Plus la terre sera humide, plus la valeur s’approchera de 0, plus elle sera sèche, plus la valeur s’approchera de 4095.
