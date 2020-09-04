@@ -1,16 +1,9 @@
-#include <SPI.h>
-#include <LoRa.h>
-#include <Wire.h>  
-#include "SSD1306.h" 
-#include "images.h"
+#include  < SPI.h > 
+#include  < LoRa.h >
 
-#define SCK     5    // GPIO5  -- SX1278's SCK
-#define MISO    19   // GPIO19 -- SX1278's MISnO
-#define MOSI    27   // GPIO27 -- SX1278's MOSI
-#define SS      18   // GPIO18 -- SX1278's CS
-#define RST     14   // GPIO14 -- SX1278's RESET
-#define DI0     26   // GPIO26 -- SX1278's IRQ(Interrupt Request)
-#define BAND  433E6
+#define SS 18
+#define RST 14
+#define DI0 26
 
 unsigned int counter = 0;
 
