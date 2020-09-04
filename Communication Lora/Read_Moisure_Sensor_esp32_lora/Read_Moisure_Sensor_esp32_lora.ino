@@ -16,8 +16,6 @@ const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 void setup() {
   Serial.begin(9600);
   pinMode(PinLed,OUTPUT);
-  Serial.begin(115200);   // Initialisation du moniteur série à 115200
-  delay(1000);
 
   Serial.println("\n");
   WiFi.begin(ssid,password);  // Initialisation avec WiFi.begin / ssid et password
