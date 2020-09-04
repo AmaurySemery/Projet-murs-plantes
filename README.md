@@ -49,6 +49,7 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Building a global open LoRaWAN™ network](<https://www.thethingsnetwork.org/>)
 * [LILYGO® TTGO ESP32-Paxcounter LoRa32 V2.1 1.6 Version 433/868/915MHZ LoRa ESP-32 OLED 0.96 Inch SD Card Bluetooth WIFI Module](<http://www.lilygo.cn/prod_view.aspx?TypeId=50003&Id=1130&FId=t3:50003:3>)
 * [Capteur d’humidité du sol YL-69 / HL-69 / FC-28 économique pour projets Arduino, Raspberry Pi](<https://projetsdiy.fr/bon-plan-capteur-humidite-sol-yl69-hl69/>)
 * [AZDelivery Capteur d'humidité du sol Module hygromètre V1.2 capacitif pour Arduino](<https://www.amazon.fr/dp/B07HJ6N1S4?tag=eeca-21&linkCode=osi&th=1&psc=1>)
