@@ -1,13 +1,9 @@
 const int entreeAnalogique = 15;
 int PinLed=2;
 
-String rssi = "RSSI --";
-String packSize = "--";
-String packet ;
-
 void setup() {
 // initialize serial communication at 9600 bits per second:
-Serial.begin(9600);
+Serial.begin(115200);
 pinMode(PinLed,OUTPUT);
 }
 

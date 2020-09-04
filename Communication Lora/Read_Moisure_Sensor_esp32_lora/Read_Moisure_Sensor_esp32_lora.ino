@@ -7,36 +7,27 @@
 
 WiFiMulti wifiMulti;
 
+const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
+const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 const int entreeAnalogique = 15;
 int PinLed=2;
 
-const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
-const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
-
 void setup() {
-  Serial.begin(9600);
   pinMode(PinLed,OUTPUT);
+  Serial.begin(115200);   // Initialisation du moniteur série à 115200
+  delay(1000);
 
   Serial.println("\n");
   WiFi.begin(ssid,password);  // Initialisation avec WiFi.begin / ssid et password
   Serial.print("Attente de connexion ...");  // Message d'attente de connexion
   while(WiFi.status() != WL_CONNECTED)  // Test connexion
-
-{
-
-    Serial.print(".");  // Affiche des points .... tant que connexion n'est pas OK
-
-    delay(100);
-  }
-  
-
+{Serial.print(".");  // Affiche des points .... tant que connexion n'est pas OK
+delay(100);}
   Serial.println("\n");
   Serial.println("Connexion etablie !");  // Affiche connexion établie
 }
 
-void loop() { 
-
-int sensorValue = analogRead(entreeAnalogique); 
+void fonction(){int sensorValue = analogRead(entreeAnalogique); 
 Serial.print("La valeur retenue par A0 [de 0 (humide) à 4095 (sec)] est de "); 
 Serial.print(sensorValue); 
 Serial.println(".");
@@ -48,11 +39,15 @@ float sensorConvert1 = b - sensorConvert;
 Serial.print("Ce qui donne ");
 Serial.print(sensorConvert1);
 Serial.println("% d'humidité.");
+
 if (sensorConvert1 < 35) {digitalWrite(PinLed,HIGH);}
-else {digitalWrite(PinLed,LOW);}
+else {digitalWrite(PinLed,LOW);}}
+
+void loop() { 
 
 if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
     HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre de lancer des requêtes en HTTP
+
     float h = sensorConvert1;
     USE_SERIAL.println("[DEBG] " + String(h));
 
@@ -86,5 +81,11 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
     }
 
     http.end();}
-    delay(50000);
+    
+
+
+}
+
+
+    delay(5000);
   }
