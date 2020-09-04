@@ -1,16 +1,3 @@
-#include  < SPI.h > 
-#include  < LoRa.h >
-
-#define SS 18
-#define RST 14
-#define DI0 26
-
-unsigned int counter = 0;
-
-String rssi = "RSSI --";
-String packSize = "--";
-String packet ;
-
 const int entreeAnalogique = 15;
 int PinLed=2;
 
@@ -38,18 +25,6 @@ Serial.println("% d'humidité.");
 if (sensorConvert1 < 35) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
 delay(50000);
-
-  // send packet
-  LoRa.beginPacket();
-  LoRa.print("hello ");
-  LoRa.print(counter);
-  LoRa.endPacket();
-
-  counter++;
-  digitalWrite(2, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(2, LOW);    // turn the LED off by making the voltage LOW
-delay(1000); // wait for a second
 }
 
 // Plus la terre sera humide, plus la valeur s’approchera de 0, plus elle sera sèche, plus la valeur s’approchera de 4095.
