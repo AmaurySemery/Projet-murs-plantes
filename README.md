@@ -8,7 +8,7 @@ Arrosage automatique des murs végétalisés
 * [Que valent les isolants végétaux ?](<https://www.quelleenergie.fr/magazine/isolation/que-valent-isolants-vegetaux-27198/>)
 * [Titre du programme ou du plan gouvernemental végétaliser : agir pour le rafraichissement urbain, les approches variées de 20 projets d'aménagement](<https://www.ademe.fr/sites/default/files/assets/documents/20projetsdevegetalisation_dossierentier_web.pdf>)
 
-# Ce qui se fait à côté (concurrence ou expériences diverses)
+# Ce qui se fait à côté (concurrence ou expériences diverses)https://github.com/AmaurySemery/solioti
 
 * [Meteogyre](<http://www.sciencesalecole.org/wp-content/uploads/2019/10/LYC19_CR.pdf>)
 * [Green Citizen](<http://www.greencityzen.fr/accueil/>)
@@ -16,7 +16,8 @@ Arrosage automatique des murs végétalisés
 * [Powermoss](<https://www.powerofmoss.com/>)
 
 # Documentation technique
-
+ 
+* [Banc d’essai : découvrir l’IdO avec les produits LoRa de Dragino](<https://www.elektormagazine.fr/news/banc-d-essai-premiers-pas-dans-l-ido-avec-les-produits-lora-de-dragino>)
 * [Le M2M (Machine to Machine),IoT et forfaits Bouygues Telecom Entreprises à Lyon dans le Rhône](<https://www.iko-solutions.com/details-le+m2m+machine+to+machine+iot+et+forfaits+bouygues+telecom+entreprises+a+lyon+dans+le+rhone-157.html>)
 * [La carte SIM signée Matooma](<https://www.matooma.com/fr/>)
 * [Comment utiliser les objets connectés (montres…) et comment fonctionnent-ils ?](<https://www.monpetitforfait.com/toutes-les-aides/quel-forfait-objet-connecte>)
