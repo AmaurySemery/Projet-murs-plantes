@@ -17,6 +17,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [Le M2M (Machine to Machine),IoT et forfaits Bouygues Telecom Entreprises à Lyon dans le Rhône](<https://www.iko-solutions.com/details-le+m2m+machine+to+machine+iot+et+forfaits+bouygues+telecom+entreprises+a+lyon+dans+le+rhone-157.html>)
 * [La carte SIM signée Matooma](<https://www.matooma.com/fr/>)
 * [Comment utiliser les objets connectés (montres…) et comment fonctionnent-ils ?](<https://www.monpetitforfait.com/toutes-les-aides/quel-forfait-objet-connecte>)
 * [Projets IoT : quelles passerelles choisir ?](<https://www.lemagit.fr/conseil/Projets-IoT-quelles-passerelles-choisir-2>)
