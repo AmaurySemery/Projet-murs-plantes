@@ -1,3 +1,4 @@
+const int entreeAnalogique = 15;
 int PinLed=2;
 
 void setup() {
@@ -9,21 +10,17 @@ pinMode(PinLed,OUTPUT);
 
 void loop() {
 // read the input on analog pin 0:
-int sensorValue = analogRead(A0); 
-Serial.print("La valeur retenue par A0 [de 0 (humide) à 1023 (sec)] est de "); 
+int sensorValue = analogRead(entreeAnalogique); 
+Serial.print("La valeur retenue par A0 [de 0 (humide) à 4095 (sec)] est de "); 
 Serial.print(sensorValue); 
 Serial.println(".");
-// convert 1023 to 100 (((1023x43.5)x20)/8900.1) => ne fonctionne pas, donc j'ai fait (1023-23)/10)
-int a = 43.5;
-int b = 20;
-int c = 8900.1;
-float sensorConvert = sensorValue * a;
-float sensorConvert1 = sensorConvert * b;
-float sensorConvert2 = sensorConvert1 / c; 
+// convert 4095 to 100 (4095/40.95=100)
+int a = 40.95;
+float sensorConvert = sensorValue / a;
 Serial.print("Ce qui donne ");
-Serial.print(sensorConvert2);
+Serial.print(sensorConvert);
 Serial.println("% d'aridité.");
-if (sensorConvert2 > 50) {digitalWrite(PinLed,HIGH);}
+if (sensorConvert > 50) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
 delay(10000);
 }
