@@ -71,6 +71,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Soil moisture sensor](<https://wiki.dfrobot.com/Capacitive_Soil_Moisture_Sensor_SKU_SEN0193>)
 * [Connect to TTN | Dragino](<https://wiki.dragino.com/index.php?title=Connect_to_TTN>)
 * [Utiliser un LCD, montage électronique](<https://www.scriptol.fr/montages/salut-le-monde.php>)
 * [Arduino: Mesurer l’humidité du sol avec le YL-69](<http://raspblog.fr/arduino-mesurer-lhumidite-sol-yl-69>)
