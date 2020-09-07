@@ -16,7 +16,6 @@ const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
 const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
 int PinLed=2;
-int PinCap=15;
 
 
 void setup() {
@@ -24,7 +23,6 @@ void setup() {
   pinMode(PinLed,OUTPUT);
   Serial.begin(115200);
     uint8_t PinCap = 15;
-  pinMode(PinCap, INPUT);
 
     if (!gravity_sensor.Setup(PinCap)) {
         Serial.println("Le capteur d'humidité au sol n'a pas été détecté.");
@@ -46,7 +44,7 @@ delay(100);}
 
 void loop() {
 
-uint16_t value = gravity_sensor.Read(PinCap);
+uint16_t value = gravity_sensor.Read(gravity_sensor_pin);
 int a = 40.95;
 int b = 100;
 float sensorConvert = value / a;
