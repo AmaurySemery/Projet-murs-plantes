@@ -16,7 +16,11 @@ Arrosage automatique des murs végétalisés
 * [Powermoss](<https://www.powerofmoss.com/>)
 
 # Documentation technique
- 
+
+* [Fonctions, comment créer et utiliser les fonctions ?](<https://plaisirarduino.fr/les-fonctions/>)
+* [Qu'est-ce que le moniteur série et à quoi ça sert ?](<https://plaisirarduino.fr/le-moniteur-serie/>)
+* [Répéter des instructions : les boucles](<https://www.locoduino.org/spip.php?article65>)
+* [Présentation de JSON](<https://www.json.org/json-fr.html>)
 * [Banc d’essai : découvrir l’IdO avec les produits LoRa de Dragino](<https://www.elektormagazine.fr/news/banc-d-essai-premiers-pas-dans-l-ido-avec-les-produits-lora-de-dragino>)
 * [Le M2M (Machine to Machine),IoT et forfaits Bouygues Telecom Entreprises à Lyon dans le Rhône](<https://www.iko-solutions.com/details-le+m2m+machine+to+machine+iot+et+forfaits+bouygues+telecom+entreprises+a+lyon+dans+le+rhone-157.html>)
 * [La carte SIM signée Matooma](<https://www.matooma.com/fr/>)
@@ -71,6 +75,10 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Arrosage automatique connecté pour votre gazon et votre jardin à l’aide d’un Raspberry Pi](<https://ouiaremakers.com/posts/tutoriel-diy-arrosage-automatique-connecte-pour-votre-gazon-et-votre-jardin-a-l-aide-d-un-raspberry-pi>)
+* [Débuter avec l’Arduino et Node-RED. Enregistrer et afficher des mesures en JSON depuis le port série](<https://projetsdiy.fr/debuter-arduino-node-red-enregistrer-afficher-mesures-json-port-serie/>)
+* [Projet de capteur WiFi ESP32](<https://www.az-delivery.de/fr/blogs/azdelivery-blog-fur-arduino-und-raspberry-pi/esp32-wifi-sensor-projekt>)
+* [Node-RED : comment intégrer un objet connecté MySensors v2](<https://projetsdiy.fr/node-red-integrer-objet-connecte-mysensors/>)
 * [Soil moisture sensor](<https://wiki.dfrobot.com/Capacitive_Soil_Moisture_Sensor_SKU_SEN0193>)
 * [Connect to TTN | Dragino](<https://wiki.dragino.com/index.php?title=Connect_to_TTN>)
 * [Utiliser un LCD, montage électronique](<https://www.scriptol.fr/montages/salut-le-monde.php>)
