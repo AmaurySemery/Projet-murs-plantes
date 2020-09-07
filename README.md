@@ -8,7 +8,7 @@ Arrosage automatique des murs végétalisés
 * [Que valent les isolants végétaux ?](<https://www.quelleenergie.fr/magazine/isolation/que-valent-isolants-vegetaux-27198/>)
 * [Titre du programme ou du plan gouvernemental végétaliser : agir pour le rafraichissement urbain, les approches variées de 20 projets d'aménagement](<https://www.ademe.fr/sites/default/files/assets/documents/20projetsdevegetalisation_dossierentier_web.pdf>)
 
-# Ce qui se fait à côté (concurrence ou expériences diverses)https://github.com/AmaurySemery/solioti
+# Ce qui se fait à côté (concurrence ou expériences diverses)
 
 * [Meteogyre](<http://www.sciencesalecole.org/wp-content/uploads/2019/10/LYC19_CR.pdf>)
 * [Green Citizen](<http://www.greencityzen.fr/accueil/>)
