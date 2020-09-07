@@ -15,16 +15,16 @@ WiFiMulti wifiMulti;
 const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
 const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
+byte bGlobalErr;
 int PinLed=2;
-int PinCap=15;
+char MS_dat[5];
 
 
 void setup() {
 
-  pinMode(PinLed,OUTPUT);
-  Serial.begin(115200);
-    uint8_t PinCap = 15;
-  pinMode(PinCap, INPUT);
+InitMS();
+InitLED();
+Serial.begin(115200);
 
     if (!gravity_sensor.Setup(PinCap)) {
         Serial.println("Le capteur d'humidité au sol n'a pas été détecté.");
@@ -43,9 +43,90 @@ delay(100);}
 
 }
 
+void InitMS() 
+// Initialise le capteur Moisture sensor
+{pinMode(gravity_sensor_pin, OUTPUT);}
+
+void InitLED()
+// Initialise la Led
+{pinMode(PinLed,OUTPUT);}
+
+void ReadMS()
+// Lit la valeur d'humidité du sol
+{
+bGlobalErr = 0;
+byte MS_in;
+byte i;
+
+MS_in = digitalRead(gravity_sensor_pin);
+if(MS_in){
+  bGlobalErr=1;
+  return;}
+MS_in = digitalRead(gravity_sensor_pin);
+
+if(!MS_in){
+  bGlobalErr=2;
+  return;}
+for(i=0;i<5;i++)
+MS_dat[i] = read_MS_dat();
+pinMode(gravity_sensor_pin,OUTPUT);
+byte MS_check_sum = MS_dat[0]+MS_dat[1]+MS_dat[2]+MS_dat[3];
+if(MS_dat[4]!=MS_check_sum)
+bGlobalErr=3;
+}
+
+byte read_MS_dat(){
+  byte i=0;
+  byte result=0;
+  for(i=0;i<8;i++)
+  {while(digitalRead(gravity_sensor_pin)==LOW);
+  if(digitalRead(gravity_sensor_pin)==HIGH)
+  result |=(1<<(7-i));
+  while(digitalRead(gravity_sensor_pin)==HIGH);}
+  return result;
+    
+  }
+
+uint16_t calcByte(uint16_t crc, uint8_t b)
+{
+uint32_t i;
+crc = crc ^ (uint32_t)b << 8; 
+for ( i = 0; i < 8; i++)
+{
+if ((crc & 0x8000) == 0x8000)
+crc = crc << 1 ^ 
+0x1021;
+else
+crc = crc << 1;
+}
+return crc & 0xffff;
+}
+
+uint16_t CRC16(uint8_t *pBuffer,uint32_t length)
+{
+uint16_t wCRC16 = 0;
+uint32_t i;
+if (( pBuffer == 0 )||( length == 0 ))
+{
+return 0;
+}
+for ( i = 0; i < length; i++)
+{
+wCRC16 = calcByte(wCRC16, pBuffer[i]);
+}
+return wCRC16;
+}
 
 void loop() {
 
+ReadMS();
+char data[50] = {0} ;
+// Utiliser Data[0]. Data[1], Data[2] pour exprimer le deviceID.
+data[0] = X;
+data[1] = X;
+data[2] = X;
+data[3] = MS_dat[0]; 
+// ajouter la valeur de l'humidité
 uint16_t value = gravity_sensor.Read(PinCap);
 int a = 40.95;
 int b = 100;
