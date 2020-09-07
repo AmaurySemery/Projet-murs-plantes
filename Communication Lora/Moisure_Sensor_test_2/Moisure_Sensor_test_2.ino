@@ -16,6 +16,7 @@ const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
 int PinLed=2;
 
+
 void setup() {
 
   pinMode(PinLed,OUTPUT);
@@ -39,9 +40,17 @@ delay(100);}
 
 }
 
-void loop() {
+void presentation()  {
+  // Présenttion du sketch / Send the sketch version information to the gateway and Controller
+  sendSketchInfo("Sonde Temp/Hum DHT22", "1.0");
 
-GravitySoilMoistureSensor gravity_sensor(moisturePIN, moistureTYPE, 15);
+  // Déclaration des capteurs attachés au noeud
+  present(CHILD_ID_TEMP, S_TEMP);
+  present(CHILD_ID_HUM, S_HUM);
+}
+
+void loop() {
+  gravity_sensor(moisturePIN, moistureTYPE, 15);
     uint16_t value = gravity_sensor.Read();
 int a = 40.95;
 int b = 100;
