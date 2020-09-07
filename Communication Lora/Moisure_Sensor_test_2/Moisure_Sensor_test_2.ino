@@ -56,9 +56,9 @@ return sensorConvert1;
 }
 
 void loop() {
-
+int h = activate_sensor();
 activate_sensor();
-int h = sensorConvert1;
+
 
 if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
     HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre de lancer des requêtes en HTTP
