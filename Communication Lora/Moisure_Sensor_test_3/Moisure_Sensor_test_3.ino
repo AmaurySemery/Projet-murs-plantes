@@ -127,6 +127,33 @@ data[1] = X;
 data[2] = X;
 data[3] = MS_dat[0]; 
 // ajouter la valeur de l'humidité
+
+switch (bGlobalErr) 
+// traiter le retour de lecture 
+{
+case 0:
+Serial.print("Humdity = ");
+Serial.print(data
+[3], DEC); 
+Serial.print("% 
+");
+break;
+case 1:
+Serial.println("Error 1: MS start condition 1 not met.");
+break;
+case 2:
+Serial.println("Error 2: MS start condition 2 not met.");
+break;
+case 3:
+Serial.println("Error 3: MS checksum error.");
+break;
+default:
+Serial.println("Error: Unrecognized code encountered.");
+break
+;
+}
+
+
 uint16_t value = gravity_sensor.Read(PinCap);
 int a = 40.95;
 int b = 100;

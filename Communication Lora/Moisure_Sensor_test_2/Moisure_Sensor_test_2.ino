@@ -23,6 +23,7 @@ void setup() {
   pinMode(PinLed,OUTPUT);
   Serial.begin(115200);
     uint8_t PinCap = 15;
+  pinMode(gravity_sensor_pin,OUTPUT);
 
     if (!gravity_sensor.Setup(PinCap)) {
         Serial.println("Le capteur d'humidité au sol n'a pas été détecté.");
