@@ -55,7 +55,7 @@ Serial.println("% d'humidité.");
 if (sensorConvert1 < 35) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
 
-int h = sensorConvert1
+int h = sensorConvert1;
 
 
 if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
@@ -94,10 +94,4 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
     http.end();    }
 
     delay(5000);
-}
-
-void montrerValeurCapteur()
-{
-    valeurCapteur = analogRead(pin); // lire la pin analogique et mettre la valeur dans valeurCapteur
-    Serial.println(valeurCapteur); // communiquer au moniteur sériel la valeur du capteur.
 }
