@@ -20,6 +20,7 @@ int PinLed=2;
 void setup() {
 
   pinMode(PinLed,OUTPUT);
+  pinMode (15, INPUT);
   Serial.begin(115200);
     uint8_t pin = 15;
 
