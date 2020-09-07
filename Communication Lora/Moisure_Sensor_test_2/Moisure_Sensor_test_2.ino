@@ -38,7 +38,8 @@ Serial.println("\n");
 delay(100);}
   Serial.println("\n");
   Serial.println("Connexion établie !");  // Affiche connexion établie
-
+  Serial.println("IP address: ");
+  Serial.print(WiFi.localIP()); 
 }
 
 
