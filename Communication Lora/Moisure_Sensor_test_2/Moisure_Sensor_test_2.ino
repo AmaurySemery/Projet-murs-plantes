@@ -15,12 +15,13 @@ const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
 const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
 int PinLed=2;
+int PinCap=15;
 
 
 void setup() {
 
   pinMode(PinLed,OUTPUT);
-  pinMode (15, INPUT);
+  pinMode (PinCap, INPUT);
   Serial.begin(115200);
     uint8_t pin = 15;
 
@@ -44,7 +45,7 @@ delay(100);}
 
 void loop() {
 
- uint16_t value = gravity_sensor.Read(15);
+ uint16_t value = gravity_sensor.Read(PinCap);
 int a = 40.95;
 int b = 100;
 float sensorConvert = value / a;
