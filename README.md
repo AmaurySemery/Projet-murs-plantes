@@ -17,6 +17,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [Traduction de l’ API/JSON de Domoticz](<https://easydomoticz.com/traduction-francais-de-lapi-json-domoticz/>)
 * [Fonctions, comment créer et utiliser les fonctions ?](<https://plaisirarduino.fr/les-fonctions/>)
 * [Qu'est-ce que le moniteur série et à quoi ça sert ?](<https://plaisirarduino.fr/le-moniteur-serie/>)
 * [Répéter des instructions : les boucles](<https://www.locoduino.org/spip.php?article65>)
