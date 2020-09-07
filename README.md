@@ -76,6 +76,9 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Node-RED : installation et configuration sur Ubuntu 16.04 LTS](<https://projetsdiy.fr/node-red-installation-configuration-ubuntu-16-04/>)
+* [Running Node-RED locally](<https://nodered.org/docs/getting-started/local>)
+* [Utiliser Node-RED pour créer une passerelle entre MySensors et Blynk (serveur local)](<https://projetsdiy.fr/passerelle-node-red-mysensors-blynk/>)
 * [Arrosage automatique connecté pour votre gazon et votre jardin à l’aide d’un Raspberry Pi](<https://ouiaremakers.com/posts/tutoriel-diy-arrosage-automatique-connecte-pour-votre-gazon-et-votre-jardin-a-l-aide-d-un-raspberry-pi>)
 * [Débuter avec l’Arduino et Node-RED. Enregistrer et afficher des mesures en JSON depuis le port série](<https://projetsdiy.fr/debuter-arduino-node-red-enregistrer-afficher-mesures-json-port-serie/>)
 * [Projet de capteur WiFi ESP32](<https://www.az-delivery.de/fr/blogs/azdelivery-blog-fur-arduino-und-raspberry-pi/esp32-wifi-sensor-projekt>)
