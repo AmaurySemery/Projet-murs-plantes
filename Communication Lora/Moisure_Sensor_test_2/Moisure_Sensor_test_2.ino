@@ -44,7 +44,7 @@ delay(100);}
 
 
 void loop() {
-
+analogRead(gravity_sensor_pin);
 uint16_t value = gravity_sensor.Read(gravity_sensor_pin);
 int a = 40.95;
 int b = 100;
