@@ -41,7 +41,7 @@ delay(100);}
 }
 // moisturePIN, moistureTYPE, 15
 int activate_sensor(){
-uint16_t value = gravity_sensor.Read();
+uint16_t value = gravity_sensor.Read(15);
 int a = 40.95;
 int b = 100;
 float sensorConvert = value / a;
