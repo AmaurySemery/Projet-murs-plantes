@@ -5,6 +5,8 @@
 #include "gravity_soil_moisture_sensor.h"
 
 #define USE_SERIAL Serial
+#define moisturePIN 15
+#define moistureTYPE "gravity_soil_moisture_sensor.h"
 
 GravitySoilMoistureSensor gravity_sensor;
 WiFiMulti wifiMulti;
@@ -38,6 +40,8 @@ delay(100);}
 }
 
 void loop() {
+
+GravitySoilMoistureSensor gravity_sensor(moisturePIN, moistureTYPE, 15);
     uint16_t value = gravity_sensor.Read();
 int a = 40.95;
 int b = 100;
