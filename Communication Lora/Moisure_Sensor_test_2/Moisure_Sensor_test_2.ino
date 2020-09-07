@@ -43,7 +43,7 @@ int a = 40.95;
 int b = 100;
 float sensorConvert = value / a;
 float sensorConvert1 = b - sensorConvert;
-Serial.printf("Moisture: %d\n", value);
+Serial.printf("Valeur de l'entrée analogique du capteur : %d\n", value);
 Serial.print("Ce qui donne ");
 Serial.print(sensorConvert1);
 Serial.println("% d'humidité.");
