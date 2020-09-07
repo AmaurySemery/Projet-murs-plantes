@@ -39,9 +39,11 @@ delay(100);}
   Serial.println("Connexion établie !");  // Affiche connexion établie
 
 }
-// moisturePIN, moistureTYPE, 15
-int activate_sensor(){
-uint16_t value = gravity_sensor.Read(15);
+
+
+void loop() {
+
+ uint16_t value = gravity_sensor.Read(15);
 int a = 40.95;
 int b = 100;
 float sensorConvert = value / a;
@@ -52,12 +54,8 @@ Serial.print(sensorConvert1);
 Serial.println("% d'humidité.");
 if (sensorConvert1 < 35) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
-return sensorConvert1;
-}
 
-void loop() {
-int h = activate_sensor();
-activate_sensor();
+int h = sensorConvert1
 
 
 if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
@@ -96,4 +94,10 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
     http.end();    }
 
     delay(5000);
+}
+
+void montrerValeurCapteur()
+{
+    valeurCapteur = analogRead(pin); // lire la pin analogique et mettre la valeur dans valeurCapteur
+    Serial.println(valeurCapteur); // communiquer au moniteur sériel la valeur du capteur.
 }
