@@ -4,6 +4,7 @@
 #include <HTTPClient.h>
 
 #define USE_SERIAL Serial
+#define moisturepin 15 // Broche sur laquelle est branché le moisure sensor
 
 WiFiMulti wifiMulti;
 
@@ -12,7 +13,7 @@ const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 const int entreeAnalogique = 15;
 int PinLed=2;
 
-void setup() {
+void setup() {  
   pinMode(PinLed,OUTPUT);
   Serial.begin(115200);   // Initialisation du moniteur série à 115200
   delay(1000);
@@ -27,7 +28,8 @@ delay(100);}
   Serial.println("Connexion etablie !");  // Affiche connexion établie
 }
 
-void fonction(){int sensorValue = analogRead(entreeAnalogique); 
+void loop() { 
+int sensorValue = analogRead(entreeAnalogique); 
 Serial.print("La valeur retenue par A0 [de 0 (humide) à 4095 (sec)] est de "); 
 Serial.print(sensorValue); 
 Serial.println(".");
@@ -41,20 +43,10 @@ Serial.print(sensorConvert1);
 Serial.println("% d'humidité.");
 
 if (sensorConvert1 < 35) {digitalWrite(PinLed,HIGH);}
-else {digitalWrite(PinLed,LOW);}}
-
-void loop() { 
-fonction();
-while(1);
+else {digitalWrite(PinLed,LOW);
 
 if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
     HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre de lancer des requêtes en HTTP
-int sensorValue = analogRead(entreeAnalogique); 
-int a = 40.95;
-int b = 100;
-float sensorConvert = sensorValue / a;
-float sensorConvert1 = b - sensorConvert;
-    float h = sensorConvert1;
     USE_SERIAL.println("[DEBG] " + String(h));
 
     USE_SERIAL.print("[HTTP] begin...\n");
