@@ -33,5 +33,5 @@ if (sensorConvert1 < 35) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
     
 
-    delay(1000);
+    delay(5000);
 }
