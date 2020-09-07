@@ -21,11 +21,11 @@ int PinCap=15;
 void setup() {
 
   pinMode(PinLed,OUTPUT);
-  pinMode (PinCap, INPUT);
   Serial.begin(115200);
-    uint8_t pin = 15;
+    uint8_t PinCap = 15;
+  pinMode(PinCap, INPUT);
 
-    if (!gravity_sensor.Setup(pin)) {
+    if (!gravity_sensor.Setup(PinCap)) {
         Serial.println("Le capteur d'humidité au sol n'a pas été détecté.");
         while(1);
     } else {
@@ -45,7 +45,9 @@ delay(100);}
 
 void loop() {
 
- uint16_t value = analogRead(PinCap);
+montrerValeurCapteur();
+
+uint16_t value = gravity_sensor.Read(PinCap);
 int a = 40.95;
 int b = 100;
 float sensorConvert = value / a;
@@ -96,4 +98,11 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
     http.end();    }
 
     delay(5000);
+}
+
+
+void montrerValeurCapteur()
+{
+    valeurCapteur = analogRead(PinCap); // lire la pin analogique et mettre la valeur dans valeurCapteur
+    Serial.println(valeurCapteur); // communiquer au moniteur sériel la valeur du capteur.
 }
