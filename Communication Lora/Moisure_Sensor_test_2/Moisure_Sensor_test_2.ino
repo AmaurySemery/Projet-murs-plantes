@@ -45,7 +45,7 @@ delay(100);}
 
 void loop() {
 
- uint16_t value = gravity_sensor.Read(PinCap);
+ uint16_t value = analogRead(PinCap);
 int a = 40.95;
 int b = 100;
 float sensorConvert = value / a;
