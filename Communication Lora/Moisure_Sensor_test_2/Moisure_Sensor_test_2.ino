@@ -39,19 +39,9 @@ delay(100);}
   Serial.println("Connexion établie !");  // Affiche connexion établie
 
 }
-
-void presentation()  {
-  // Présenttion du sketch / Send the sketch version information to the gateway and Controller
-  sendSketchInfo("Sonde Temp/Hum DHT22", "1.0");
-
-  // Déclaration des capteurs attachés au noeud
-  present(CHILD_ID_TEMP, S_TEMP);
-  present(CHILD_ID_HUM, S_HUM);
-}
-
-void loop() {
-  gravity_sensor(moisturePIN, moistureTYPE, 15);
-    uint16_t value = gravity_sensor.Read();
+// moisturePIN, moistureTYPE, 15
+int activate_sensor(){
+uint16_t value = gravity_sensor.Read();
 int a = 40.95;
 int b = 100;
 float sensorConvert = value / a;
@@ -60,10 +50,14 @@ Serial.printf("Valeur de l'entrée analogique du capteur : %d\n", value);
 Serial.print("Ce qui donne ");
 Serial.print(sensorConvert1);
 Serial.println("% d'humidité.");
-
 if (sensorConvert1 < 35) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
-    
+return sensorConvert1;
+}
+
+void loop() {
+
+activate_sensor();
 int h = sensorConvert1;
 
 if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
