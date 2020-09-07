@@ -5,18 +5,17 @@
 #include "gravity_soil_moisture_sensor.h"
 
 #define USE_SERIAL Serial
-
+#define MSTYPE v1.2
+#define gravity_sensor_pin 15
 
 GravitySoilMoistureSensor gravity_sensor;
 WiFiMulti wifiMulti;
-
-#define gravity_sensor_pin 15
+HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre de lancer des requêtes en HTTP
 
 const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
 const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
 int PinLed=2;
-
 
 void setup() {
 
@@ -44,7 +43,6 @@ delay(100);}
 
 
 void loop() {
-analogRead(gravity_sensor_pin);
 uint16_t value = gravity_sensor.Read(gravity_sensor_pin);
 int a = 40.95;
 int b = 100;
@@ -61,7 +59,6 @@ int h = sensorConvert1;
 
 
 if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
-    HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre de lancer des requêtes en HTTP
     USE_SERIAL.println("[DEBG] " + String(h));
 
     USE_SERIAL.print("[HTTP] begin...\n");
