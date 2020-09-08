@@ -94,6 +94,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [How to use ADC of ESP32 – Measuring voltage example](<https://microcontrollerslab.com/adc-esp32-measuring-voltage-example/>)
 * [Comment alimenter l’Arduino sans ordinateur ?](<https://www.locoduino.org/spip.php?article16>)
 * [LILYGO®TTGO t-beam 433/868/915/923MHZ ESP32 WiFi Module Bluetooth sans fil ESP32 GPS NEO-M8N SMA LORA 32 18650 support de batterie](<https://fr.aliexpress.com/item/32895091799.html>)
 * [Surveillance du capteur ESP32 LoRa avec serveur Web (communication longue portée)](<https://translate.google.com/translate?hl=fr&sl=en&u=https://randomnerdtutorials.com/esp32-lora-sensor-web-server/&prev=search&pto=aue>)
