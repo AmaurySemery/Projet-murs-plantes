@@ -1,4 +1,4 @@
-const int entreeAnalogique = 15;
+const int entreeAnalogique = 32;
 int PinLed=2;
 
 void setup() {
