@@ -6,7 +6,7 @@
 
 #define USE_SERIAL Serial
 #define MSTYPE v1.2
-#define gravity_sensor_pin 15
+#define gravity_sensor_pin 2
 
 GravitySoilMoistureSensor gravity_sensor;
 WiFiMulti wifiMulti;
@@ -15,13 +15,13 @@ HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre
 const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
 const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
-int PinLed=2;
+int PinLed=13;
 
 void setup() {
 
   pinMode(PinLed,OUTPUT);
   Serial.begin(115200);
-    uint8_t PinCap = 15;
+    uint8_t PinCap = 2;
   pinMode(gravity_sensor_pin,OUTPUT);
 
     if (!gravity_sensor.Setup(PinCap)) {
