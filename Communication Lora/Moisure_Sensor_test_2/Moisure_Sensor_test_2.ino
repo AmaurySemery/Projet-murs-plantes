@@ -50,7 +50,6 @@ Serial.printf("Valeur de l'entrée analogique du capteur : %d\n", value);
 Serial.print("Ce qui donne ");
 Serial.print(sensorConvert1);
 Serial.println("% d'humidité.");
-Serial.println(sensorValue);
 if (sensorConvert1 < 35) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
 
