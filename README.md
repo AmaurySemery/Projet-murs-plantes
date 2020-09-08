@@ -17,6 +17,11 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [Quel ESP32 choisir pour développer des objets connectés DIY en 2020](<https://projetsdiy.fr/quelle-carte-esp32-choisir-developper-projets-diy-objets-connectes/>)
+* [Tester la couverture du réseau Lorawan](<https://spot.objenious.com/eligibility-public>)
+* [Pourquoi seules les ondes radio passent-elles les murs ?](<https://www.science-et-vie.com/questions-reponses/pourquoi-seules-les-ondes-radio-passent-elles-les-murs-5594>)
+* [Tout savoir sur le réseau LoRa de Bouygues](<https://www.objetconnecte.com/tout-savoir-reseau-lora-bouygues/>)
+* [La connectivité sans fil en intérieur : quelles solutions pour les usages actuels et futurs ?](<https://www.banquedesterritoires.fr/sites/default/files/2019-06/La%20connectivite%20sans%20fil-web.pdf>)
 * [Traduction de l’ API/JSON de Domoticz](<https://easydomoticz.com/traduction-francais-de-lapi-json-domoticz/>)
 * [Fonctions, comment créer et utiliser les fonctions ?](<https://plaisirarduino.fr/les-fonctions/>)
 * [Qu'est-ce que le moniteur série et à quoi ça sert ?](<https://plaisirarduino.fr/le-moniteur-serie/>)
@@ -54,6 +59,19 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Interrupteur de bande de fer à souder électrique réglable de haute qualité KS9160 fer à souder électrique de vente chaude transfrontalière](<https://fr.aliexpress.com/item/32893731376.html?spm=a2g0o.productlist.0.0.698d1ac2lPnSfJ&s=p&ad_pvid=2020090804190310936573556282640006094637_1&algo_pvid=94342a52-09cf-49f9-9b26-9b60539a306e&algo_expid=94342a52-09cf-49f9-9b26-9b60539a306e-0&btsid=0b8b15ea15995639438904825ed773&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
+* [Test : alimentation UPS LiFePO4wered pour Raspberry Pi](<https://projetsdiy.fr/test-de-lalimentation-ups-lifepo4wered-pour-raspberry-pi/>)
+* [Un shield batterie 18650 à moins de 2€ pour alimenter vos projets IoT Arduino, ESP32, ESP8266, Raspberry Pi](<https://projetsdiy.fr/shield-batterie-18650-projets-iot-esp32-esp8266-raspberry-pi/>)
+* [2 pièces de TTGO LORA32 868 / 915Mhz SX1276 ESP32 carte de développement Bluetooth WIFI Lora à affichage Oled](<https://translate.googleusercontent.com/translate_c?depth=1&hl=fr&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://www.aliexpress.com/item/4000010599226.html%3Faff_platform%3Dapi%26sk%3D54aMBYbO%26aff_trace_key%3D7222688add844ef4a7d747dd0e6fefd4-1599557226045-03022-54aMBYbO%26terminal_id%3Dfe14eef099ac44f09f31675c926ca8c3&usg=ALkJrhgtHHZikE9FOkCf20lr6rRu8HOYmQ>)
+* [1 ensemble LoRa SX1278 Module Mental de puissance sans fil RF longue portée SX1276](<https://fr.aliexpress.com/item/4001018863699.html?spm=a2g0o.productlist.0.0.75f9250f3fZ9V6&algo_pvid=09f13683-f1bf-4331-9f45-75cc69697ab3&algo_expid=09f13683-f1bf-4331-9f45-75cc69697ab3-8&btsid=0b8b034e15995579446674201e622e&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
+* [Vente chaude 1 ensemble LoRa SX1278 longue portée RF sans fil Module Mental SX1276](<https://fr.aliexpress.com/item/4000994658275.html?spm=a2g0o.productlist.0.0.75f9250f3fZ9V6&algo_pvid=09f13683-f1bf-4331-9f45-75cc69697ab3&algo_expid=09f13683-f1bf-4331-9f45-75cc69697ab3-1&btsid=0b8b034e15995579446674201e622e&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
+* [Module sans fil CH340/CP2102 NodeMcu V3 V2 Lua WIFI carte de développement d'internet des objets basée ESP8266 ESP-12E avec antenne de carte pcb](<https://fr.aliexpress.com/item/32665100123.html?spm=a2g0w.search0302.3.2.732a409690Op8i&ws_ab_test=searchweb0_0,searchweb201602_0,searchweb201603_0,ppcSwitch_0&algo_pvid=1a17db53-4faa-404b-bd74-077a97ad8082&algo_expid=1a17db53-4faa-404b-bd74-077a97ad8082-0>)
+* [RFM95 RFM95W 868 915 RFM95-868MHz RFM95-915MHz LORA SX1276 module émetteur-récepteur sans fil meilleure qualité en stock usine en gros](<https://fr.aliexpress.com/item/32811523237.html?spm=a2g0w.search0302.3.1.53d12c231guPTT&ws_ab_test=searchweb0_0,searchweb201602_0,searchweb201603_0,ppcSwitch_0&algo_pvid=02840f80-db6b-4ddc-875b-99b806f93c6d&algo_expid=02840f80-db6b-4ddc-875b-99b806f93c6d-0>)
+* [1pc 868MHz LoRa SX1276 rf émetteur récepteur sans fil rf Module CDSENET E32-868T20D UART longue portée 868 mhz rf émetteur-récepteur](<https://fr.aliexpress.com/item/32791688505.html?spm=a2g0o.productlist.0.0.4e6b3a45xL5tp6&algo_pvid=5980cbf1-812e-44f4-816d-36b513854a71&algo_expid=5980cbf1-812e-44f4-816d-36b513854a71-8&btsid=0b8b035915995597232334499e5550&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
+* [Module LoRa SX1272 pour Arduino, Raspberry Pi et Intel Galileo – 868 MHz](<https://www.generationrobots.com/fr/402331-module-lora-sx1272-pour-arduino-raspberry-pi-et-intel-galileo.html>)
+* [Module ADC 4 canaux 16 bits I2C ADS1115 avec amplificateur à Gain Pro RPi](<https://fr.aliexpress.com/item/32817162654.html?spm=a2g0w.search0302.3.1.49376d07Pzfp2a&ws_ab_test=searchweb0_0,searchweb201602_0,searchweb201603_0,ppcSwitch_0&algo_pvid=7ff54bbe-44bb-4980-823e-0ceccd7904bc&algo_expid=7ff54bbe-44bb-4980-823e-0ceccd7904bc-0>)
+* [ADS1115 - Convertisseur ADC 4 canaux - 16bits - I2C](<https://shop.mchobby.be/fr/cartes-breakout/362-ads1115-convertisseur-adc-16bits-i2c-3232100003620-adafruit.html>)
+* [Prime Edition MkII](<https://github.com/lyusupov/SoftRF/wiki/Prime-Edition-MkII>)
 * [Building a global open LoRaWAN™ network](<https://www.thethingsnetwork.org/>)
 * [LILYGO® TTGO ESP32-Paxcounter LoRa32 V2.1 1.6 Version 433/868/915MHZ LoRa ESP-32 OLED 0.96 Inch SD Card Bluetooth WIFI Module](<http://www.lilygo.cn/prod_view.aspx?TypeId=50003&Id=1130&FId=t3:50003:3>)
 * [Capteur d’humidité du sol YL-69 / HL-69 / FC-28 économique pour projets Arduino, Raspberry Pi](<https://projetsdiy.fr/bon-plan-capteur-humidite-sol-yl69-hl69/>)
@@ -76,6 +94,18 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [How to use ADC of ESP32 – Measuring voltage example](<https://microcontrollerslab.com/adc-esp32-measuring-voltage-example/>)
+* [Comment alimenter l’Arduino sans ordinateur ?](<https://www.locoduino.org/spip.php?article16>)
+* [LILYGO®TTGO t-beam 433/868/915/923MHZ ESP32 WiFi Module Bluetooth sans fil ESP32 GPS NEO-M8N SMA LORA 32 18650 support de batterie](<https://fr.aliexpress.com/item/32895091799.html>)
+* [Surveillance du capteur ESP32 LoRa avec serveur Web (communication longue portée)](<https://translate.google.com/translate?hl=fr&sl=en&u=https://randomnerdtutorials.com/esp32-lora-sensor-web-server/&prev=search&pto=aue>)
+* [Carte OLED TTGO LoRa32 SX1276: Premiers pas avec Arduino IDE](<https://translate.google.com/translate?hl=fr&sl=en&u=https://randomnerdtutorials.com/ttgo-lora32-sx1276-arduino-ide/&prev=search&pto=aue>)
+* [Écran OLED ESP32 avec IDE Arduino](<https://translate.googleusercontent.com/translate_c?depth=1&hl=fr&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://randomnerdtutorials.com/esp32-ssd1306-oled-display-arduino-ide/&usg=ALkJrhjOXw2ZCkzI-zUKZX7GWcKtr1qstQ>)
+* [Référence de brochage ESP32: Quelles broches GPIO devez-vous utiliser?](<https://translate.googleusercontent.com/translate_c?depth=1&hl=fr&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://randomnerdtutorials.com/esp32-pinout-reference-gpios/&usg=ALkJrhgBjEG8XPBYPiy0YBUhYBWYjDDOeg>)
+* [ESP32 PWM avec Arduino IDE (sortie analogique)](<https://translate.googleusercontent.com/translate_c?depth=1&hl=fr&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://randomnerdtutorials.com/esp32-pwm-arduino-ide/&usg=ALkJrhiLxIOprHdY1QPzjqxQRLKwk2nNIQ>)
+* [ESP32 ADC - Lire les valeurs analogiques avec Arduino IDE](<https://translate.googleusercontent.com/translate_c?depth=1&hl=fr&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/&usg=ALkJrhjqp4PSlYyOPF-soWJxq7B73Z81Aw>)
+* [Broches de capteur tactile capacitif ESP32 avec IDE Arduino](<https://translate.googleusercontent.com/translate_c?depth=1&hl=fr&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://randomnerdtutorials.com/esp32-touch-pins-arduino-ide/&usg=ALkJrhiyg4lIgM50mItf-DSYZkh8bRNBdw>)
+* [Utilisation du convertisseur analogique-numérique ADS1115 en MicroPython](<https://itechnofrance.wordpress.com/2019/02/14/utilisation-du-convertisseur-analogique-numerique-ads1115-en-micropython/)
+* [Utilisation des ports de conversion analogique-numérique sur un ESP32 en MicroPython](<https://itechnofrance.wordpress.com/2019/02/13/utilisation-des-ports-de-conversion-analogique-numerique-sur-un-esp32-en-micropython/>)
 * [Node-RED : installation et configuration sur Ubuntu 16.04 LTS](<https://projetsdiy.fr/node-red-installation-configuration-ubuntu-16-04/>)
 * [Running Node-RED locally](<https://nodered.org/docs/getting-started/local>)
 * [Utiliser Node-RED pour créer une passerelle entre MySensors et Blynk (serveur local)](<https://projetsdiy.fr/passerelle-node-red-mysensors-blynk/>)
