@@ -5,8 +5,6 @@
 #include "gravity_soil_moisture_sensor.h"
 
 #define USE_SERIAL Serial
-#define MSTYPE v1.2
-#define gravity_sensor_pin 32
 
 GravitySoilMoistureSensor gravity_sensor;
 WiFiMulti wifiMulti;
@@ -16,15 +14,14 @@ const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
 const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
 int PinLed=2;
+const int entreeAnalogique = 32;
+
 
 void setup() {
 
   pinMode(PinLed,OUTPUT);
   Serial.begin(115200);
-    uint8_t PinCap = 32;
-  pinMode(gravity_sensor_pin,OUTPUT);
-
-    if (!gravity_sensor.Setup(PinCap)) {
+    if (!gravity_sensor.Setup(entreeAnalogique)) {
         Serial.println("Le capteur d'humidité au sol n'a pas été détecté.");
         while(1);
     } else {
@@ -43,7 +40,7 @@ delay(100);}
 
 
 void loop() {
-uint16_t value = gravity_sensor.Read(gravity_sensor_pin);
+uint16_t value = gravity_sensor.Read(entreeAnalogique);
 int a = 40.95;
 int b = 100;
 float sensorConvert = value / a;
