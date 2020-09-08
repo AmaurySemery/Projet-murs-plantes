@@ -17,6 +17,9 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [Pourquoi seules les ondes radio passent-elles les murs ?](<https://www.science-et-vie.com/questions-reponses/pourquoi-seules-les-ondes-radio-passent-elles-les-murs-5594>)
+* [Tout savoir sur le réseau LoRa de Bouygues](<https://www.objetconnecte.com/tout-savoir-reseau-lora-bouygues/>)
+* [La connectivité sans fil en intérieur : quelles solutions pour les usages actuels et futurs ?](<https://www.banquedesterritoires.fr/sites/default/files/2019-06/La%20connectivite%20sans%20fil-web.pdf>)
 * [Traduction de l’ API/JSON de Domoticz](<https://easydomoticz.com/traduction-francais-de-lapi-json-domoticz/>)
 * [Fonctions, comment créer et utiliser les fonctions ?](<https://plaisirarduino.fr/les-fonctions/>)
 * [Qu'est-ce que le moniteur série et à quoi ça sert ?](<https://plaisirarduino.fr/le-moniteur-serie/>)
@@ -54,6 +57,9 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Module ADC 4 canaux 16 bits I2C ADS1115 avec amplificateur à Gain Pro RPi](<https://fr.aliexpress.com/item/32817162654.html?spm=a2g0w.search0302.3.1.49376d07Pzfp2a&ws_ab_test=searchweb0_0,searchweb201602_0,searchweb201603_0,ppcSwitch_0&algo_pvid=7ff54bbe-44bb-4980-823e-0ceccd7904bc&algo_expid=7ff54bbe-44bb-4980-823e-0ceccd7904bc-0>)
+* [ADS1115 - Convertisseur ADC 4 canaux - 16bits - I2C](<https://shop.mchobby.be/fr/cartes-breakout/362-ads1115-convertisseur-adc-16bits-i2c-3232100003620-adafruit.html>)
+* [Prime Edition MkII](<https://github.com/lyusupov/SoftRF/wiki/Prime-Edition-MkII>)
 * [Building a global open LoRaWAN™ network](<https://www.thethingsnetwork.org/>)
 * [LILYGO® TTGO ESP32-Paxcounter LoRa32 V2.1 1.6 Version 433/868/915MHZ LoRa ESP-32 OLED 0.96 Inch SD Card Bluetooth WIFI Module](<http://www.lilygo.cn/prod_view.aspx?TypeId=50003&Id=1130&FId=t3:50003:3>)
 * [Capteur d’humidité du sol YL-69 / HL-69 / FC-28 économique pour projets Arduino, Raspberry Pi](<https://projetsdiy.fr/bon-plan-capteur-humidite-sol-yl69-hl69/>)
