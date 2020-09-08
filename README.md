@@ -59,6 +59,7 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Interrupteur de bande de fer à souder électrique réglable de haute qualité KS9160 fer à souder électrique de vente chaude transfrontalière](<https://fr.aliexpress.com/item/32893731376.html?spm=a2g0o.productlist.0.0.698d1ac2lPnSfJ&s=p&ad_pvid=2020090804190310936573556282640006094637_1&algo_pvid=94342a52-09cf-49f9-9b26-9b60539a306e&algo_expid=94342a52-09cf-49f9-9b26-9b60539a306e-0&btsid=0b8b15ea15995639438904825ed773&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
 * [Test : alimentation UPS LiFePO4wered pour Raspberry Pi](<https://projetsdiy.fr/test-de-lalimentation-ups-lifepo4wered-pour-raspberry-pi/>)
 * [Un shield batterie 18650 à moins de 2€ pour alimenter vos projets IoT Arduino, ESP32, ESP8266, Raspberry Pi](<https://projetsdiy.fr/shield-batterie-18650-projets-iot-esp32-esp8266-raspberry-pi/>)
 * [2 pièces de TTGO LORA32 868 / 915Mhz SX1276 ESP32 carte de développement Bluetooth WIFI Lora à affichage Oled](<https://translate.googleusercontent.com/translate_c?depth=1&hl=fr&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://www.aliexpress.com/item/4000010599226.html%3Faff_platform%3Dapi%26sk%3D54aMBYbO%26aff_trace_key%3D7222688add844ef4a7d747dd0e6fefd4-1599557226045-03022-54aMBYbO%26terminal_id%3Dfe14eef099ac44f09f31675c926ca8c3&usg=ALkJrhgtHHZikE9FOkCf20lr6rRu8HOYmQ>)
@@ -93,6 +94,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Comment alimenter l’Arduino sans ordinateur ?](<https://www.locoduino.org/spip.php?article16>)
 * [LILYGO®TTGO t-beam 433/868/915/923MHZ ESP32 WiFi Module Bluetooth sans fil ESP32 GPS NEO-M8N SMA LORA 32 18650 support de batterie](<https://fr.aliexpress.com/item/32895091799.html>)
 * [Surveillance du capteur ESP32 LoRa avec serveur Web (communication longue portée)](<https://translate.google.com/translate?hl=fr&sl=en&u=https://randomnerdtutorials.com/esp32-lora-sensor-web-server/&prev=search&pto=aue>)
 * [Carte OLED TTGO LoRa32 SX1276: Premiers pas avec Arduino IDE](<https://translate.google.com/translate?hl=fr&sl=en&u=https://randomnerdtutorials.com/ttgo-lora32-sx1276-arduino-ide/&prev=search&pto=aue>)
