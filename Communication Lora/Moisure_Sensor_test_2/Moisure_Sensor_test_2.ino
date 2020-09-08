@@ -4,6 +4,7 @@
 #include <HTTPClient.h>
 #include "gravity_soil_moisture_sensor.h"
 
+#define gravity_sensor_pin 33
 #define USE_SERIAL Serial
 
 GravitySoilMoistureSensor gravity_sensor;
