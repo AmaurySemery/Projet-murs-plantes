@@ -59,6 +59,9 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Electrovanne Hydralectric, 2 ports , 12 V c.c., NF](<https://fr.rs-online.com/web/p/electrovannes/0342023?cm_mmc=FR-PLA-DS3A-_-google-_-PLA_FR_FR_Plomberie_et_canalisations_Whoop-_-(FR:Whoop!)+Electrovannes-_-342023&matchtype=&aud-826607885227:pla-296487486909&gclid=EAIaIQobChMIiYCpnOLZ6wIVxrLVCh0DGwY7EAQYAiABEgJYAPD_BwE&gclsrc=aw.ds>)
+* [Connecteur pour électrovanne, Femelle, 3P+E, Montage sur câble 10A, 12 V c.c., PG9](<https://fr.rs-online.com/web/p/connecteurs-delectrovanne-din-43650/8118314?cm_mmc=FR-PLA-DS3A-_-google-_-PLA_FR_FR_Connecteurs_Whoop-_-(FR:Whoop!)+Connecteurs+pour+%C3%A9lectrovanne+DIN+43650-_-8118314&matchtype=&aud-827186183886:pla-362265817914&gclid=EAIaIQobChMIrp-T7-HZ6wIVBflRCh3XlgcNEAQYBSABEgIzbvD_BwE&gclsrc=aw.ds>)
+* [Electrovanne RS PRO, 2 ports , 24 V c.c.](<https://fr.rs-online.com/web/p/electrovannes/1762069?cm_mmc=FR-PLA-DS3A-_-google-_-CSS_FR_FR_Plomberie_et_canalisations_Whoop-_-(FR:Whoop!)+Electrovannes-_-1762069&matchtype=&aud-813230962291:pla-315539983419&gclid=EAIaIQobChMIrp-T7-HZ6wIVBflRCh3XlgcNEAQYAiABEgIjE_D_BwE&gclsrc=aw.ds>)
 * [Interrupteur de bande de fer à souder électrique réglable de haute qualité KS9160 fer à souder électrique de vente chaude transfrontalière](<https://fr.aliexpress.com/item/32893731376.html?spm=a2g0o.productlist.0.0.698d1ac2lPnSfJ&s=p&ad_pvid=2020090804190310936573556282640006094637_1&algo_pvid=94342a52-09cf-49f9-9b26-9b60539a306e&algo_expid=94342a52-09cf-49f9-9b26-9b60539a306e-0&btsid=0b8b15ea15995639438904825ed773&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
 * [Test : alimentation UPS LiFePO4wered pour Raspberry Pi](<https://projetsdiy.fr/test-de-lalimentation-ups-lifepo4wered-pour-raspberry-pi/>)
 * [Un shield batterie 18650 à moins de 2€ pour alimenter vos projets IoT Arduino, ESP32, ESP8266, Raspberry Pi](<https://projetsdiy.fr/shield-batterie-18650-projets-iot-esp32-esp8266-raspberry-pi/>)
@@ -94,6 +97,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Connecter une électrovanne à un circuit arduino](<https://openclassrooms.com/forum/sujet/connecter-une-electrovanne-a-un-circuit-arduino>)
 * [How to use ADC of ESP32 – Measuring voltage example](<https://microcontrollerslab.com/adc-esp32-measuring-voltage-example/>)
 * [Create ESP32 Web server in Arduino IDE : controlling LEDs](<https://microcontrollerslab.com/esp32-web-server-arduino-led/>)
 * [How to use ADC of ESP32 – Measuring voltage example](<https://microcontrollerslab.com/adc-esp32-measuring-voltage-example/>)
