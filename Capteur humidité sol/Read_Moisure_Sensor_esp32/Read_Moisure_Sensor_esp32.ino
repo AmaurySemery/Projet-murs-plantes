@@ -1,4 +1,5 @@
-const int entreeAnalogique = 2;
+int sensorPin = 0;  
+int sensorValue = 0;
 int PinLed=13;
 
 void setup() {
@@ -10,7 +11,7 @@ pinMode(PinLed,OUTPUT);
 
 void loop() {
 // read the input on analog pin 0:
-int sensorValue = analogRead(entreeAnalogique); 
+int sensorValue = analogRead(sensorPin);
 Serial.print("La valeur retenue par A0 [de 0 (humide) à 4095 (sec)] est de "); 
 Serial.print(sensorValue); 
 Serial.println(".");
@@ -22,6 +23,7 @@ float sensorConvert1 = b - sensorConvert;
 Serial.print("Ce qui donne ");
 Serial.print(sensorConvert1);
 Serial.println("% d'humidité.");
+Serial.println(sensorValue); 
 if (sensorConvert1 < 35) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
 delay(10000);

@@ -13,8 +13,9 @@ HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre
 const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
 const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
-int PinLed=13;
-const int entreeAnalogique = 2;
+int PinLed=2;
+int sensorPin = 32;  
+int sensorValue = 32;
 
 
 void setup() {
@@ -40,7 +41,7 @@ delay(100);}
 
 
 void loop() {
-uint16_t value = gravity_sensor.Read(entreeAnalogique);
+uint16_t value = analogRead(sensorPin);
 int a = 40.95;
 int b = 100;
 float sensorConvert = value / a;
@@ -49,6 +50,7 @@ Serial.printf("Valeur de l'entrée analogique du capteur : %d\n", value);
 Serial.print("Ce qui donne ");
 Serial.print(sensorConvert1);
 Serial.println("% d'humidité.");
+Serial.println(sensorValue);
 if (sensorConvert1 < 35) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
 
