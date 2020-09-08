@@ -7,7 +7,7 @@ void setup(){
 
 void loop() {
  // put your main code here, to run repeatedly:
- int a4 = analogRead(15);  //v1.2
+ int a4 = analogRead(33);  //v1.2
 
  
  Serial.print("Valeur de l'entrée analogique : ");

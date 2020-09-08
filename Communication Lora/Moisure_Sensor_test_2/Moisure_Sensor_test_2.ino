@@ -14,8 +14,8 @@ const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
 const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
 int PinLed=2;
-int sensorPin = 25;  
-int sensorValue = 25;
+int sensorPin = 33;  
+int sensorValue = 33;
 
 
 void setup() {

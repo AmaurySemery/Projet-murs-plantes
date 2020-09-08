@@ -1,7 +1,7 @@
-const int entreeAnalogique = 15;  // GPIO 33
+const int entreeAnalogique = 33;  // GPIO 33
       
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
 }
 
 void loop() {

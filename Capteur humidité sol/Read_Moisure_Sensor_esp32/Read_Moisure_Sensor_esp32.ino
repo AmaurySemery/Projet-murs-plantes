@@ -1,6 +1,6 @@
 int PinLed=2;
-int sensorPin = 5;  
-int sensorValue = 5;
+int sensorPin = 33;  
+int sensorValue = 33;
 
 void setup() {
 // initialize serial communication at 9600 bits per second:
