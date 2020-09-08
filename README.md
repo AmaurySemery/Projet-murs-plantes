@@ -59,6 +59,8 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Test : alimentation UPS LiFePO4wered pour Raspberry Pi](<https://projetsdiy.fr/test-de-lalimentation-ups-lifepo4wered-pour-raspberry-pi/>)
+* [Un shield batterie 18650 à moins de 2€ pour alimenter vos projets IoT Arduino, ESP32, ESP8266, Raspberry Pi](<https://projetsdiy.fr/shield-batterie-18650-projets-iot-esp32-esp8266-raspberry-pi/>)
 * [2 pièces de TTGO LORA32 868 / 915Mhz SX1276 ESP32 carte de développement Bluetooth WIFI Lora à affichage Oled](<https://translate.googleusercontent.com/translate_c?depth=1&hl=fr&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://www.aliexpress.com/item/4000010599226.html%3Faff_platform%3Dapi%26sk%3D54aMBYbO%26aff_trace_key%3D7222688add844ef4a7d747dd0e6fefd4-1599557226045-03022-54aMBYbO%26terminal_id%3Dfe14eef099ac44f09f31675c926ca8c3&usg=ALkJrhgtHHZikE9FOkCf20lr6rRu8HOYmQ>)
 * [1 ensemble LoRa SX1278 Module Mental de puissance sans fil RF longue portée SX1276](<https://fr.aliexpress.com/item/4001018863699.html?spm=a2g0o.productlist.0.0.75f9250f3fZ9V6&algo_pvid=09f13683-f1bf-4331-9f45-75cc69697ab3&algo_expid=09f13683-f1bf-4331-9f45-75cc69697ab3-8&btsid=0b8b034e15995579446674201e622e&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
 * [Vente chaude 1 ensemble LoRa SX1278 longue portée RF sans fil Module Mental SX1276](<https://fr.aliexpress.com/item/4000994658275.html?spm=a2g0o.productlist.0.0.75f9250f3fZ9V6&algo_pvid=09f13683-f1bf-4331-9f45-75cc69697ab3&algo_expid=09f13683-f1bf-4331-9f45-75cc69697ab3-1&btsid=0b8b034e15995579446674201e622e&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
