@@ -1,5 +1,5 @@
-const int entreeAnalogique = 32;
-int PinLed=2;
+const int entreeAnalogique = 2;
+int PinLed=13;
 
 void setup() {
 // initialize serial communication at 9600 bits per second:

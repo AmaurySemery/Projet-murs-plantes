@@ -45,6 +45,9 @@ Serial.println("% d'humidité.");
 if (sensorConvert1 < 35) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);
 
+int h = sensorconvert1
+
+
 if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
     HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre de lancer des requêtes en HTTP
     USE_SERIAL.println("[DEBG] " + String(h));

@@ -13,21 +13,21 @@ HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre
 const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
 const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
-int PinLed=2;
-const int entreeAnalogique = 32;
+int PinLed=13;
+const int entreeAnalogique = 2;
 
 
 void setup() {
 
   pinMode(PinLed,OUTPUT);
   Serial.begin(115200);
-    if (!gravity_sensor.Setup(entreeAnalogique)) {
-        Serial.println("Le capteur d'humidité au sol n'a pas été détecté.");
-        while(1);
-    } else {
-        Serial.println("Le capteur d'humidité au sol est opérationnel !");
-    }
 Serial.println("\n");
+//    if (!gravity_sensor.Setup(entreeAnalogique)) {
+//        Serial.println("Le capteur d'humidité au sol n'a pas été détecté.");
+//        while(1);
+//    } else {
+//        Serial.println("Le capteur d'humidité au sol est opérationnel !");
+//    }
   WiFi.begin(ssid,password);  // Initialisation avec WiFi.begin / ssid et password
   Serial.print("Attente de connexion ...");  // Message d'attente de connexion
   while(WiFi.status() != WL_CONNECTED)  // Test connexion
