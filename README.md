@@ -1,4 +1,4 @@
-# Solioti
+# Projet murs végétalisés
 Arrosage automatique des murs végétalisés
 
 # Documentation sur les murs végétalisés
