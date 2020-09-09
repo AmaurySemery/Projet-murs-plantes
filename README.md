@@ -17,6 +17,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [Les capteurs d'humidité](<http://www.wimesure.fr/cbx/_ftp/hb303f.pdf>)
 * [Quel ESP32 choisir pour développer des objets connectés DIY en 2020](<https://projetsdiy.fr/quelle-carte-esp32-choisir-developper-projets-diy-objets-connectes/>)
 * [Tester la couverture du réseau Lorawan](<https://spot.objenious.com/eligibility-public>)
 * [Pourquoi seules les ondes radio passent-elles les murs ?](<https://www.science-et-vie.com/questions-reponses/pourquoi-seules-les-ondes-radio-passent-elles-les-murs-5594>)
