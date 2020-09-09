@@ -60,6 +60,7 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [La Carte ESP32 ECO Power et sa Technologie](<https://www.radioshuttle.de/fr/esp32-eco-power-fr/carte-esp32-eco-power-et-sa-technologie/>)
 * [Pompe à eau Velleman VMA421 convient pour (cartes Arduino): Arduino 1 pc(s)](<https://www.conrad.fr/p/pompe-a-eau-velleman-vma421-convient-pour-cartes-arduino-arduino-1-pcs-2120229>)
 * [Pompe miniature PPMB00117](<https://www.gotronic.fr/art-pompe-miniature-ppmb00117-26643.htm>)
 * [MINI pompe à eau submersible DC 3V 120L/H couleur ARDUINO noir](<https://fr.aliexpress.com/item/4001363120006.html?spm=a2g0o.productlist.0.0.12772713g6iqVt&algo_pvid=ebee7314-8d0f-4044-94d1-aa7e70488444&algo_expid=ebee7314-8d0f-4044-94d1-aa7e70488444-10&btsid=0b8b15c915995766199677211e3bf6&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
