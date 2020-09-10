@@ -1,5 +1,6 @@
 import requests
 import json
+from pyowm import OWM
 
 api_key = "7f9054c4edb12a97316c2da4d6fed6c9"
 lat = "50.633333"
