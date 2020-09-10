@@ -1,11 +1,11 @@
 import requests
 import json
 
-api_key = "7f9054c4edb12a97316c2da4d6fed6c9"
-lat = "50.633333"
-lon = "3.066667"
-url = "https://api.openweathermap.org/data/2.5/onecall?lat=%s&lon=%s&appid=%s&units=metric" % (lat, lon, api_key)
+City_API_endpoint = "https://api.openweathermap.org/data/2.5/onecall?q="
+City = "Lille"
+Country = ",fr,"
+join_key = "&appid=" + "9f9a2aa0b0d0871b54bda3bc56990983"
+units = "&units=metric"
 
-response = requests.get(url)
-data = json.loads(response.text)
-print(data)
+current_city_weather = City_API_endpoint + City + Country + join_key + units
+print(current_city_weather)
