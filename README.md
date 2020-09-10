@@ -102,6 +102,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Using the Open Weather Map API with Python](<https://knasmueller.net/using-the-open-weather-map-api-with-python>)
 * [Faire un système d’arrosage automatique pendant les vacances](<https://1plus1blog.com/2017/10/22/arroser-ses-plantes-a-la-maison-ou-au-jardin-quand-on-part-longtemps/>)
 * [Connecter une électrovanne à un circuit arduino](<https://openclassrooms.com/forum/sujet/connecter-une-electrovanne-a-un-circuit-arduino>)
 * [How to use ADC of ESP32 – Measuring voltage example](<https://microcontrollerslab.com/adc-esp32-measuring-voltage-example/>)
