@@ -165,6 +165,8 @@ Arrosage automatique des murs végétalisés
 
 # Api météo utilisables
 
+* [Weather API](<https://openweathermap.org/api>)
+* [PyOWM v3 documentation](<https://pyowm.readthedocs.io/en/latest/>)
 * [OpenWeather](<https://openweathermap.org/api>)
 * [Api Gouv](<https://api.gouv.fr/>)
 * [Hub'Eau - Hydrométrie](<https://api.gouv.fr/les-api/api_hubeau_hydrometrie>)
