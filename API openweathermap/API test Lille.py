@@ -2,8 +2,6 @@ import requests
 import json
 from pyowm import OWM
 import config 
-import smopy 
-import matplotlib.pyplot as plt 
 
 config.apikey = '7f9054c4edb12a97316c2da4d6fed6c9'
 
