@@ -6,15 +6,15 @@
         {
             "dt": 1599825600,
             "main": {
-                "temp": 21.02,
-                "feels_like": 19.68,
-                "temp_min": 21.02,
+                "temp": 21,
+                "feels_like": 19.66,
+                "temp_min": 21,
                 "temp_max": 21.65,
                 "pressure": 1018,
                 "sea_level": 1018,
                 "grnd_level": 1014,
                 "humidity": 51,
-                "temp_kf": -0.63
+                "temp_kf": -0.65
             },
             "weather": [
                 {
@@ -41,15 +41,15 @@
         {
             "dt": 1599836400,
             "main": {
-                "temp": 22.85,
-                "feels_like": 20.8,
-                "temp_min": 22.85,
+                "temp": 22.84,
+                "feels_like": 20.79,
+                "temp_min": 22.84,
                 "temp_max": 23.52,
                 "pressure": 1017,
                 "sea_level": 1017,
                 "grnd_level": 1013,
                 "humidity": 44,
-                "temp_kf": -0.67
+                "temp_kf": -0.68
             },
             "weather": [
                 {
