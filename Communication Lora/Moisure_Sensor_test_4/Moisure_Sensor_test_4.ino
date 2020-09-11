@@ -16,12 +16,12 @@ const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
 LiquidCrystal lcd(25, 14, 23, 13, 22, 21);
 
-int buttonPin=15;
+int buttonPin=25;
 int boutonappui = 0; // variable lorsque j'appuie sur le bouton
 int etatbouton = 0; // etat dans lequel se trouve le bouton
 int bouton_pasappui = 0;// variable lorsque je n'appuie pas sur le bouton
 //int buttonState = 0;
-int PinLed=2;
+int PinLed=14;
 int sensorPin1 = 32;  
 int sensorPin2 = 33;
 int sensorPin3 = 35;
