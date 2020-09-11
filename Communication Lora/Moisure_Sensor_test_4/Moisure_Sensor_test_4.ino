@@ -14,7 +14,7 @@ HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre
 const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
 const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
-LiquidCrystal lcd(25, 14, 23, 13, 22, 21);
+//LiquidCrystal lcd(25, 14, 23, 13, 22, 21);
 
 int buttonPin=25;
 int boutonappui = 0; // variable lorsque j'appuie sur le bouton
@@ -32,11 +32,11 @@ float d = 29.304;
 float g = 3;
 
 void setup() {
-lcd.begin(16, 2);
-lcd.clear();
-lcd.print("Hellow, world!");
-lcd.setCursor(0,1);
-lcd.print("LCD with ESP32");
+//lcd.begin(16, 2);
+//lcd.clear();
+//lcd.print("Hellow, world!");
+//lcd.setCursor(0,1);
+//lcd.print("LCD with ESP32");
   pinMode(buttonPin, INPUT_PULLUP);  
   pinMode(PinLed,OUTPUT);
   Serial.begin(115200);
