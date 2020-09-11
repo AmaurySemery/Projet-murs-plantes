@@ -3,6 +3,7 @@
 #include <Arduino.h>
 #include <HTTPClient.h>
 #include "gravity_soil_moisture_sensor.h"
+#include <LiquidCrystal.h>
 
 #define USE_SERIAL Serial
 
@@ -12,6 +13,8 @@ HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre
 
 const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
 const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
+
+LiquidCrystal lcd(25, 14, 23, 13, 22, 21);
 
 int buttonPin=15;
 int boutonappui = 0; // variable lorsque j'appuie sur le bouton
@@ -29,7 +32,11 @@ float d = 29.304;
 float g = 3;
 
 void setup() {
-
+lcd.begin(16, 2);
+lcd.clear();
+lcd.print("Hellow, world!");
+lcd.setCursor(0,1);
+lcd.print("LCD with ESP32");
   pinMode(buttonPin, INPUT_PULLUP);  
   pinMode(PinLed,OUTPUT);
   Serial.begin(115200);
@@ -97,7 +104,7 @@ Serial.println("% d'humidité.");
 Serial.print("La moyenne entre les 3 capteurs donne : ");
 Serial.print(moyenne);
 Serial.println("% d'humidité.");
-if (moyenne < 70) {digitalWrite(PinLed,HIGH);}
+if (moyenne < 50) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
 
 delay(50);}
