@@ -24,9 +24,10 @@ int PinLed3=14;
 int sensorPin1 = 32;  
 int sensorPin2 = 33;
 int sensorPin3 = 35;
-int a = 40.95;
-int b = 100;
-
+float a = 40.95;
+float b = 100;
+float c = 1200;
+float d = 29.304;
 
 void setup() {
 
@@ -35,7 +36,22 @@ void setup() {
   pinMode(PinLed2,OUTPUT);
   pinMode(PinLed3,OUTPUT);
   Serial.begin(115200);
-Serial.println("Bienvenue sur le programme Moisture Sensor");
+Serial.println("Bienvenue sur le programme Moisture Sensor !");
+Serial.println("**********");
+Serial.println("Avant de commencer, nous allons procéder à une série de tests.");
+Serial.print("Dans le programme, a = 40,95, il devrait donc donner ce même résultat : ");
+Serial.println(a);
+Serial.print("De même, b = 100, le résultat devrait encore être le même : ");
+Serial.println(b);
+Serial.println("**********");
+float e = c / a;
+Serial.print("Je fais le calcul 1200/40.95 et ça devrait donner environ 30 : ");
+Serial.println(e);
+float f = b - d;
+Serial.print("Je fais le calcul 100 - 29.304 et ça devrait donner environ 71 : ");
+Serial.println(f);
+Serial.println("Si les tests sont bons, on peut commencer le programme !");
+Serial.println("**********");
 //    if (!gravity_sensor.Setup(entreeAnalogique)) {
 //        Serial.println("Le capteur d'humidité au sol n'a pas été détecté.");
 //        while(1);
@@ -67,6 +83,7 @@ uint16_t value3 = analogRead(sensorPin3);
 float sensor3Convert1 = value3 / a;
 float sensor3Convert2 = b - sensor3Convert1;
 
+
 Serial.printf("Valeur de l'entrée analogique du capteur 1 : %d\n", value1);
 Serial.print("Ce qui donne ");
 Serial.print(sensor1Convert2);
@@ -77,7 +94,7 @@ Serial.printf("Valeur de l'entrée analogique du capteur 2 : %d\n", value2);
 Serial.print("Ce qui donne ");
 Serial.print(sensor2Convert2);
 Serial.println("% d'humidité.");
-if (sensor2Convert2 < 65) {digitalWrite(PinLed2,HIGH);}
+if (sensor2Convert2 < 35) {digitalWrite(PinLed2,HIGH);}
 else {digitalWrite(PinLed2,LOW);}
 Serial.printf("Valeur de l'entrée analogique du capteur 3 : %d\n", value3);
 Serial.print("Ce qui donne ");
