@@ -24,6 +24,8 @@ int PinLed3=14;
 int sensorPin1 = 32;  
 int sensorPin2 = 33;
 int sensorPin3 = 35;
+int a = 40.95;
+int b = 100;
 
 
 void setup() {
@@ -53,8 +55,6 @@ Serial.println("Bienvenue sur le programme Moisture Sensor");
 
 void loop() {
 etatbouton = digitalRead(buttonPin);
-int a = 40.95;
-int b = 100;
 if (etatbouton != bouton_pasappui){
 if (etatbouton == LOW) {
 uint16_t value1 = analogRead(sensorPin1);
@@ -77,7 +77,7 @@ Serial.printf("Valeur de l'entrée analogique du capteur 2 : %d\n", value2);
 Serial.print("Ce qui donne ");
 Serial.print(sensor2Convert2);
 Serial.println("% d'humidité.");
-if (sensor2Convert2 < 35) {digitalWrite(PinLed2,HIGH);}
+if (sensor2Convert2 < 60) {digitalWrite(PinLed2,HIGH);}
 else {digitalWrite(PinLed2,LOW);}
 Serial.printf("Valeur de l'entrée analogique du capteur 3 : %d\n", value3);
 Serial.print("Ce qui donne ");
