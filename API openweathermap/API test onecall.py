@@ -1,5 +1,7 @@
 import requests
 import json
+import pandas as pd
+from pprint import pprint
 
 join_key = "&appid=" + "9f9a2aa0b0d0871b54bda3bc56990983"
 lat = "50.633333"
@@ -8,16 +10,19 @@ units = "&units=metric"
 key = "&appid=9f9a2aa0b0d0871b54bda3bc56990983"
 langage = "&lang=fr"
 url = "https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+key+units+langage
-print(url)
+#print(url)
 
 response = requests.get(url)
 data = json.loads(response.text)
 
-with open("data_file.json", "w") as write_file:
+#pprint(data)
 
-    json.dump(data, write_file)
+json.dumps(data, indent=4)
 
-#list=[]
+with open('/home/popschool/Documents/GitHub/solioti/API openweathermap/Données/data_file.json', 'w') as f:
+    f.write(json.dumps(data, indent=4))
 
-#for line in data:
-#    tempmax,tempmin,
+with open('data_file.json', 'r') as f:
+    datas = json.load(f)
+    
+#pprint(datas)
