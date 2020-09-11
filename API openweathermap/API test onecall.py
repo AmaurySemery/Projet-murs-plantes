@@ -10,3 +10,4 @@ langage = "&lang=fr"
 test = "https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+key+units+langage
 print(test)
 
+list=[]
