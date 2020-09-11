@@ -18,9 +18,7 @@ int boutonappui = 0; // variable lorsque j'appuie sur le bouton
 int etatbouton = 0; // etat dans lequel se trouve le bouton
 int bouton_pasappui = 0;// variable lorsque je n'appuie pas sur le bouton
 //int buttonState = 0;
-int PinLed1=2;
-int PinLed2=13;
-int PinLed3=14;
+int PinLed=2;
 int sensorPin1 = 32;  
 int sensorPin2 = 33;
 int sensorPin3 = 35;
@@ -28,13 +26,12 @@ float a = 40.95;
 float b = 100;
 float c = 1200;
 float d = 29.304;
+float g = 3;
 
 void setup() {
 
   pinMode(buttonPin, INPUT_PULLUP);  
-  pinMode(PinLed1,OUTPUT);
-  pinMode(PinLed2,OUTPUT);
-  pinMode(PinLed3,OUTPUT);
+  pinMode(PinLed,OUTPUT);
   Serial.begin(115200);
 Serial.println("Bienvenue sur le programme Moisture Sensor !");
 Serial.println("**********");
@@ -82,26 +79,27 @@ float sensor2Convert2 = b - sensor2Convert1;
 uint16_t value3 = analogRead(sensorPin3);
 float sensor3Convert1 = value3 / a;
 float sensor3Convert2 = b - sensor3Convert1;
-
+float somme = sensor1Convert2 + sensor2Convert2 + sensor3Convert2;
+float moyenne = somme / g;
 
 Serial.printf("Valeur de l'entrée analogique du capteur 1 : %d\n", value1);
 Serial.print("Ce qui donne ");
 Serial.print(sensor1Convert2);
 Serial.println("% d'humidité.");
-if (sensor1Convert2 < 35) {digitalWrite(PinLed1,HIGH);}
-else {digitalWrite(PinLed1,LOW);}
 Serial.printf("Valeur de l'entrée analogique du capteur 2 : %d\n", value2);
 Serial.print("Ce qui donne ");
 Serial.print(sensor2Convert2);
 Serial.println("% d'humidité.");
-if (sensor2Convert2 < 35) {digitalWrite(PinLed2,HIGH);}
-else {digitalWrite(PinLed2,LOW);}
 Serial.printf("Valeur de l'entrée analogique du capteur 3 : %d\n", value3);
 Serial.print("Ce qui donne ");
 Serial.print(sensor3Convert2);
 Serial.println("% d'humidité.");
-if (sensor3Convert2 < 35) {digitalWrite(PinLed3,HIGH);}
-else {digitalWrite(PinLed3,LOW);}
+Serial.print("La moyenne entre les 3 capteurs donne : ");
+Serial.print(moyenne);
+Serial.println("% d'humidité.");
+if (moyenne < 50) {digitalWrite(PinLed,HIGH);}
+else {digitalWrite(Pinled,LOW);}
+
 delay(50);}
 else {Serial.println("**********");
 delay(50);}
