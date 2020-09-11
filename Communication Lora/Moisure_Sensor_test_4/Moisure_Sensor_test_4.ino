@@ -4,7 +4,6 @@
 #include <HTTPClient.h>
 #include "gravity_soil_moisture_sensor.h"
 
-#define gravity_sensor_pin 33
 #define USE_SERIAL Serial
 
 GravitySoilMoistureSensor gravity_sensor;
@@ -15,7 +14,10 @@ const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
 const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
 int buttonPin=15;
-int buttonState = 0;
+int boutonappui = 0; // variable lorsque j'appuie sur le bouton
+int etatbouton = 0; // etat dans lequel se trouve le bouton
+int bouton_pasappui = 0;// variable lorsque je n'appuie pas sur le bouton
+//int buttonState = 0;
 int PinLed1=2;
 int PinLed2=13;
 int PinLed3=14;
@@ -26,12 +28,12 @@ int sensorPin3 = 35;
 
 void setup() {
 
-  pinMode(buttonPin, INPUT);  
+  pinMode(buttonPin, INPUT_PULLUP);  
   pinMode(PinLed1,OUTPUT);
   pinMode(PinLed2,OUTPUT);
   pinMode(PinLed3,OUTPUT);
   Serial.begin(115200);
-Serial.println("\n");
+Serial.println("Bienvenue sur le programme Moisture Sensor");
 //    if (!gravity_sensor.Setup(entreeAnalogique)) {
 //        Serial.println("Le capteur d'humidité au sol n'a pas été détecté.");
 //        while(1);
@@ -50,8 +52,11 @@ Serial.println("\n");
 
 
 void loop() {
+etatbouton = digitalRead(buttonPin);
 int a = 40.95;
 int b = 100;
+if (etatbouton != bouton_pasappui){
+if (etatbouton == LOW) {
 uint16_t value1 = analogRead(sensorPin1);
 float sensor1Convert1 = value1 / a;
 float sensor1Convert2 = b - sensor1Convert1;
@@ -80,7 +85,10 @@ Serial.print(sensor3Convert2);
 Serial.println("% d'humidité.");
 if (sensor3Convert2 < 35) {digitalWrite(PinLed3,HIGH);}
 else {digitalWrite(PinLed3,LOW);}
-
+delay(50);}
+else {Serial.println("**********");
+delay(50);}
+bouton_pasappui = etatbouton;}
 
 //int h = sensorConvert1;
 
@@ -118,6 +126,4 @@ else {digitalWrite(PinLed3,LOW);}
 //    }
 
 //    http.end();    }
-
-    delay(5000);
 }
