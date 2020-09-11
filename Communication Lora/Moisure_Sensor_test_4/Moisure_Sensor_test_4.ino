@@ -97,8 +97,8 @@ Serial.println("% d'humidité.");
 Serial.print("La moyenne entre les 3 capteurs donne : ");
 Serial.print(moyenne);
 Serial.println("% d'humidité.");
-if (moyenne < 50) {digitalWrite(PinLed,HIGH);}
-else {digitalWrite(Pinled,LOW);}
+if (moyenne < 70) {digitalWrite(PinLed,HIGH);}
+else {digitalWrite(PinLed,LOW);}
 
 delay(50);}
 else {Serial.println("**********");
