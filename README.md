@@ -108,6 +108,8 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Arduino LCD 16x2 lignes parallèles](<http://wiki.funlab.fr/index.php/Arduino_LCD_16x2_lignes_parall%C3%A8les>)
+* [Manuel d'utilisation de l’afficheur I2C LCD 16x2](<https://www.gotronic.fr/pj2-sbc-lcd16x2-fr-1441.pdf>)
 * [Weather Data and Forecasts from Open Weather API](<https://towardsdatascience.com/weather-data-and-forecasts-from-open-weather-api-1636691d5ba>)
 * [Using the Open Weather Map API with Python](<https://knasmueller.net/using-the-open-weather-map-api-with-python>)
 * [Faire un système d’arrosage automatique pendant les vacances](<https://1plus1blog.com/2017/10/22/arroser-ses-plantes-a-la-maison-ou-au-jardin-quand-on-part-longtemps/>)
