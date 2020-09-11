@@ -15,6 +15,12 @@ Arrosage automatique des murs végétalisés
 * [Urbasense](<https://www.urbasense.fr/fr/>)
 * [Powermoss](<https://www.powerofmoss.com/>)
 
+# Documentation python
+
+* [Les dictionnaires python](<https://python.doctor/page-apprendre-dictionnaire-python>)
+* [json — Encodage et décodage JSON](<https://docs.python.org/fr/3/library/json.html>)
+* [Python: Le module json](<https://www.quennec.fr/trucs-astuces/langages/python/python-le-module-json>)
+
 # Documentation technique
 
 * [Les capteurs d'humidité](<http://www.wimesure.fr/cbx/_ftp/hb303f.pdf>)
@@ -164,8 +170,9 @@ Arrosage automatique des murs végétalisés
 * [Les super pouvoirs des sols en BD](<https://www.cerema.fr/fr/actualites/super-pouvoirs-sols-bd>)
 * [IBM en quête d’un nouveau souffle dans le cloud](<https://www.usinenouvelle.com/article/ibm-en-quete-d-un-nouveau-souffle-dans-le-cloud.N885464>)
 
-# Api météo utilisables
+# Api météo
 
+* [Parameters of API respond | openweathermap](<https://openweathermap.org/weather-data>)
 * [Weather API](<https://openweathermap.org/api>)
 * [PyOWM v3 documentation](<https://pyowm.readthedocs.io/en/latest/>)
 * [OpenWeather](<https://openweathermap.org/api>)
