@@ -44,19 +44,6 @@ void setup() {
 Serial.println("Bienvenue sur le programme Moisture Sensor !");
 Serial.println("**********");
 Serial.println("Avant de commencer, nous allons procéder à une série de tests.");
-Serial.print("Dans le programme, a = 40,95, il devrait donc donner ce même résultat : ");
-Serial.println(a);
-Serial.print("De même, b = 100, le résultat devrait encore être le même : ");
-Serial.println(b);
-Serial.println("**********");
-float e = c / a;
-Serial.print("Je fais le calcul 1200/40.95 et ça devrait donner environ 30 : ");
-Serial.println(e);
-float f = b - d;
-Serial.print("Je fais le calcul 100 - 29.304 et ça devrait donner environ 71 : ");
-Serial.println(f);
-Serial.println("Si les tests sont bons, on peut commencer le programme !");
-Serial.println("**********");
     if (!gravity_sensor.Setup(sensorPin1)) {
         Serial.println("Le capteur 1 d'humidité au sol n'a pas été détecté.");
         while(1);
@@ -75,13 +62,28 @@ Serial.println("**********");
     } else {
         Serial.println("Le capteur 3 d'humidité au sol est opérationnel !");
     }
-//  WiFi.begin(ssid,password);  // Initialisation avec WiFi.begin / ssid et password
-//  Serial.print("Attente de connexion ...");  // Message d'attente de connexion
-//  while(WiFi.status() != WL_CONNECTED)  // Test connexion
-//{Serial.print(".");  // Affiche des points .... tant que connexion n'est pas OK
-//delay(100);}
-//  Serial.println("\n");
-//  Serial.println("Connexion établie !");  // Affiche connexion établie
+Serial.print("Dans le programme, a = 40,95, il devrait donc donner ce même résultat : ");
+Serial.println(a);
+Serial.print("De même, b = 100, le résultat devrait encore être le même : ");
+Serial.println(b);
+Serial.println("**********");
+float e = c / a;
+Serial.print("Je fais le calcul 1200/40.95 et ça devrait donner environ 30 : ");
+Serial.println(e);
+float f = b - d;
+Serial.print("Je fais le calcul 100 - 29.304 et ça devrait donner environ 71 : ");
+Serial.println(f);
+WiFi.begin(ssid,password);  // Initialisation avec WiFi.begin / ssid et password
+Serial.print("Attente de connexion ...");  // Message d'attente de connexion
+while(WiFi.status() != WL_CONNECTED)  // Test connexion
+{Serial.print(".");  // Affiche des points .... tant que connexion n'est pas OK
+delay(100);}
+Serial.println("\n");
+Serial.println("Connexion établie !");  // Affiche connexion établie
+Serial.println("Si les tests sont bons, on peut commencer le programme !");
+Serial.println("**********");
+
+
 
 }
 
