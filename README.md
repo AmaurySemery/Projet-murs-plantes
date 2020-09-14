@@ -15,11 +15,12 @@ Arrosage automatique des murs végétalisés
 * [Urbasense](<https://www.urbasense.fr/fr/>)
 * [Powermoss](<https://www.powerofmoss.com/>)
 
-# Documentation python
+# Documentation programmation
 
 * [Les dictionnaires python](<https://python.doctor/page-apprendre-dictionnaire-python>)
 * [json — Encodage et décodage JSON](<https://docs.python.org/fr/3/library/json.html>)
 * [Python: Le module json](<https://www.quennec.fr/trucs-astuces/langages/python/python-le-module-json>)
+* [JSONLint - The JSON Validator](<https://jsonlint.com/>)
 
 # Documentation technique
 
