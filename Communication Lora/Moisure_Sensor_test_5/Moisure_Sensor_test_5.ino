@@ -73,15 +73,15 @@ Serial.println(e);
 float f = b - d;
 Serial.print("Je fais le calcul 100 - 29.304 et ça devrait donner environ 71 : ");
 Serial.println(f);
-//WiFi.begin(ssid,password);  // Initialisation avec WiFi.begin / ssid et password
-//Serial.print("Attente de connexion ...");  // Message d'attente de connexion
-//while(WiFi.status() != WL_CONNECTED)  // Test connexion
-//{Serial.print(".");  // Affiche des points .... tant que connexion n'est pas OK
-//delay(1000);}
-//Serial.println("\n");
-//Serial.println("Connexion établie !");  // Affiche connexion établie
-//Serial.println("Si les tests sont bons, on peut commencer le programme !");
-//Serial.println("**********");
+WiFi.begin(ssid,password);  // Initialisation avec WiFi.begin / ssid et password
+Serial.print("Attente de connexion ...");  // Message d'attente de connexion
+while(WiFi.status() != WL_CONNECTED)  // Test connexion
+{Serial.print(".");  // Affiche des points .... tant que connexion n'est pas OK
+delay(1000);}
+Serial.println("\n");
+Serial.println("Connexion établie !");  // Affiche connexion établie
+Serial.println("Si les tests sont bons, on peut commencer le programme !");
+Serial.println("**********");
 
 
 
@@ -115,42 +115,42 @@ Serial.println("}");
 
 int h = moyenne;
 
-//if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
-//    USE_SERIAL.println("[DEBG] " + String(h));
+if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
+    USE_SERIAL.println("[DEBG] " + String(h));
 
-//    USE_SERIAL.print("[HTTP] begin...\n");
+    USE_SERIAL.print("[HTTP] begin...\n");
     // configure traged server and url
     //http.begin("https://www.howsmyssl.com/a/check", ca); //HTTPS
-//    http.begin("https://10.130.1.236:1883/h/" + String(h)); //HTTP => démarre connexion vers le serveur mentionné
+    http.begin("https://10.130.1.236:1883/h/" + String(h)); //HTTP => démarre connexion vers le serveur mentionné
 
-//    USE_SERIAL.print("[HTTP] GET...\n");
+    USE_SERIAL.print("[HTTP] GET...\n");
     // start connection and send HTTP header
-//    int httpCode = http.GET(); // soumet une requête de type "get", puis récupère résultat qui sera collée dans HTTP
+    int httpCode = http.GET(); // soumet une requête de type "get", puis récupère résultat qui sera collée dans HTTP
 
     // httpCode will be negative on error
-//    if (httpCode > 0) { // si c'est supérieur à 0, il refait un test)
+    if (httpCode > 0) { // si c'est supérieur à 0, il refait un test)
       // HTTP header has been send and Server response header has been handled
-//      USE_SERIAL.printf("[HTTP] GET... code: %d\n", httpCode);
+      USE_SERIAL.printf("[HTTP] GET... code: %d\n", httpCode);
 
       // file found at server
-//      if (httpCode == HTTP_CODE_OK) { // Si ça s'est bien passé, il refait une variable où il met le getString puis affiche à l'écran => on a reçu un code 200
-//        String payload = http.getString();
-//        USE_SERIAL.println(payload);
-//        if (payload == "ON") {
-//          digitalWrite(4, HIGH);
-//        }
-//        if (payload == "OFF") {
-//          digitalWrite(4, LOW);
-//        }
+      if (httpCode == HTTP_CODE_OK) { // Si ça s'est bien passé, il refait une variable où il met le getString puis affiche à l'écran => on a reçu un code 200
+        String payload = http.getString();
+        USE_SERIAL.println(payload);
+        if (payload == "ON") {
+          digitalWrite(4, HIGH);
+        }
+        if (payload == "OFF") {
+          digitalWrite(4, LOW);
+        }
       }
-//    } else { // sinon, il dit que ça ne fonctionne pas
-//      USE_SERIAL.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
-//    }
+    } else { // sinon, il dit que ça ne fonctionne pas
+     USE_SERIAL.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
+    }
+    }
 
-//    http.end();}
+    http.end();}
 
-//delay(50);}
+delay(50000);}
 else {Serial.println("**********");
 delay(50);}
 bouton_pasappui = etatbouton;}
-}
