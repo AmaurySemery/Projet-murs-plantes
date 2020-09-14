@@ -78,9 +78,9 @@ Serial.println("**********");
 
 
 void loop() {
-etatbouton = digitalRead(buttonPin);
-if (etatbouton != bouton_pasappui){
-if (etatbouton == LOW) {
+//etatbouton = digitalRead(buttonPin);
+//if (etatbouton != bouton_pasappui){
+//if (etatbouton == LOW) {
 uint16_t value1 = analogRead(sensorPin1);
 float sensor1Convert = value1 / a;
 uint16_t value2 = analogRead(sensorPin2);
@@ -139,7 +139,7 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
 
     http.end();}
 
-delay(50);}
-else {Serial.println("**********");
-delay(50000);}
-bouton_pasappui = etatbouton;}
+delay(5000);}
+//else {Serial.println("**********");
+//delay(5000);}
+//bouton_pasappui = etatbouton;}
