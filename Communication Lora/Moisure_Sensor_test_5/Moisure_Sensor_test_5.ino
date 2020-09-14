@@ -121,7 +121,7 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
     USE_SERIAL.print("[HTTP] begin...\n");
     // configure traged server and url
     //http.begin("https://www.howsmyssl.com/a/check", ca); //HTTPS
-    http.begin("https://192.168.1.101:1883/h/" + String(h)); //HTTP => démarre connexion vers le serveur mentionné
+    http.begin("https://127.0.0.1:1883/h/" + String(h)); //HTTP => démarre connexion vers le serveur mentionné
 
     USE_SERIAL.print("[HTTP] GET...\n");
     // start connection and send HTTP header
