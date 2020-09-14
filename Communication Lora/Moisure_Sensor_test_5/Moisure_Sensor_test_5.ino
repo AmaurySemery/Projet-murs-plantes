@@ -93,25 +93,22 @@ etatbouton = digitalRead(buttonPin);
 if (etatbouton != bouton_pasappui){
 if (etatbouton == LOW) {
 uint16_t value1 = analogRead(sensorPin1);
-float sensor1Convert1 = value1 / a;
-float sensor1Convert2 = b - sensor1Convert1;
+float sensor1Convert = value1 / a;
 uint16_t value2 = analogRead(sensorPin2);
-float sensor2Convert1 = value2 / a;
-float sensor2Convert2 = b - sensor2Convert1;
+float sensor2Convert = value2 / a;
 uint16_t value3 = analogRead(sensorPin3);
-float sensor3Convert1 = value3 / a;
-float sensor3Convert2 = b - sensor3Convert1;
-float somme = sensor1Convert1 + sensor2Convert1 + sensor3Convert1;
+float sensor3Convert = value3 / a;
+float somme = sensor1Convert + sensor2Convert + sensor3Convert;
 float moyenne = somme / g;
 
 // Conversion des données au format Json
 
 Serial.print("{\"sensor1\":");
-Serial.print(sensor1Convert1);
+Serial.print(sensor1Convert);
 Serial.print(",\"sensor2\":");
-Serial.print(sensor2Convert1);
+Serial.print(sensor2Convert);
 Serial.print(",\"sensor3\":");
-Serial.print(sensor3Convert1);
+Serial.print(sensor3Convert);
 Serial.print(",\"moyenne\":");
 Serial.print(moyenne);
 Serial.println("}");
@@ -152,7 +149,8 @@ int h = moyenne;
 
 //    http.end();}
 
-delay(50);}
+//delay(50);}
 else {Serial.println("**********");
 delay(50);}
 bouton_pasappui = etatbouton;}
+}
