@@ -17,12 +17,12 @@ const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
 //LiquidCrystal lcd(25, 14, 23, 13, 22, 21);
 
-int buttonPin=25;
-int boutonappui = 0; // variable lorsque j'appuie sur le bouton
-int etatbouton = 0; // etat dans lequel se trouve le bouton
-int bouton_pasappui = 0;// variable lorsque je n'appuie pas sur le bouton
+//int buttonPin=25;
+//int boutonappui = 0; // variable lorsque j'appuie sur le bouton
+//int etatbouton = 0; // etat dans lequel se trouve le bouton
+//int bouton_pasappui = 0;// variable lorsque je n'appuie pas sur le bouton
 //int buttonState = 0;
-int PinLed=14;
+//int PinLed=14;
 int sensorPin1 = 32;  
 int sensorPin2 = 33;
 int sensorPin3 = 35;
@@ -62,17 +62,6 @@ Serial.println("Avant de commencer, nous allons procéder à une série de tests
     } else {
         Serial.println("Le capteur 3 d'humidité au sol est opérationnel !");
     }
-Serial.print("Dans le programme, a = 40,95, il devrait donc donner ce même résultat : ");
-Serial.println(a);
-Serial.print("De même, b = 100, le résultat devrait encore être le même : ");
-Serial.println(b);
-Serial.println("**********");
-float e = c / a;
-Serial.print("Je fais le calcul 1200/40.95 et ça devrait donner environ 30 : ");
-Serial.println(e);
-float f = b - d;
-Serial.print("Je fais le calcul 100 - 29.304 et ça devrait donner environ 71 : ");
-Serial.println(f);
 WiFi.begin(ssid,password);  // Initialisation avec WiFi.begin / ssid et password
 Serial.print("Attente de connexion ...");  // Message d'attente de connexion
 while(WiFi.status() != WL_CONNECTED)  // Test connexion
