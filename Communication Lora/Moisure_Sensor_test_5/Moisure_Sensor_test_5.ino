@@ -39,7 +39,7 @@ void setup() {
 //lcd.setCursor(0,1);
 //lcd.print("LCD with ESP32");
 //  pinMode(buttonPin, INPUT_PULLUP);  
-  pinMode(PinLed,OUTPUT);
+//  pinMode(PinLed,OUTPUT);
   Serial.begin(115200);
 Serial.println("Bienvenue sur le programme Moisture Sensor !");
 Serial.println("**********");
