@@ -1,4 +1,5 @@
 #include <WiFi.h>  // Utilisation de la librairie WiFi.h
+
 #include <WiFiMulti.h>
 #include <Arduino.h>
 #include <HTTPClient.h>
@@ -91,15 +92,15 @@ float moyenne = somme / g;
 
 Serial.printf("Valeur de l'entrée analogique du capteur 1 : %d\n", value1);
 Serial.print("Ce qui donne ");
-Serial.print(sensor1Convert2);
+Serial.print(sensor1Convert1);
 Serial.println("% d'humidité.");
 Serial.printf("Valeur de l'entrée analogique du capteur 2 : %d\n", value2);
 Serial.print("Ce qui donne ");
-Serial.print(sensor2Convert2);
+Serial.print(sensor2Convert1);
 Serial.println("% d'humidité.");
 Serial.printf("Valeur de l'entrée analogique du capteur 3 : %d\n", value3);
 Serial.print("Ce qui donne ");
-Serial.print(sensor3Convert2);
+Serial.print(sensor3Convert1);
 Serial.println("% d'humidité.");
 Serial.print("La moyenne entre les 3 capteurs donne : ");
 Serial.print(moyenne);
