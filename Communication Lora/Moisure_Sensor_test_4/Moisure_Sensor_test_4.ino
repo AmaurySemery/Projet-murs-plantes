@@ -77,7 +77,7 @@ WiFi.begin(ssid,password);  // Initialisation avec WiFi.begin / ssid et password
 Serial.print("Attente de connexion ...");  // Message d'attente de connexion
 while(WiFi.status() != WL_CONNECTED)  // Test connexion
 {Serial.print(".");  // Affiche des points .... tant que connexion n'est pas OK
-delay(100);}
+delay(1000);}
 Serial.println("\n");
 Serial.println("Connexion établie !");  // Affiche connexion établie
 Serial.println("Si les tests sont bons, on peut commencer le programme !");
