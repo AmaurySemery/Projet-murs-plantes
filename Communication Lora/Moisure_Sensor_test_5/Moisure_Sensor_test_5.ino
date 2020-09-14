@@ -150,7 +150,7 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
 
     http.end();}
 
-delay(50000);}
+delay(50);}
 else {Serial.println("**********");
 delay(50000);}
 bouton_pasappui = etatbouton;}
