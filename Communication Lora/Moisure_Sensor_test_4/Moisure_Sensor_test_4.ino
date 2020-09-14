@@ -57,12 +57,24 @@ Serial.print("Je fais le calcul 100 - 29.304 et ça devrait donner environ 71 : 
 Serial.println(f);
 Serial.println("Si les tests sont bons, on peut commencer le programme !");
 Serial.println("**********");
-//    if (!gravity_sensor.Setup(entreeAnalogique)) {
-//        Serial.println("Le capteur d'humidité au sol n'a pas été détecté.");
-//        while(1);
-//    } else {
-//        Serial.println("Le capteur d'humidité au sol est opérationnel !");
-//    }
+    if (!gravity_sensor.Setup(sensorPin1)) {
+        Serial.println("Le capteur 1 d'humidité au sol n'a pas été détecté.");
+        while(1);
+    } else {
+        Serial.println("Le capteur 1 d'humidité au sol est opérationnel !");
+    }
+        if (!gravity_sensor.Setup(sensorPin2)) {
+        Serial.println("Le capteur 2 d'humidité au sol n'a pas été détecté.");
+        while(1);
+    } else {
+        Serial.println("Le capteur 2 d'humidité au sol est opérationnel !");
+    }
+        if (!gravity_sensor.Setup(sensorPin3)) {
+        Serial.println("Le capteur 3 d'humidité au sol n'a pas été détecté.");
+        while(1);
+    } else {
+        Serial.println("Le capteur 3 d'humidité au sol est opérationnel !");
+    }
 //  WiFi.begin(ssid,password);  // Initialisation avec WiFi.begin / ssid et password
 //  Serial.print("Attente de connexion ...");  // Message d'attente de connexion
 //  while(WiFi.status() != WL_CONNECTED)  // Test connexion
@@ -113,7 +125,7 @@ else {Serial.println("**********");
 delay(50);}
 bouton_pasappui = etatbouton;}
 
-//int h = sensorConvert1;
+//int h = moyenne;
 
 
 //if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
