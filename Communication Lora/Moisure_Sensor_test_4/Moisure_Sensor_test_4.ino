@@ -122,22 +122,6 @@ Serial.println("% d'humidité.");
 if (moyenne < 50) {digitalWrite(PinLed,HIGH);}
 else {digitalWrite(PinLed,LOW);}
 
-delay(50);}
-else {Serial.println("**********");
-delay(50);}
-bouton_pasappui = etatbouton;}
-
-uint16_t value1 = analogRead(sensorPin1);
-float sensor1Convert1 = value1 / a;
-float sensor1Convert2 = b - sensor1Convert1;
-uint16_t value2 = analogRead(sensorPin2);
-float sensor2Convert1 = value2 / a;
-float sensor2Convert2 = b - sensor2Convert1;
-uint16_t value3 = analogRead(sensorPin3);
-float sensor3Convert1 = value3 / a;
-float sensor3Convert2 = b - sensor3Convert1;
-float somme = sensor1Convert1 + sensor2Convert1 + sensor3Convert1;
-float moyenne = somme / g;
 int h = moyenne;
 
 
@@ -173,5 +157,10 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
       USE_SERIAL.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
     }
 
-    http.end();    }
+    http.end();}
+
+delay(50);}
+else {Serial.println("**********");
+delay(50);}
+bouton_pasappui = etatbouton;}
 }
