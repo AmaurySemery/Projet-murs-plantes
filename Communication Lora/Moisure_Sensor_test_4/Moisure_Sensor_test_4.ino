@@ -99,7 +99,7 @@ float sensor2Convert2 = b - sensor2Convert1;
 uint16_t value3 = analogRead(sensorPin3);
 float sensor3Convert1 = value3 / a;
 float sensor3Convert2 = b - sensor3Convert1;
-float somme = sensor1Convert2 + sensor2Convert2 + sensor3Convert2;
+float somme = sensor1Convert1 + sensor2Convert1 + sensor3Convert1;
 float moyenne = somme / g;
 
 Serial.printf("Valeur de l'entrée analogique du capteur 1 : %d\n", value1);
