@@ -90,6 +90,7 @@ float sensor3Convert = value3 / a;
 float somme = sensor1Convert + sensor2Convert + sensor3Convert;
 float moyenne = somme / g;
 
+
 // Conversion des données au format Json
 
 Serial.print("{\"sensor1\":");
@@ -98,10 +99,12 @@ Serial.print(",\"sensor2\":");
 Serial.print(sensor2Convert);
 Serial.print(",\"sensor3\":");
 Serial.print(sensor3Convert);
-Serial.print(",\"maximum\":");
-Serial.print(maximum());
 Serial.print(",\"minimum\":");
 Serial.print(minimum());
+Serial.print(",\"maximum\":");
+Serial.print(maximum());
+Serial.print(",\"alerte\":");
+Serial.print(alerte());
 Serial.print(",\"moyenne\":");
 Serial.print(moyenne);
 Serial.println("}");
@@ -176,3 +179,9 @@ if(sensor2Convert<sensor1Convert and sensor2Convert<sensor3Convert){
   return(sensor2Convert);}
 else{
   return(sensor3Convert);}}
+
+int alerte(){
+if (maximum()-minimum() >= 10){
+  return(1);}
+else{
+  return(0);}}
