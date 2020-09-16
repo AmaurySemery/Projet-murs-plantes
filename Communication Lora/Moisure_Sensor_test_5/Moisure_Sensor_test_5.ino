@@ -82,13 +82,13 @@ void loop() {
 //if (etatbouton != bouton_pasappui){
 //if (etatbouton == LOW) {
 uint16_t value1 = analogRead(sensorPin1);
-float sensor1Convert = value1 / a;
+int sensor1Convert = value1 / a;
 uint16_t value2 = analogRead(sensorPin2);
-float sensor2Convert = value2 / a;
+int sensor2Convert = value2 / a;
 uint16_t value3 = analogRead(sensorPin3);
-float sensor3Convert = value3 / a;
-float somme = sensor1Convert + sensor2Convert + sensor3Convert;
-float moyenne = somme / g;
+int sensor3Convert = value3 / a;
+int somme = sensor1Convert + sensor2Convert + sensor3Convert;
+int moyenne = somme / g;
 
 
 // Conversion des données au format Json
