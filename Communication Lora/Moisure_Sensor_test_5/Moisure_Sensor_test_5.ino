@@ -41,9 +41,9 @@ void setup() {
 //  pinMode(buttonPin, INPUT_PULLUP);  
 //  pinMode(PinLed,OUTPUT);
   Serial.begin(115200);
-Serial.println("Bienvenue sur le programme Moisture Sensor !");
-Serial.println("**********");
-Serial.println("Avant de commencer, nous allons procéder à une série de tests.");
+//Serial.println("Bienvenue sur le programme Moisture Sensor !");
+//Serial.println("**********");
+//Serial.println("Avant de commencer, nous allons procéder à une série de tests.");
     if (!gravity_sensor.Setup(sensorPin1)) {
         Serial.println("Le capteur 1 d'humidité au sol n'a pas été détecté.");
         while(1);
