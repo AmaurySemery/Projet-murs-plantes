@@ -100,6 +100,8 @@ Serial.print(",\"sensor3\":");
 Serial.print(sensor3Convert);
 Serial.print(",\"maximum\":");
 Serial.print(maximum());
+Serial.print(",\"minimum\":");
+Serial.print(minimum());
 Serial.print(",\"moyenne\":");
 Serial.print(moyenne);
 Serial.println("}");
