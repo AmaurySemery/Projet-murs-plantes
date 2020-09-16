@@ -89,6 +89,19 @@ uint16_t value3 = analogRead(sensorPin3);
 float sensor3Convert = value3 / a;
 float somme = sensor1Convert + sensor2Convert + sensor3Convert;
 float moyenne = somme / g;
+int index_min, index_max;
+float tableau[3] = {sensor1Convert, sensor2Convert, sensor3Convert};
+
+for (int i = 1; i < 100; i++)
+  {
+    if (tableau[i] > tableau[i-1]) { index_max = i; }
+    if (tableau[i] < tableau[i-1]) { index_min = i; }
+  }
+
+  Serial.print("Valeur mini : ");
+  Serial.println(tableau[index_min]);
+  Serial.print("Valeur maxi : ");
+  Serial.println(tableau[index_max]);
 
 // Conversion des données au format Json
 
@@ -138,7 +151,7 @@ Serial.println("}");
 //    }
 
 //    http.end();
-    delay(5000);}
+    delay(10000);}
 
 
 //else {Serial.println("**********");
