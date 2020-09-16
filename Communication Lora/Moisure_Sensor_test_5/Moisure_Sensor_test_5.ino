@@ -89,10 +89,19 @@ uint16_t value3 = analogRead(sensorPin3);
 float sensor3Convert = value3 / a;
 float somme = sensor1Convert + sensor2Convert + sensor3Convert;
 float moyenne = somme / g;
-max(sensor1Convert,sensor2Convert,sensor3Convert) = max(max(sensor1Convert,sensor2Convert), sensor3Convert) = max(sensor1Convert, max(sensor2Convert,sensor3Convert)); 
 
-  Serial.print("Valeur max : ");
-  Serial.println(max(sensor1Convert,sensor2Convert,sensor3Convert));
+if(sensor1Convert>sensor2Convert and sensor1Convert>sensor3Convert){
+  Serial.print("Le capteur 1 a la valeur max avec : ");
+  Serial.println(sensor1Convert);}
+
+if(sensor2Convert>sensor1Convert and sensor2Convert>sensor3Convert){
+  Serial.print("Le capteur 2 a la valeur max avec : ");
+  Serial.println(sensor2Convert);}
+
+if(sensor3Convert>sensor1Convert and sensor3Convert>sensor2Convert){
+  Serial.print("Le capteur 3 a la valeur max avec : ");
+  Serial.println(sensor3Convert);}
+
 
 // Conversion des données au format Json
 
