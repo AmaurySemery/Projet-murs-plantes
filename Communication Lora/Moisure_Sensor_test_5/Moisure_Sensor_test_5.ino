@@ -160,3 +160,17 @@ if(sensor2Convert>sensor1Convert and sensor2Convert>sensor3Convert){
   return(sensor2Convert);}
 else{
   return(sensor3Convert);}}
+
+int minimum(){
+uint16_t value1 = analogRead(sensorPin1);
+float sensor1Convert = value1 / a;
+uint16_t value2 = analogRead(sensorPin2);
+float sensor2Convert = value2 / a;
+uint16_t value3 = analogRead(sensorPin3);
+float sensor3Convert = value3 / a;
+if(sensor1Convert<sensor2Convert and sensor1Convert<sensor3Convert){
+  return(sensor1Convert);}
+if(sensor2Convert<sensor1Convert and sensor2Convert<sensor3Convert){
+  return(sensor2Convert);}
+else{
+  return(sensor3Convert);}}
