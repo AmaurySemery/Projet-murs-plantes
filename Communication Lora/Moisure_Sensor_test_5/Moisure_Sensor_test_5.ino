@@ -90,19 +90,6 @@ float sensor3Convert = value3 / a;
 float somme = sensor1Convert + sensor2Convert + sensor3Convert;
 float moyenne = somme / g;
 
-if(sensor1Convert>sensor2Convert and sensor1Convert>sensor3Convert){
-  Serial.print("Le capteur 1 a la valeur max avec : ");
-  Serial.println(sensor1Convert);}
-
-if(sensor2Convert>sensor1Convert and sensor2Convert>sensor3Convert){
-  Serial.print("Le capteur 2 a la valeur max avec : ");
-  Serial.println(sensor2Convert);}
-
-if(sensor3Convert>sensor1Convert and sensor3Convert>sensor2Convert){
-  Serial.print("Le capteur 3 a la valeur max avec : ");
-  Serial.println(sensor3Convert);}
-
-
 // Conversion des données au format Json
 
 Serial.print("{\"sensor1\":");
@@ -111,6 +98,8 @@ Serial.print(",\"sensor2\":");
 Serial.print(sensor2Convert);
 Serial.print(",\"sensor3\":");
 Serial.print(sensor3Convert);
+Serial.print(",\"maximum\":");
+Serial.print(maximum());
 Serial.print(",\"moyenne\":");
 Serial.print(moyenne);
 Serial.println("}");
@@ -157,3 +146,17 @@ Serial.println("}");
 //else {Serial.println("**********");
 //delay(5000);}
 //bouton_pasappui = etatbouton;}
+
+int maximum(){
+uint16_t value1 = analogRead(sensorPin1);
+float sensor1Convert = value1 / a;
+uint16_t value2 = analogRead(sensorPin2);
+float sensor2Convert = value2 / a;
+uint16_t value3 = analogRead(sensorPin3);
+float sensor3Convert = value3 / a;
+if(sensor1Convert>sensor2Convert and sensor1Convert>sensor3Convert){
+  return(sensor1Convert);}
+if(sensor2Convert>sensor1Convert and sensor2Convert>sensor3Convert){
+  return(sensor2Convert);}
+else{
+  return(sensor3Convert);}}
