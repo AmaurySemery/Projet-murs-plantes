@@ -143,7 +143,7 @@ Serial.print(moyenne);
 //    }
 
 //    http.end();
-    delay(50000);}
+    delay(10000);}
 
 
 //else {Serial.println("**********");
