@@ -105,7 +105,7 @@ Serial.print(maximum());
 Serial.print(",");
 Serial.print(alerte());
 Serial.print(",");
-Serial.print(moyenne);
+Serial.println(moyenne);
 
 //int h = moyenne;
 
