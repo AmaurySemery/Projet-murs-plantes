@@ -145,7 +145,7 @@ Serial.println("}");
 //    }
 
 //    http.end();
-    delay(10000);}
+    delay(50000);}
 
 
 //else {Serial.println("**********");
