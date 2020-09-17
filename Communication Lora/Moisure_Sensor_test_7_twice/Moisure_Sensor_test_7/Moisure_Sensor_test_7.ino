@@ -9,8 +9,6 @@
 
 GravitySoilMoistureSensor gravity_sensor;
 WiFiMulti wifiMulti;
-HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre de lancer des requêtes en HTTP
-
 const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
 const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
@@ -90,6 +88,9 @@ int al = alerte();
 int moy = moyenne;
 
 if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
+
+HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre de lancer des requêtes en HTTP
+
     USE_SERIAL.println("[DEBG] " + String(sen1)+ String(sen2) + String(sen3) + String(mi) + String(ma) + String(al) + String(moy));
 
     USE_SERIAL.print("[HTTP] begin...\n");
@@ -120,8 +121,8 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
     } else { // sinon, il dit que ça ne fonctionne pas
      USE_SERIAL.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
     }
-    }
-    http.end();
+    http.end();}
+    
     delay(10000);}
 
 int maximum(){
