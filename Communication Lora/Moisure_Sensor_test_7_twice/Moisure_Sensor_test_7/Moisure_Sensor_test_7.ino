@@ -67,13 +67,13 @@ int moyenne = somme / g;
 
 // Affichage des données sur le moniteur
 
-Serial.print("Sensor 1 :");
+Serial.print("Sensor 1 : ");
 Serial.print(sensor1Convert);
 Serial.println(" %");
-Serial.print("Sensor 2 :");
+Serial.print("Sensor 2 : ");
 Serial.print(sensor2Convert);
 Serial.println(" %");
-Serial.print("Sensor 3 :");
+Serial.print("Sensor 3 : ");
 Serial.print(sensor3Convert);
 Serial.println(" %");
 Serial.println("*****");
@@ -92,7 +92,7 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
     USE_SERIAL.print("[HTTP] begin...\n");
     // configure traged server and url
     //http.begin("https://www.howsmyssl.com/a/check", ca); //HTTPS
-    http.begin("http://node03.popschool-willems.fr/#flow/sen1/" + String(sen1)+"/sen2"+ String(sen2)+"/sen3/"+ String(sen3)+"/mi/"+ String(mi)+"/ma"+ String(ma)+"/al"+ String(al)+"/moy/"+ String(moy)); //HTTP => démarre connexion vers le serveur mentionné
+    http.begin("http://node03.popschool-willems.fr/#flow/sen1/" + String(sen1)+"/sen2/"+ String(sen2)+"/sen3/"+ String(sen3)+"/mi/"+ String(mi)+"/ma/"+ String(ma)+"/al/"+ String(al)+"/moy/"+ String(moy)); //HTTP => démarre connexion vers le serveur mentionné
 
     USE_SERIAL.print("[HTTP] GET...\n");
     // start connection and send HTTP header
