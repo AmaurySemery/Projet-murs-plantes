@@ -41,6 +41,8 @@ void setup() {
     } else {
         Serial.println("Le capteur 3 d'humidité au sol est opérationnel !");
     }
+
+Serial.println("Le programme peut commencer !");
     
     USE_SERIAL.begin(115200);
 
@@ -91,12 +93,12 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
 
 HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre de lancer des requêtes en HTTP
 
-    USE_SERIAL.println("[DEBG] " + String(sen1)+ String(sen2) + String(sen3) + String(mi) + String(ma) + String(al) + String(moy));
+    USE_SERIAL.println("[DEBG] " + String(sen1)+ String(sen2)+ String(sen3) + String(mi) + String(ma)+ String(al) + String(moy));
 
     USE_SERIAL.print("[HTTP] begin...\n");
     // configure traged server and url
     //http.begin("https://www.howsmyssl.com/a/check", ca); //HTTPS
-    http.begin("http://node03.popschool-willems.fr/sen1/" + String(sen1)+"/sen2/"+ String(sen2)+"/sen3/"+ String(sen3)+"/mi/"+ String(mi)+"/ma/"+ String(ma)+"/al/"+ String(al)+"/moy"+ String(moy)); //HTTP => démarre connexion vers le serveur mentionné
+    http.begin("http://node03.popschool-willems.fr/sen1/sen2/sen3/mi/ma/al/moy"); //HTTP => démarre connexion vers le serveur mentionné
 
     USE_SERIAL.print("[HTTP] GET...\n");
     // start connection and send HTTP header
