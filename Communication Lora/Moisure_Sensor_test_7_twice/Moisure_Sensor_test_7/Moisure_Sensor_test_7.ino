@@ -118,10 +118,10 @@ int moy = moyenne;
 //if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
 //    USE_SERIAL.println("[DEBG] " + String(h));
 
-//    USE_SERIAL.print("[HTTP] begin...\n");
+    USE_SERIAL.print("[HTTP] begin...\n");
     // configure traged server and url
     //http.begin("https://www.howsmyssl.com/a/check", ca); //HTTPS
-//    http.begin("http://node03.popschool-willems.fr/#flow/sen1/" + String(sen1)+"/sen2"+ String(sen2)+"/sen3/"+ String(sen3)+"/mi/"+ String(mi)+"/ma"+ String(ma)+"/al"+ String(al)+"/moy/"+ String(moy)); //HTTP => démarre connexion vers le serveur mentionné
+    http.begin("http://node03.popschool-willems.fr/#flow/sen1/" + String(sen1)+"/sen2"+ String(sen2)+"/sen3/"+ String(sen3)+"/mi/"+ String(mi)+"/ma"+ String(ma)+"/al"+ String(al)+"/moy/"+ String(moy)); //HTTP => démarre connexion vers le serveur mentionné
 
 //    USE_SERIAL.print("[HTTP] GET...\n");
     // start connection and send HTTP header
