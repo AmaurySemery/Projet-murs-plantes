@@ -70,16 +70,21 @@ int moyenne = somme / g;
 
 // Affichage des données sur le moniteur
 
-Serial.print("Sensor 1 : ");
+Serial.print("{\"sensor1\":");
 Serial.print(sensor1Convert);
-Serial.println(" %");
-Serial.print("Sensor 2 : ");
+Serial.print(",\"sensor2\":");
 Serial.print(sensor2Convert);
-Serial.println(" %");
-Serial.print("Sensor 3 : ");
+Serial.print(",\"sensor3\":");
 Serial.print(sensor3Convert);
-Serial.println(" %");
-Serial.println("*****");
+Serial.print(",\"minimum\":");
+Serial.print(minimum());
+Serial.print(",\"maximum\":");
+Serial.print(maximum());
+Serial.print(",\"alerte\":");
+Serial.print(alerte());
+Serial.print(",\"moyenne\":");
+Serial.print(moyenne);
+Serial.println("}");
 
 int sen1 = sensor1Convert;
 int sen2 = sensor2Convert;
@@ -98,7 +103,7 @@ HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre
     USE_SERIAL.print("[HTTP] begin...\n");
     // configure traged server and url
     //http.begin("https://www.howsmyssl.com/a/check", ca); //HTTPS
-    http.begin("http://node03.popschool-willems.fr/sen1/sen2/sen3/mi/ma/al/moy"); //HTTP => démarre connexion vers le serveur mentionné
+    http.begin("http://node03.popschool-willems.fr:1880/sen1/sen2/sen3/mi/ma/al/moy"); //HTTP => démarre connexion vers le serveur mentionné
 
     USE_SERIAL.print("[HTTP] GET...\n");
     // start connection and send HTTP header
@@ -113,12 +118,8 @@ HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre
       if (httpCode == HTTP_CODE_OK) { // Si ça s'est bien passé, il refait une variable où il met le getString puis affiche à l'écran => on a reçu un code 200
         String payload = http.getString();
         USE_SERIAL.println(payload);
-        if (payload == "ON") {
-        Serial.println("Serveur trouvé !");
-        }
-        if (payload == "OFF") {
-        Serial.println("Le serveur n'a pas été trouvé.");
-        }
+        if (payload == "ON") {digitalWrite(4, HIGH);}
+        if (payload == "OFF") {digitalWrite(4, LOW);}
       }
     } else { // sinon, il dit que ça ne fonctionne pas
      USE_SERIAL.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
