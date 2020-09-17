@@ -103,7 +103,7 @@ HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre
     USE_SERIAL.print("[HTTP] begin...\n");
     // configure traged server and url
     //http.begin("https://www.howsmyssl.com/a/check", ca); //HTTPS
-    http.begin("http://192.168.1.200:1883/"); //HTTP => démarre connexion vers le serveur mentionné
+    http.begin("http://node03.popschool-willems.fr:1880/sen1",sen1); //HTTP => démarre connexion vers le serveur mentionné
 
     USE_SERIAL.print("[HTTP] GET...\n");
     // start connection and send HTTP header
