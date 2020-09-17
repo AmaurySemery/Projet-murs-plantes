@@ -43,13 +43,18 @@ void setup() {
     } else {
         Serial.println("Le capteur 3 d'humidité au sol est opérationnel !");
     }
-WiFi.begin(ssid,password);  // Initialisation avec WiFi.begin / ssid et password
-Serial.print("Attente de connexion ...");  // Message d'attente de connexion
-while(WiFi.status() != WL_CONNECTED)  // Test connexion
-{Serial.print(".");  // Affiche des points .... tant que connexion n'est pas OK
-delay(1000);}
-Serial.println("\n");
-Serial.println("Connexion établie !");  // Affiche connexion établie
+    
+    USE_SERIAL.begin(115200);
+
+    USE_SERIAL.println();
+    USE_SERIAL.println();
+    USE_SERIAL.println();
+
+    for(uint8_t t = 4; t > 0; t--) {
+        USE_SERIAL.printf("[SETUP] WAIT %d...\n", t);
+        USE_SERIAL.flush();
+        delay(1000);}
+wifiMulti.addAP(ssid,password);
 }
 
 
