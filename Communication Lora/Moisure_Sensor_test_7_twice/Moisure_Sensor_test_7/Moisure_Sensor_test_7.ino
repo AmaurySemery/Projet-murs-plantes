@@ -76,6 +76,7 @@ Serial.println(" %");
 Serial.print("Sensor 3 :");
 Serial.print(sensor3Convert);
 Serial.println(" %");
+Serial.println("*****");
 
 int sen1 = sensor1Convert;
 int sen2 = sensor2Convert;
