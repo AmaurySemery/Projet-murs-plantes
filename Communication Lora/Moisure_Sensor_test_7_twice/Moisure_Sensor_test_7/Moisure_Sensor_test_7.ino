@@ -107,7 +107,13 @@ Serial.print(alerte());
 Serial.print(",");
 Serial.println(moyenne);
 
-//int h = moyenne;
+int sen1 = sensor1Convert;
+int sen2 = sensor2Convert;
+int sen3 = sensor3Convert;
+int mi = minimum();
+int ma = maximum();
+int al = alerte();
+int moy = moyenne;
 
 //if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
 //    USE_SERIAL.println("[DEBG] " + String(h));
@@ -115,7 +121,7 @@ Serial.println(moyenne);
 //    USE_SERIAL.print("[HTTP] begin...\n");
     // configure traged server and url
     //http.begin("https://www.howsmyssl.com/a/check", ca); //HTTPS
-//    http.begin("https://127.0.0.1:1883/h/" + String(h)); //HTTP => démarre connexion vers le serveur mentionné
+//    http.begin("http://node03.popschool-willems.fr/#flow/sen1/" + String(sen1)+"/sen2"+ String(sen2)+"/sen3/"+ String(sen3)+"/mi/"+ String(mi)+"/ma"+ String(ma)+"/al"+ String(al)+"/moy/"+ String(moy)); //HTTP => démarre connexion vers le serveur mentionné
 
 //    USE_SERIAL.print("[HTTP] GET...\n");
     // start connection and send HTTP header
