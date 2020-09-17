@@ -50,8 +50,6 @@ while(WiFi.status() != WL_CONNECTED)  // Test connexion
 delay(1000);}
 Serial.println("\n");
 Serial.println("Connexion établie !");  // Affiche connexion établie
-Serial.println("Si les tests sont bons, on peut commencer le programme !");
-Serial.println("**********");
 }
 
 
@@ -92,7 +90,7 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
     USE_SERIAL.print("[HTTP] begin...\n");
     // configure traged server and url
     //http.begin("https://www.howsmyssl.com/a/check", ca); //HTTPS
-    http.begin("http://node03.popschool-willems.fr/sen1/" + String(sen1)+"/sen2/"+ String(sen2)+"/sen3/"+ String(sen3)+"/mi/"+ String(mi)+"/ma/"+ String(ma)+"/al/"+ String(al)+"/moy/"+ String(moy)); //HTTP => démarre connexion vers le serveur mentionné
+    http.begin("http://node03.popschool-willems.fr/sen1/" + String(sen1)+"/sen2/"+ String(sen2)+"/sen3/"+ String(sen3)+"/mi/"+ String(mi)+"/ma/"+ String(ma)+"/al/"+ String(al)+"/moy"+ String(moy)); //HTTP => démarre connexion vers le serveur mentionné
 
     USE_SERIAL.print("[HTTP] GET...\n");
     // start connection and send HTTP header
