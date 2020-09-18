@@ -132,7 +132,7 @@ int ma = maximum();
 int al = alerte();
 int moy = moyenne;
 
-if (al = 1) { LCD.print("Erreur :");
+if (al = 1) { LCD.print("Anomalie :");
 LCD.setCursor(0,1);
 LCD.print("Mesures capteurs");
 delay(3000);
