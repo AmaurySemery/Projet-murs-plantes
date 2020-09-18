@@ -7,7 +7,7 @@
 
 #define USE_SERIAL Serial
 
-LiquidCrystal monEcran (12,11,5,4,3,2); 
+LiquidCrystal monEcran (4,23,25,14,13,15); 
 
 GravitySoilMoistureSensor gravity_sensor;
 WiFiMulti wifiMulti;
