@@ -31,7 +31,8 @@ void setup() {
         LCD.print("Attention !");
         LCD.setCursor(0,1);
         LCD.print("Erreur capteur 1");
-        while(1);
+        delay(3000);
+        LCD.clear();
     } else {
         Serial.println("Le capteur 1 d'humidité au sol est opérationnel !");
         LCD.print("Capteur 1 :");
@@ -46,7 +47,8 @@ void setup() {
         LCD.print("Attention !");
         LCD.setCursor(0,1);
         LCD.print("Erreur capteur 2");
-        while(1);
+        delay(3000);
+        LCD.clear();
     } else {
         Serial.println("Le capteur 2 d'humidité au sol est opérationnel !");
         LCD.print("Capteur 2 :");
@@ -61,7 +63,8 @@ void setup() {
         LCD.print("Attention !");
         LCD.setCursor(0,1);
         LCD.print("Erreur capteur 3");
-        while(1);
+        delay(3000);
+        LCD.clear();
     } else {
         Serial.println("Le capteur 3 d'humidité au sol est opérationnel !");
         LCD.print("Capteur 3 :");
