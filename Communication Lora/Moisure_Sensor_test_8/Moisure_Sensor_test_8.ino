@@ -36,7 +36,7 @@ void setup() {
         Serial.println("Le capteur 1 d'humidité au sol est opérationnel !");
         LCD.print("Capteur 1 :");
         LCD.setCursor(0,1);
-        LCD.print("Opérationnel");
+        LCD.print("OK !");
         delay(3000);
         LCD.clear();
     }
@@ -51,7 +51,7 @@ void setup() {
         Serial.println("Le capteur 2 d'humidité au sol est opérationnel !");
         LCD.print("Capteur 2 :");
         LCD.setCursor(0,1);
-        LCD.print("Opérationnel");
+        LCD.print("OK !");
         delay(3000);
         LCD.clear();
     }
@@ -66,13 +66,11 @@ void setup() {
         Serial.println("Le capteur 3 d'humidité au sol est opérationnel !");
         LCD.print("Capteur 3 :");
         LCD.setCursor(0,1);
-        LCD.print("Opérationnel");
+        LCD.print("OK !");
         delay(3000);
         LCD.clear();
     }
     delay(1000);
-
-Serial.println("Le programme peut commencer !");
     
     USE_SERIAL.begin(115200);
 
@@ -85,6 +83,11 @@ Serial.println("Le programme peut commencer !");
         USE_SERIAL.flush();
         delay(1000);}
 wifiMulti.addAP(ssid,password);
+
+LCD.print("Lancement du programme !");
+delay(2000);
+LCD.clear();
+
 }
 
 
@@ -124,6 +127,17 @@ int ma = maximum();
 int al = alerte();
 int moy = moyenne;
 
+if (al = 1) { LCD.print("Erreur :");
+LCD.setCursor(0,1);
+LCD.print("Mesures capteurs");
+delay(1000);
+LCD.clear();
+LCD.print(mi);
+LCD.setCursor(0,1);
+LCD.print(ma);
+delay(3000);
+LCD.clear();}
+
 if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
 
 HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre de lancer des requêtes en HTTP
@@ -153,10 +167,14 @@ HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre
       }
     } else { // sinon, il dit que ça ne fonctionne pas
      USE_SERIAL.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
+     LCD.print("Erreur :");
+     LCD.setCursor(0,1);
+     LCD.print("Requete HTTP");
     }
     http.end();}
     
-    delay(10000);}
+    delay(10000);
+    LCD.clear();}
 
 int maximum(){
 uint16_t value1 = analogRead(sensorPin1);
