@@ -7,6 +7,8 @@
 
 #define USE_SERIAL Serial
 
+LiquidCrystal monEcran (12,11,5,4,3,2); 
+
 GravitySoilMoistureSensor gravity_sensor;
 WiFiMulti wifiMulti;
 const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
