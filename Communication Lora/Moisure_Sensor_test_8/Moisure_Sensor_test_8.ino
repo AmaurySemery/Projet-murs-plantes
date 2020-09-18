@@ -25,6 +25,11 @@ float g = 3;
 
 void setup() {
   Serial.begin(115200);
+  monEcran.begin(16,2) ;
+  monEcran.clear(); // on efface l'écran   
+  monEcran.print("salut,"); // on écrit Bonjour   
+  monEcran.setCursor(0,1); //on passe à la ligne suivante   
+  monEcran.print("MIFOBIO"); // on finit d'écrire 
     if (!gravity_sensor.Setup(sensorPin1)) {
         Serial.println("Le capteur 1 d'humidité au sol n'a pas été détecté.");
         while(1);
