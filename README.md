@@ -25,6 +25,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [Branchement et utilisation d’un écran LCD](<http://rtmfm.cnrs.fr/IMG/pdf/fiche_6_branchement_et_utilisation_d_un_ecran_LCD.pdf>)
 * [Les capteurs d'humidité](<http://www.wimesure.fr/cbx/_ftp/hb303f.pdf>)
 * [Quel ESP32 choisir pour développer des objets connectés DIY en 2020](<https://projetsdiy.fr/quelle-carte-esp32-choisir-developper-projets-diy-objets-connectes/>)
 * [Tester la couverture du réseau Lorawan](<https://spot.objenious.com/eligibility-public>)
