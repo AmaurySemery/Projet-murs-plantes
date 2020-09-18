@@ -25,6 +25,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [Branchement et utilisation d’un écran LCD](<http://rtmfm.cnrs.fr/IMG/pdf/fiche_6_branchement_et_utilisation_d_un_ecran_LCD.pdf>)
 * [Les capteurs d'humidité](<http://www.wimesure.fr/cbx/_ftp/hb303f.pdf>)
 * [Quel ESP32 choisir pour développer des objets connectés DIY en 2020](<https://projetsdiy.fr/quelle-carte-esp32-choisir-developper-projets-diy-objets-connectes/>)
 * [Tester la couverture du réseau Lorawan](<https://spot.objenious.com/eligibility-public>)
@@ -110,6 +111,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Piloter son Arduino avec son navigateur web et Node.js](<https://www.locoduino.org/spip.php?article216>)
 * [Arrosage automatique 16 sorti](<https://ouiaremakers.com/posts/tutoriel-diy-arrosage-automatique-16-sorti-9abb82e9-91d4-4921-b6bb-f3ff03f7ddb1>)
 * [Arduino LCD 16x2 lignes parallèles](<http://wiki.funlab.fr/index.php/Arduino_LCD_16x2_lignes_parall%C3%A8les>)
 * [Manuel d'utilisation de l’afficheur I2C LCD 16x2](<https://www.gotronic.fr/pj2-sbc-lcd16x2-fr-1441.pdf>)
