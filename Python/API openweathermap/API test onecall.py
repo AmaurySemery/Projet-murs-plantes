@@ -19,10 +19,11 @@ data = json.loads(response.text)
 
 json.dumps(data, indent=4)
 
-with open('/home/popschool/Documents/GitHub/solioti/API openweathermap/Données/data_file.json', 'w') as f:
+with open('/home/popschool/Documents/GitHub/solioti/Python/API openweathermap/Données/data_file.json', 'w') as f:
     f.write(json.dumps(data, indent=4))
 
 with open('data_file.json', 'r') as f:
     datas = json.load(f)
+    print(datas)
     
 #pprint(datas)
