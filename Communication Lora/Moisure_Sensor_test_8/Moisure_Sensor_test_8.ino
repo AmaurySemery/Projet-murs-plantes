@@ -87,7 +87,9 @@ void setup() {
         delay(1000);}
 wifiMulti.addAP(ssid,password);
 
-LCD.print("Lancement du programme !");
+LCD.print("Lancement du");
+LCD.setCursor(0,1);
+LCD.print("programme !");
 delay(2000);
 LCD.clear();
 
@@ -135,9 +137,9 @@ LCD.setCursor(0,1);
 LCD.print("Mesures capteurs");
 delay(1000);
 LCD.clear();
-LCD.print(mi);
+LCD.print("Val min : " + mi);
 LCD.setCursor(0,1);
-LCD.print(ma);
+LCD.print("Val max : " + ma);
 delay(3000);
 LCD.clear();}
 
