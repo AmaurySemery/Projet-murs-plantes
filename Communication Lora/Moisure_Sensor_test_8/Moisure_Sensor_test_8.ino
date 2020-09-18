@@ -90,7 +90,7 @@ wifiMulti.addAP(ssid,password);
 LCD.print("Lancement du");
 LCD.setCursor(0,1);
 LCD.print("programme !");
-delay(2000);
+delay(3000);
 LCD.clear();
 
 }
@@ -135,11 +135,13 @@ int moy = moyenne;
 if (al = 1) { LCD.print("Erreur :");
 LCD.setCursor(0,1);
 LCD.print("Mesures capteurs");
-delay(1000);
+delay(3000);
 LCD.clear();
-LCD.print("Val min : " + mi);
+LCD.print("Val min : ");
+LCD.print(mi);
 LCD.setCursor(0,1);
-LCD.print("Val max : " + ma);
+LCD.print("Val max : ");
+LCD.print(ma);
 delay(3000);
 LCD.clear();}
 
