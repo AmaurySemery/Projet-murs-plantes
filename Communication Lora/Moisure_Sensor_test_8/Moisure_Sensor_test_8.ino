@@ -7,7 +7,7 @@
 
 #define USE_SERIAL Serial
 
-LiquidCrystal monEcran (4,23,25,14,13,15); 
+LiquidCrystal LCD (4,23,25,14,13,15); 
 
 GravitySoilMoistureSensor gravity_sensor;
 WiFiMulti wifiMulti;
@@ -25,29 +25,52 @@ float g = 3;
 
 void setup() {
   Serial.begin(115200);
-  monEcran.begin(16,2) ;
-  monEcran.clear(); // on efface l'écran   
-  monEcran.print("salut,"); // on écrit Bonjour   
-  monEcran.setCursor(0,1); //on passe à la ligne suivante   
-  monEcran.print("MIFOBIO"); // on finit d'écrire 
+  LCD.begin(16,2) ;
     if (!gravity_sensor.Setup(sensorPin1)) {
         Serial.println("Le capteur 1 d'humidité au sol n'a pas été détecté.");
+        LCD.print("Attention !");
+        LCD.setCursor(0,1);
+        LCD.print("Erreur capteur 1");
         while(1);
     } else {
         Serial.println("Le capteur 1 d'humidité au sol est opérationnel !");
+        LCD.print("Capteur 1 :");
+        LCD.setCursor(0,1);
+        LCD.print("Opérationnel");
+        delay(3000);
+        LCD.clear();
     }
+    delay(1000);
         if (!gravity_sensor.Setup(sensorPin2)) {
         Serial.println("Le capteur 2 d'humidité au sol n'a pas été détecté.");
+        LCD.print("Attention !");
+        LCD.setCursor(0,1);
+        LCD.print("Erreur capteur 2");
         while(1);
     } else {
         Serial.println("Le capteur 2 d'humidité au sol est opérationnel !");
+        LCD.print("Capteur 2 :");
+        LCD.setCursor(0,1);
+        LCD.print("Opérationnel");
+        delay(3000);
+        LCD.clear();
     }
+    delay(1000;)
         if (!gravity_sensor.Setup(sensorPin3)) {
         Serial.println("Le capteur 3 d'humidité au sol n'a pas été détecté.");
+        LCD.print("Attention !");
+        LCD.setCursor(0,1);
+        LCD.print("Erreur capteur 3");
         while(1);
     } else {
         Serial.println("Le capteur 3 d'humidité au sol est opérationnel !");
+        LCD.print("Capteur 3 :");
+        LCD.setCursor(0,1);
+        LCD.print("Opérationnel");
+        delay(3000);
+        LCD.clear();
     }
+    delay(1000);
 
 Serial.println("Le programme peut commencer !");
     
