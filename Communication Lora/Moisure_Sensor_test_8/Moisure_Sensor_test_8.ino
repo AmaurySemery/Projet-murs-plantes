@@ -55,7 +55,7 @@ void setup() {
         delay(3000);
         LCD.clear();
     }
-    delay(1000;)
+    delay(1000);
         if (!gravity_sensor.Setup(sensorPin3)) {
         Serial.println("Le capteur 3 d'humidité au sol n'a pas été détecté.");
         LCD.print("Attention !");
