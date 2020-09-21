@@ -14,6 +14,7 @@ Arrosage automatique des murs végétalisés
 * [Green Citizen](<http://www.greencityzen.fr/accueil/>)
 * [Urbasense](<https://www.urbasense.fr/fr/>)
 * [Powermoss](<https://www.powerofmoss.com/>)
+* [Vertuo | bocages urbains](<https://www.vertuo.city/bocage-urbain.html>)
 
 # Documentation programmation
 
