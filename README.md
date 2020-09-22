@@ -14,6 +14,7 @@ Arrosage automatique des murs végétalisés
 * [Green Citizen](<http://www.greencityzen.fr/accueil/>)
 * [Urbasense](<https://www.urbasense.fr/fr/>)
 * [Powermoss](<https://www.powerofmoss.com/>)
+* [Vertuo | bocages urbains](<https://www.vertuo.city/bocage-urbain.html>)
 
 # Documentation programmation
 
@@ -25,6 +26,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [A Dozen Ways to Measure Fluid Level and How They Work](<https://www.fierceelectronics.com/components/a-dozen-ways-to-measure-fluid-level-and-how-they-work>)
 * [Branchement et utilisation d’un écran LCD](<http://rtmfm.cnrs.fr/IMG/pdf/fiche_6_branchement_et_utilisation_d_un_ecran_LCD.pdf>)
 * [Les capteurs d'humidité](<http://www.wimesure.fr/cbx/_ftp/hb303f.pdf>)
 * [Quel ESP32 choisir pour développer des objets connectés DIY en 2020](<https://projetsdiy.fr/quelle-carte-esp32-choisir-developper-projets-diy-objets-connectes/>)
@@ -69,6 +71,19 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Liquid Level Control Using a Pressure Sensor](<https://www.nxp.com/docs/en/application-note/AN1516.pdf>)
+* [Water Level Monitoring](<http://www.nxp.com/docs/en/application-note/AN1950.pdf>)
+* [Compteur d'eau froide avec sortie impulsion (1 imp. / 1 litre)](<https://www.planete-domotique.com/compteur-d-eau-froide-avec-sortie-impulsion-1-imp-1-litre.html>)
+* [2 pièces débitmètre Ssensor eau carburant débitmètre compteur indicateur piscine 1-30L/Min G3/4 DN20](<https://fr.aliexpress.com/item/32808354426.html?spm=a2g0o.detail.1000023.12.1bb83102QQHruB>)
+* [2 pièces antirouille débitmètre d'eau capteur compteur indicateur débitmètre carburant piscine flotteur interrupteur Hall pour chauffe-eau G1/2 1-30L/min](<https://fr.aliexpress.com/item/32811291161.html?spm=a2g0o.detail.1000013.13.337e199856wn5d&gps-id=pcDetailBottomMoreThisSeller&scm=1007.13339.169870.0&scm_id=1007.13339.169870.0&scm-url=1007.13339.169870.0&pvid=94fb877f-c449-4934-b3c9-d3f988455682&_t=gps-id:pcDetailBottomMoreThisSeller,scm-url:1007.13339.169870.0,pvid:94fb877f-c449-4934-b3c9-d3f988455682,tpp_buckets:668%230%23131923%2314_668%23808%234094%23379_668%23888%233325%239_668%232846%238112%23513_668%232717%237560%23293_668%231000022185%231000066058%230_668%233468%2315609%23219>)
+* [2 pièces débitmètre d'eau débitmètre Hall capteur de débit indicateur compteur caudalimetro noir G1/2 0.5-25L/min 1.2MPa F = 6 * Q capteur de débit](<https://fr.aliexpress.com/item/32760787683.html?spm=a2g0o.detail.1000023.8.1bb83102QQHruB>)
+* [Affichage LCD numérique capteur de débit d'eau compteur débitmètre totamètre température temps record avec capteur de débit G1/2](<https://fr.aliexpress.com/item/32904873684.html?src=google&albch=shopping&acnt=631-313-3945&isdl=y&slnk=&plac=&mtctp=&albbt=Gploogle_7_shopping&aff_atform=google&aff_short_key=UneMJZVf&&albagn=888888&albcp=9867207063&albag=103142451827&trgt=800756789506&crea=fr32904873684&netw=u&device=c&albpg=800756789506&albpd=fr32904873684&gclid=EAIaIQobChMI7_Ov7On56wIVV4XVCh3frwmuEAQYAyABEgKT6_D_BwE&gclsrc=aw.ds>)
+* [Sortie d'impulsion de capteur de débit d'eau de cuivre de DN20 G3/4 1.75Mpa 2 ~ 45L / min débitmètre](<https://www.banggood.com/fr/DN20-G34-Copper-Water-Flow-Sensor-Pulse-Output-1_75Mpa-245Lmin-Flowmeter-p-1266296.html?gmcCountry=FR&currency=EUR&createTmp=1&utm_source=googleshopping&utm_medium=cpc_union&utm_content=frank&utm_campaign=frank-ssc-fr-css-all-0423-19bf-v2&ad_id=344815794167&gclid=EAIaIQobChMI7_Ov7On56wIVV4XVCh3frwmuEAQYBiABEgIHpvD_BwE&cur_warehouse=CN>)
+* [Détecteur de niveau automatique, interrupteur de flotteur résistant à haute température en acier inoxydable 304 capteur de niveau d'eau](<https://fr.aliexpress.com/item/33004754249.html?src=google&albch=shopping&acnt=631-313-3945&isdl=y&slnk=&plac=&mtctp=&albbt=Gploogle_7_shopping&aff_atform=google&aff_short_key=UneMJZVf&&albagn=888888&albcp=9867207063&albag=103142451827&trgt=800756789506&crea=fr33004754249&netw=u&device=c&albpg=800756789506&albpd=fr33004754249&gclid=EAIaIQobChMIm4LH3N756wIV1ZTVCh18EQtDEAQYAyABEgJCsfD_BwE&gclsrc=aw.ds>)
+* [Capteur de niveau, Cynergy3, Vertical](<https://fr.rs-online.com/web/p/capteurs-de-niveau/7800175?cm_mmc=FR-PLA-DS3A-_-google-_-PLA_FR_FR_Automatisme_et_Contr%C3%B4le_de_process_Whoop-_-(FR:Whoop!)+Capteurs+de+niveau-_-7800175&matchtype=&aud-828197004210:pla-563506511472&gclid=EAIaIQobChMIm4LH3N756wIV1ZTVCh18EQtDEAQYAiABEgIBH_D_BwE&gclsrc=aw.ds>)
+* [AF905 Sonde de niveau hydrostatique](<https://autosen.com/fr/Capteurs-Process/Capteurs-de-niveau/Sonde-de-niveau-hydrostatique-AF905?keyword=&device=c&network=g&gclid=EAIaIQobChMI2e3Zpd756wIVmeFRCh2pgwTlEAYYBiABEgJ_uvD_BwE>)
+* [Capteur à pression absolue, MPRLS0025PA00001A, CMS 12 broches 25kPa 3 V → 3,6 V Output](<https://fr.rs-online.com/web/p/capteurs-de-pression-absolue/1503955?cm_mmc=FR-PLA-DS3A-_-google-_-PLA_FR_FR_Semi-conducteurs_Whoop-_-(FR:Whoop!)+Capteurs+de+pression+absolue-_-1503955&matchtype=&aud-826607885227:pla-317081103014&gclid=EAIaIQobChMIzcXM1N356wIV8v3VCh1f8Ad6EAQYASABEgJXmvD_BwE&gclsrc=aw.ds>)
+* [Capteur du Capteur de Niveau du Transmetteur de Niveau d'Eau Submersible 0-5mH2O Câble de 6 m](<https://www.banggood.com/fr/Submersible-Water-Level-Transmitter-Level-Transducer-Sensor-0-5mH2O-6m-Cable-p-1146896.html?gmcCountry=FR&currency=EUR&createTmp=1&utm_source=googleshopping&utm_medium=cpc_bgs&utm_content=frank&utm_campaign=ssc-fr-all-0302&ad_id=335402343736&gclid=EAIaIQobChMIzcXM1N356wIV8v3VCh1f8Ad6EAQYAyABEgJvUPD_BwE&cur_warehouse=CN>)
 * [La Carte ESP32 ECO Power et sa Technologie](<https://www.radioshuttle.de/fr/esp32-eco-power-fr/carte-esp32-eco-power-et-sa-technologie/>)
 * [Pompe à eau Velleman VMA421 convient pour (cartes Arduino): Arduino 1 pc(s)](<https://www.conrad.fr/p/pompe-a-eau-velleman-vma421-convient-pour-cartes-arduino-arduino-1-pcs-2120229>)
 * [Pompe miniature PPMB00117](<https://www.gotronic.fr/art-pompe-miniature-ppmb00117-26643.htm>)
@@ -111,6 +126,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Suivre sa consommation d’eau : domotisation d’un compteur d’eau à l’aide d’un arduino](<http://www.connectingstuff.net/blog/suivre-consommation-eau-avec-un-arduino/>)
 * [Piloter son Arduino avec son navigateur web et Node.js](<https://www.locoduino.org/spip.php?article216>)
 * [Arrosage automatique 16 sorti](<https://ouiaremakers.com/posts/tutoriel-diy-arrosage-automatique-16-sorti-9abb82e9-91d4-4921-b6bb-f3ff03f7ddb1>)
 * [Arduino LCD 16x2 lignes parallèles](<http://wiki.funlab.fr/index.php/Arduino_LCD_16x2_lignes_parall%C3%A8les>)
