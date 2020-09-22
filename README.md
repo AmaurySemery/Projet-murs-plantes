@@ -71,6 +71,8 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Liquid Level Control Using a Pressure Sensor](<https://www.nxp.com/docs/en/application-note/AN1516.pdf>)
+* [Water Level Monitoring](<http://www.nxp.com/docs/en/application-note/AN1950.pdf>)
 * [Compteur d'eau froide avec sortie impulsion (1 imp. / 1 litre)](<https://www.planete-domotique.com/compteur-d-eau-froide-avec-sortie-impulsion-1-imp-1-litre.html>)
 * [2 pièces débitmètre Ssensor eau carburant débitmètre compteur indicateur piscine 1-30L/Min G3/4 DN20](<https://fr.aliexpress.com/item/32808354426.html?spm=a2g0o.detail.1000023.12.1bb83102QQHruB>)
 * [2 pièces antirouille débitmètre d'eau capteur compteur indicateur débitmètre carburant piscine flotteur interrupteur Hall pour chauffe-eau G1/2 1-30L/min](<https://fr.aliexpress.com/item/32811291161.html?spm=a2g0o.detail.1000013.13.337e199856wn5d&gps-id=pcDetailBottomMoreThisSeller&scm=1007.13339.169870.0&scm_id=1007.13339.169870.0&scm-url=1007.13339.169870.0&pvid=94fb877f-c449-4934-b3c9-d3f988455682&_t=gps-id:pcDetailBottomMoreThisSeller,scm-url:1007.13339.169870.0,pvid:94fb877f-c449-4934-b3c9-d3f988455682,tpp_buckets:668%230%23131923%2314_668%23808%234094%23379_668%23888%233325%239_668%232846%238112%23513_668%232717%237560%23293_668%231000022185%231000066058%230_668%233468%2315609%23219>)
