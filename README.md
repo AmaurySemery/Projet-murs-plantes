@@ -71,6 +71,12 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Module relais 1/2/4/6/8 canaux avec couplage de lumière 5V pour Arduino](<https://fr.aliexpress.com/item/32912316381.html?src=google&albch=shopping&acnt=248-630-5778&isdl=y&slnk=&plac=&mtctp=&albbt=Gploogle_7_shopping&aff_atform=google&aff_short_key=UneMJZVf&gclsrc=aw.ds&&albagn=888888&&ds_e_adid=438856512850&ds_e_matchtype=&ds_e_device=c&ds_e_network=u&ds_e_product_group_id=539263010115&ds_e_product_id=fr32912316381&ds_e_product_merchant_id=108992333&ds_e_product_country=FR&ds_e_product_language=fr&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&ds_dest_url=https://fr.aliexpress.com/item/32912316381.html?&albcp=10191220526&albag=107473525328&gclid=EAIaIQobChMIiczvlej-6wIVhumyCh1EbgiEEAQYAiABEgIkXfD_BwE>)
+* [Single Relay Board](<https://fr.rs-online.com/web/p/modules-de-developpement-pour-la-robotique-la-gestion-d-alimentation-et-les-moteurs/8430834?cm_mmc=FR-PLA-DS3A-_-google-_-PLA_FR_FR_Raspberry_Pi_%26_Arduino_%26_Outils_de_d%C3%A9veloppement_Whoop-_-(FR:Whoop!)+Modules+de+d%C3%A9veloppement+pour+la+robotique+%26+la+gestion+d%27alimentation+et+les+moteurs-_-8430834&matchtype=&aud-826607885227:pla-340994558382&gclid=EAIaIQobChMIiczvlej-6wIVhumyCh1EbgiEEAQYASABEgJDZ_D_BwE&gclsrc=aw.ds>)
+* [Module de relais à un canal 5V 12V 1 | Déclencheur de niveau bas pour SCM, commande d'appareils ménagers pour arduino kit de bricolage](<https://fr.aliexpress.com/item/4000956019162.html?spm=a2g0w.search0302.3.2.3e971b12QOThHS&s=p&ws_ab_test=searchweb0_0,searchweb201602_0,searchweb201603_0,ppcSwitch_0&algo_pvid=005ccba3-dc5b-49e1-870f-48dcdda0bcc5&algo_expid=005ccba3-dc5b-49e1-870f-48dcdda0bcc5-0>)
+* [Module de détecteur de capteur d'humidité du sol avec sonde résistante à la Corrosion en métal](<https://fr.aliexpress.com/item/33015889778.html?spm=a2g0o.productlist.0.0.35a93cd05TUnf6&algo_pvid=d2323e24-64b2-46eb-8e71-4449c34a74f2&algo_expid=d2323e24-64b2-46eb-8e71-4449c34a74f2-16&btsid=0b0a119a16007891601472256ead1d&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
+* [Capteur de transducteur de taille moyenne de TM-1 pour le débitmètre ultrasonique de module de débitmètre 50-700mm](<https://fr.aliexpress.com/item/32651432664.html?spm=a2g0o.productlist.0.0.35a93cd05TUnf6&s=p&ad_pvid=20200922083920756210053953620000219508_3&algo_pvid=d2323e24-64b2-46eb-8e71-4449c34a74f2&algo_expid=d2323e24-64b2-46eb-8e71-4449c34a74f2-2&btsid=0b0a119a16007891601472256ead1d&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
+* [ATMEGA328P-AUR](<https://fr.farnell.com/microchip/atmega328p-aur/mcu-8-bits-atmega-20mhz-tqfp-32/dp/2425124?gclid=EAIaIQobChMIuszP5_386wIVg-FRCh1-iAb-EAYYBSABEgKJqfD_BwE&gross_price=true&mckv=sJOY0vtfn_dc|pcrid|459878077136|plid||kword||match||slid||product|2425124|pgrid|116105369468|ptaid|pla-326740859707|&CMP=KNC-GFR-SHOPPING-SMEC-Whoops-New-Structure-04-Sep-2020_Desktop-LO>)
 * [Liquid Level Control Using a Pressure Sensor](<https://www.nxp.com/docs/en/application-note/AN1516.pdf>)
 * [Water Level Monitoring](<http://www.nxp.com/docs/en/application-note/AN1950.pdf>)
 * [Compteur d'eau froide avec sortie impulsion (1 imp. / 1 litre)](<https://www.planete-domotique.com/compteur-d-eau-froide-avec-sortie-impulsion-1-imp-1-litre.html>)
@@ -126,6 +132,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Fritzing for Schematic and PCB Design](<https://core-electronics.com.au/tutorials/fritzing-for-schematic-and-pcb-design.html>)
 * [Suivre sa consommation d’eau : domotisation d’un compteur d’eau à l’aide d’un arduino](<http://www.connectingstuff.net/blog/suivre-consommation-eau-avec-un-arduino/>)
 * [Piloter son Arduino avec son navigateur web et Node.js](<https://www.locoduino.org/spip.php?article216>)
 * [Arrosage automatique 16 sorti](<https://ouiaremakers.com/posts/tutoriel-diy-arrosage-automatique-16-sorti-9abb82e9-91d4-4921-b6bb-f3ff03f7ddb1>)
@@ -184,6 +191,7 @@ Arrosage automatique des murs végétalisés
 
 # Liens intéressants
 
+* [Online GUID/UUID Generator](<https://www.guidgenerator.com/online-guid-generator.aspx>)
 * [Gestion intégrée de l'eau en milieu urbain : une série de fiches du Cerema](<https://www.cerema.fr/fr/actualites/gestion-integree-eau-milieu-urbain-serie-fiches-du-cerema>)
 * [Mieux vivre en période de fortes chaleurs](<https://www.caissedesdepots.fr/sites/default/files/2020-07/Synth%C3%A8se%20du%20rapport%20final%20CDC-Mieux%20vivre%20en%20ville%20en%20p%C3%A9riode%20de%20fortes%20chaleurs.pdf>)
 * [Pluie - inondation : se protéger, connaître les bons comportements](<https://www.ecologie.gouv.fr/pluie-inondation-se-proteger-connaitre-bons-comportements>)
