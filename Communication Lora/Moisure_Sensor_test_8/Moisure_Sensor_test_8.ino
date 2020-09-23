@@ -125,7 +125,7 @@ void loop() {
   int moy = moyenne;
 
   if (al = 1) {
-    LCD.print("Anomalie capteurs :");
+    LCD.print("Anomalie :");
     LCD.setCursor(0, 1);
     LCD.print("Min:");
     LCD.print(mi);
