@@ -218,6 +218,7 @@ int alerte() {
     LCD.print(" ; ");
     LCD.print("Max:");
     LCD.print(maximum());
+    delay(3000);
     LCD.clear();
     return (1);
   }
@@ -229,6 +230,7 @@ int alerte() {
     LCD.print(" ; ");
     LCD.print("Max:");
     LCD.print(maximum());
+    delay(3000);
     LCD.clear();
     return (0);
   }
