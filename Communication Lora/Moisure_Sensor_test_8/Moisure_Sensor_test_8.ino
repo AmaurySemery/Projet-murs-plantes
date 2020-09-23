@@ -41,7 +41,6 @@ void setup() {
     delay(3000);
     LCD.clear();
   }
-  delay(1000);
   if (!gravity_sensor.Setup(sensorPin2)) {
     Serial.println("Le capteur 2 d'humidité au sol n'a pas été détecté.");
     LCD.print("Attention !");
@@ -57,7 +56,6 @@ void setup() {
     delay(3000);
     LCD.clear();
   }
-  delay(1000);
   if (!gravity_sensor.Setup(sensorPin3)) {
     Serial.println("Le capteur 3 d'humidité au sol n'a pas été détecté.");
     LCD.print("Attention !");
@@ -73,18 +71,12 @@ void setup() {
     delay(3000);
     LCD.clear();
   }
-  delay(1000);
 
 
   USE_SERIAL.println();
   USE_SERIAL.println();
   USE_SERIAL.println();
 
-  for (uint8_t t = 4; t > 0; t--) {
-    USE_SERIAL.printf("[SETUP] WAIT %d...\n", t);
-    USE_SERIAL.flush();
-    delay(1000);
-  }
   wifiMulti.addAP(ssid, password);
 
   LCD.print("Lancement du");
