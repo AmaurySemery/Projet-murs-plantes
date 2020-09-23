@@ -184,6 +184,7 @@ Arrosage automatique des murs végétalisés
 
 # Liens intéressants
 
+* [Online GUID/UUID Generator](<https://www.guidgenerator.com/online-guid-generator.aspx>)
 * [Gestion intégrée de l'eau en milieu urbain : une série de fiches du Cerema](<https://www.cerema.fr/fr/actualites/gestion-integree-eau-milieu-urbain-serie-fiches-du-cerema>)
 * [Mieux vivre en période de fortes chaleurs](<https://www.caissedesdepots.fr/sites/default/files/2020-07/Synth%C3%A8se%20du%20rapport%20final%20CDC-Mieux%20vivre%20en%20ville%20en%20p%C3%A9riode%20de%20fortes%20chaleurs.pdf>)
 * [Pluie - inondation : se protéger, connaître les bons comportements](<https://www.ecologie.gouv.fr/pluie-inondation-se-proteger-connaitre-bons-comportements>)
