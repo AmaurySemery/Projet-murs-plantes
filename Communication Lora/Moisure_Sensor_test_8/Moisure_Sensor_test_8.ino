@@ -124,17 +124,6 @@ void loop() {
   int al = alerte();
   int moy = moyenne;
 
-  if (al = 1) {
-    LCD.print("Anomalie :");
-    LCD.setCursor(0, 1);
-    LCD.print("Min:");
-    LCD.print(mi);
-    LCD.print(" ; ");
-    LCD.print("Max:");
-    LCD.print(ma);
-    delay(3000);
-    LCD.clear();
-  }
 
   if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
 
@@ -219,9 +208,27 @@ int minimum() {
 
 int alerte() {
   if (maximum() - minimum() >= 10) {
+    LCD.print("Anomalie :");
+    LCD.setCursor(0, 1);
+    LCD.print("Min:");
+    LCD.print(minimum());
+    LCD.print(" ; ");
+    LCD.print("Max:");
+    LCD.print(maximum());
+    delay(3000);
+    LCD.clear();
     return (1);
   }
   else {
+    LCD.print("Valeurs correctes :");
+    LCD.setCursor(0, 1);
+    LCD.print("Min:");
+    LCD.print(minimum());
+    LCD.print(" ; ");
+    LCD.print("Max:");
+    LCD.print(maximum());
+    delay(3000);
+    LCD.clear();
     return (0);
   }
 }
