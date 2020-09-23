@@ -133,15 +133,12 @@ void loop() {
   int moy = moyenne;
 
   if (al = 1) {
-    LCD.print("Anomalie :");
+    LCD.print("Anomalie capteurs :");
     LCD.setCursor(0, 1);
-    LCD.print("Mesures capteurs");
-    delay(3000);
-    LCD.clear();
-    LCD.print("Val min : ");
+    LCD.print("Min : ");
     LCD.print(mi);
-    LCD.setCursor(0, 1);
-    LCD.print("Val max : ");
+    LCD.print(" ; ");
+    LCD.print("Max : ");
     LCD.print(ma);
     delay(3000);
     LCD.clear();
