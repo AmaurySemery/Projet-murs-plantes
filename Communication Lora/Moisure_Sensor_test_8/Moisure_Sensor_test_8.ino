@@ -127,10 +127,10 @@ void loop() {
   if (al = 1) {
     LCD.print("Anomalie capteurs :");
     LCD.setCursor(0, 1);
-    LCD.print("Min : ");
+    LCD.print("Min:");
     LCD.print(mi);
     LCD.print(" ; ");
-    LCD.print("Max : ");
+    LCD.print("Max:");
     LCD.print(ma);
     delay(3000);
     LCD.clear();
