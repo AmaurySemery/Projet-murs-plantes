@@ -208,7 +208,7 @@ int minimum() {
 
 int alerte() {
   if (maximum() - minimum() >= 10) {
-    LCD.print("Anomalie :");
+    LCD.print("Mesures Err :");
     LCD.setCursor(0, 1);
     LCD.print("Min:");
     LCD.print(minimum());
@@ -220,7 +220,7 @@ int alerte() {
     return (1);
   }
   else {
-    LCD.print("Valeurs correctes :");
+    LCD.print("Mesures OK :");
     LCD.setCursor(0, 1);
     LCD.print("Min:");
     LCD.print(minimum());
