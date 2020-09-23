@@ -71,6 +71,9 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Module de détecteur de capteur d'humidité du sol avec sonde résistante à la Corrosion en métal](<https://fr.aliexpress.com/item/33015889778.html?spm=a2g0o.productlist.0.0.35a93cd05TUnf6&algo_pvid=d2323e24-64b2-46eb-8e71-4449c34a74f2&algo_expid=d2323e24-64b2-46eb-8e71-4449c34a74f2-16&btsid=0b0a119a16007891601472256ead1d&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
+* [Capteur de transducteur de taille moyenne de TM-1 pour le débitmètre ultrasonique de module de débitmètre 50-700mm](<https://fr.aliexpress.com/item/32651432664.html?spm=a2g0o.productlist.0.0.35a93cd05TUnf6&s=p&ad_pvid=20200922083920756210053953620000219508_3&algo_pvid=d2323e24-64b2-46eb-8e71-4449c34a74f2&algo_expid=d2323e24-64b2-46eb-8e71-4449c34a74f2-2&btsid=0b0a119a16007891601472256ead1d&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
+* [ATMEGA328P-AUR](<https://fr.farnell.com/microchip/atmega328p-aur/mcu-8-bits-atmega-20mhz-tqfp-32/dp/2425124?gclid=EAIaIQobChMIuszP5_386wIVg-FRCh1-iAb-EAYYBSABEgKJqfD_BwE&gross_price=true&mckv=sJOY0vtfn_dc|pcrid|459878077136|plid||kword||match||slid||product|2425124|pgrid|116105369468|ptaid|pla-326740859707|&CMP=KNC-GFR-SHOPPING-SMEC-Whoops-New-Structure-04-Sep-2020_Desktop-LO>)
 * [Liquid Level Control Using a Pressure Sensor](<https://www.nxp.com/docs/en/application-note/AN1516.pdf>)
 * [Water Level Monitoring](<http://www.nxp.com/docs/en/application-note/AN1950.pdf>)
 * [Compteur d'eau froide avec sortie impulsion (1 imp. / 1 litre)](<https://www.planete-domotique.com/compteur-d-eau-froide-avec-sortie-impulsion-1-imp-1-litre.html>)
@@ -126,6 +129,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Fritzing for Schematic and PCB Design](<https://core-electronics.com.au/tutorials/fritzing-for-schematic-and-pcb-design.html>)
 * [Suivre sa consommation d’eau : domotisation d’un compteur d’eau à l’aide d’un arduino](<http://www.connectingstuff.net/blog/suivre-consommation-eau-avec-un-arduino/>)
 * [Piloter son Arduino avec son navigateur web et Node.js](<https://www.locoduino.org/spip.php?article216>)
 * [Arrosage automatique 16 sorti](<https://ouiaremakers.com/posts/tutoriel-diy-arrosage-automatique-16-sorti-9abb82e9-91d4-4921-b6bb-f3ff03f7ddb1>)
