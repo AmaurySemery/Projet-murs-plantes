@@ -71,6 +71,12 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Plaque de montage rapide](<https://www.gotronic.fr/art-plaque-de-montage-rapide-22812.htm>)
+* [Module capteur de niveau d'eau ST045](<https://www.gotronic.fr/art-module-capteur-de-niveau-d-eau-st045-26116.htm>)
+* [Module 4 relais 5 Vcc GT108](<https://www.gotronic.fr/art-module-4-relais-5-vcc-gt108-26090.htm>)
+* [Module potentiomètre ST031](<https://www.gotronic.fr/art-module-potentiometre-st031-26112.htm>)
+* [Led 5 mm RGB clignotante rapide](<https://www.gotronic.fr/art-led-5-mm-rgb-clignotante-rapide-20752.htm>)
+* [Afficheur LCD I2C Grove 104030001](<https://www.gotronic.fr/art-afficheur-lcd-i2c-grove-104030001-21308.htm>)
 * [Carte de développement ESP-WROOM-32 ESP32 ESP-32S 2.4GHz double Mode WiFi + Bluetooth double processeur de microcontrôleur](<https://fr.aliexpress.com/item/4000060787606.html?spm=a2g0o.productlist.0.0.79cf1115EnOxPz&s=p&ad_pvid=202009230310375932406877817770000023418_1&algo_pvid=7fe57447-8b8d-48cf-8758-0cd749109eb3&algo_expid=7fe57447-8b8d-48cf-8758-0cd749109eb3-0&btsid=0b0a01f816008558373197161e2812&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
 * [https://fr.banggood.com/Geekcreit-1100-Meter-Long-Distance-NRF24L01+PA+LNA-Wireless-Module-With-Antenna-Module-p-1057170.html?rmmds=detail-top-buytogether-auto&cur_warehouse=UK](<https://fr.banggood.com/Geekcreit-1100-Meter-Long-Distance-NRF24L01+PA+LNA-Wireless-Module-With-Antenna-Module-p-1057170.html?rmmds=detail-top-buytogether-auto&cur_warehouse=UK>)
 * [1100 Mètres Longue Distance NRF24L01+PA+LNA Module sans Fil avec Antenne](<https://fr.banggood.com/Geekcreit-1100-Meter-Long-Distance-NRF24L01+PA+LNA-Wireless-Module-With-Antenna-Module-p-1057170.html?rmmds=detail-top-buytogether-auto&cur_warehouse=UK>)
@@ -135,6 +141,8 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Guide de mise en marche du capteur de niveau d’eauST045](<https://www.gotronic.fr/pj2-35211-2264.pdf>)
+* [Piloter un LCD Avec le module I2C pour Arduino Source Arduino & Raspberry Pi](<https://www.tutoriel-arduino.com/lcd_i2c_arduino/>)
 * [Fritzing for Schematic and PCB Design](<https://core-electronics.com.au/tutorials/fritzing-for-schematic-and-pcb-design.html>)
 * [Suivre sa consommation d’eau : domotisation d’un compteur d’eau à l’aide d’un arduino](<http://www.connectingstuff.net/blog/suivre-consommation-eau-avec-un-arduino/>)
 * [Piloter son Arduino avec son navigateur web et Node.js](<https://www.locoduino.org/spip.php?article216>)
