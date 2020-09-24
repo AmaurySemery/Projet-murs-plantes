@@ -168,9 +168,9 @@ void loop() {
     }
     http.end();
   }
-
-  delay(10000);
   LCD.clear();
+  delay(60000);
+  
 }
 
 int maximum() {
