@@ -167,10 +167,9 @@ void loop() {
       LCD.print("Requete HTTP");
     }
     http.end();
-    Serial.end();
   }
+  delay(120000);
   LCD.clear();
-  delay(5000);
   
 }
 
