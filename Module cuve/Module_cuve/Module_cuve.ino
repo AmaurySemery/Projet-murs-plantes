@@ -20,8 +20,9 @@ void loop() {
   Serial.println(maDistance);
   hauteur_restante = hauteur_maxi - maDistance;
 
- Serial.print("hauteur restante : ");
- Serial.println( hauteur_restante);
+ Serial.print("Contenu : ");
+ Serial.print( hauteur_restante);
+ Serial.println(" cm.");
 
 pourcentage = (hauteur_restante * 100) / hauteur_maxi;
 
