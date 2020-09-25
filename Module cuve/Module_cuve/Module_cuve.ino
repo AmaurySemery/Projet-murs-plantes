@@ -17,7 +17,6 @@ void setup() {
 void loop() {
   // Every 500 miliseconds, do a measurement using the sensor and print the distance in centimeters./ toutes les 500 millisecondes nous faisons une mesure et nous affichons la distance en centimetre sur le port serie.
   maDistance = distanceSensor.measureDistanceCm();
-  Serial.println(maDistance);
   hauteur_restante = hauteur_maxi - maDistance;
 
  Serial.print("Contenu : ");
@@ -26,7 +25,7 @@ void loop() {
 
 pourcentage = (hauteur_restante * 100) / hauteur_maxi;
 
-Serial.print("pourcentage : ");
+Serial.print("Niveau de remplissage de la cuve : ");
 Serial.print( pourcentage, 2);
 Serial.println(" %");
   delay(5000);
