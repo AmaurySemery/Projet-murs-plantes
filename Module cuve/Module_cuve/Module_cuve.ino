@@ -7,6 +7,10 @@
 #define USE_SERIAL Serial
 
 // defines pins numbers / definition des broches du capteur
+int led1 = 35;
+int led2 = 32;
+int led3 = 33;
+int led4 = 25;
 const int trigPin = 13;
 const int echoPin = 2;
 int maDistance = 0;
@@ -20,13 +24,18 @@ const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 // Initialize sensor that uses digital pins trigPin and echoPin / initialisation du capteur avec les broches utilisees.
 UltraSonicDistanceSensor distanceSensor(trigPin, echoPin);
 void setup() {
-  // We initialize serial connection so that we could print values from sensor./ initialisation du port serie a 9600 band pour afficher les valeurs mesurees par le capteur.
+  pinMode(led1,OUTPUT);
+  pinMode(led2,OUTPUT);
+  pinMode(led3,OUTPUT);
+  pinMode(led4,OUTPUT);
+  // We initialize serial connection so that we could print values from sensor./ initialisation du port serie a 115200 band pour afficher les valeurs mesurees par le capteur.
   Serial.begin(115200);
   wifiMulti.addAP(ssid, password);
 }
 void loop() {
   // Every 500 miliseconds, do a measurement using the sensor and print the distance in centimeters./ toutes les 500 millisecondes nous faisons une mesure et nous affichons la distance en centimetre sur le port serie.
   maDistance = distanceSensor.measureDistanceCm();
+  Serial.println(maDistance);
   hauteur_restante = hauteur_maxi - maDistance;
 
  Serial.print("Contenu : ");
