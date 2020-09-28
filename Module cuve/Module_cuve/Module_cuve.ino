@@ -9,7 +9,7 @@
 // defines pins numbers / definition des broches du capteur
 int led1 = 35;
 int led2 = 32;
-int led3 = 33;
+int led3 = 23;
 int led4 = 25;
 const int trigPin = 13;
 const int echoPin = 2;
@@ -75,29 +75,17 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
         if (payload == "30") {
           Serial.println("Le programme éco est activé !");
           digitalWrite(led1,HIGH);
-          digitalWrite(led2,LOW);
-          digitalWrite(led3,LOW);
-          digitalWrite(led4,LOW);
         }
         if (payload == "50") {
           Serial.println("Le programme par défaut est activé !");
-          digitalWrite(led1,LOW);
           digitalWrite(led2,HIGH);
-          digitalWrite(led3,LOW);
-          digitalWrite(led4,LOW);
         }
         if (payload == "70") {
           Serial.println("Le programme intensif est activé !");
-          digitalWrite(led1,LOW);
-          digitalWrite(led2,LOW);
           digitalWrite(led3,HIGH);
-          digitalWrite(led4,LOW);
         }
         if (payload == "100") {
           Serial.println("Le programme de démarrage est activé !");
-          digitalWrite(led1,LOW);
-          digitalWrite(led2,LOW);
-          digitalWrite(led3,LOW);
           digitalWrite(led4,HIGH);
         }
         if (payload == "OFF") {
