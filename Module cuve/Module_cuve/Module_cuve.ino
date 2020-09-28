@@ -72,7 +72,6 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
       if (httpCode == HTTP_CODE_OK) { // Si ça s'est bien passé, il refait une variable où il met le getString puis affiche à l'écran => on a reçu un code 200
         String payload = http.getString();
         USE_SERIAL.println(payload);
-      Serial.print(payload);
         if (payload == "30") {
           Serial.println("Le programme éco est activé !");
           digitalWrite(led1,HIGH);
