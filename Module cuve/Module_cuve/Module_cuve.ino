@@ -73,11 +73,36 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
         String payload = http.getString();
         USE_SERIAL.println(payload);
       Serial.print(payload);
+        if (payload == "30") {
+          Serial.println("Le programme éco est activé !");
+          digitalWrite(led1,HIGH);
+          digitalWrite(led2,LOW);
+          digitalWrite(led3,LOW);
+          digitalWrite(led4,LOW);
+        }
         if (payload == "50") {
-          USE_SERIAL.println("Coucou");
+          Serial.println("Le programme par défaut est activé !");
+          digitalWrite(led1,LOW);
+          digitalWrite(led2,HIGH);
+          digitalWrite(led3,LOW);
+          digitalWrite(led4,LOW);
+        }
+        if (payload == "70") {
+          Serial.println("Le programme intensif est activé !");
+          digitalWrite(led1,LOW);
+          digitalWrite(led2,LOW);
+          digitalWrite(led3,HIGH);
+          digitalWrite(led4,LOW);
+        }
+        if (payload == "100") {
+          Serial.println("Le programme de démarrage est activé !");
+          digitalWrite(led1,LOW);
+          digitalWrite(led2,LOW);
+          digitalWrite(led3,LOW);
+          digitalWrite(led4,HIGH);
         }
         if (payload == "OFF") {
-          digitalWrite(4, LOW);
+          Serial.println("Aucune valeur n'a été récupérée sur le payload...");
         }
       }
     } else { // sinon, il dit que ça ne fonctionne pas
