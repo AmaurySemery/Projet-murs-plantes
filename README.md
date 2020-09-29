@@ -141,6 +141,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Node-RED. Dashboard pour objet connecté. Jauges, graphiques, notifications, template HTML (Partie 2)](<https://projetsdiy.fr/node-red-dashboard-gauges-graphiques-notifications-html/)
 * [Guide de mise en marche du capteur de niveau d’eauST045](<https://www.gotronic.fr/pj2-35211-2264.pdf>)
 * [Piloter un LCD Avec le module I2C pour Arduino Source Arduino & Raspberry Pi](<https://www.tutoriel-arduino.com/lcd_i2c_arduino/>)
 * [Fritzing for Schematic and PCB Design](<https://core-electronics.com.au/tutorials/fritzing-for-schematic-and-pcb-design.html>)
