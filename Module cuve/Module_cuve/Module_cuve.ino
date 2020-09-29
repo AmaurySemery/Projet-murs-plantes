@@ -6,8 +6,8 @@
 
 #define USE_SERIAL Serial
 
-int 5mn = 300000;
-int 10 mn = 600000
+int mn5 = 300000;
+int mn10 = 600000;
 // defines pins numbers / definition des broches du capteur
 int led1 = 23;
 int led2 = 4;
@@ -80,7 +80,7 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
           digitalWrite(led2,LOW);
           digitalWrite(led3,LOW);
           digitalWrite(led4,LOW);
-          delay(5mn);
+          delay(mn5);
         }
         if (payload == "50") {
           Serial.println("Le programme par défaut est activé !");
@@ -88,7 +88,7 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
           digitalWrite(led2,HIGH);
           digitalWrite(led3,LOW);
           digitalWrite(led4,LOW);
-          delay(5mn);
+          delay(mn5);
         }
         if (payload == "70") {
           Serial.println("Le programme intensif est activé !");
@@ -96,7 +96,7 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
           digitalWrite(led2,LOW);
           digitalWrite(led3,HIGH);
           digitalWrite(led4,LOW);
-          delay(5mn);
+          delay(mn5);
         }
         if (payload == "100") {
           Serial.println("Le programme de démarrage est activé !");
@@ -104,7 +104,7 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
           digitalWrite(led2,LOW);
           digitalWrite(led3,LOW);
           digitalWrite(led4,HIGH);
-          delay(5mn);
+          delay(mn5);
         }
         if (payload == "OFF") {
           Serial.println("Aucune valeur n'a été récupérée sur le payload...");
@@ -114,5 +114,5 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
       USE_SERIAL.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
     }
     http.end();}
-  delay(10mn);
+  delay(mn10);
 }
