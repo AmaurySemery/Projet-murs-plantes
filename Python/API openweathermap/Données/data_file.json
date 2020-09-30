@@ -6,15 +6,15 @@
         {
             "dt": 1601456400,
             "main": {
-                "temp": 15.22,
-                "feels_like": 12.84,
-                "temp_min": 15.22,
+                "temp": 15.3,
+                "feels_like": 13.12,
+                "temp_min": 15.3,
                 "temp_max": 15.31,
-                "pressure": 1014,
-                "sea_level": 1014,
+                "pressure": 1013,
+                "sea_level": 1013,
                 "grnd_level": 1010,
-                "humidity": 89,
-                "temp_kf": -0.09
+                "humidity": 92,
+                "temp_kf": -0.01
             },
             "weather": [
                 {
@@ -44,15 +44,15 @@
         {
             "dt": 1601467200,
             "main": {
-                "temp": 16.67,
-                "feels_like": 14.19,
-                "temp_min": 16.67,
+                "temp": 16.7,
+                "feels_like": 14.35,
+                "temp_min": 16.7,
                 "temp_max": 17.09,
                 "pressure": 1012,
                 "sea_level": 1012,
                 "grnd_level": 1008,
-                "humidity": 78,
-                "temp_kf": -0.42
+                "humidity": 80,
+                "temp_kf": -0.39
             },
             "weather": [
                 {
@@ -79,15 +79,15 @@
         {
             "dt": 1601478000,
             "main": {
-                "temp": 17.82,
-                "feels_like": 15.25,
-                "temp_min": 17.82,
+                "temp": 17.83,
+                "feels_like": 15.33,
+                "temp_min": 17.83,
                 "temp_max": 18,
                 "pressure": 1010,
                 "sea_level": 1010,
                 "grnd_level": 1006,
-                "humidity": 69,
-                "temp_kf": -0.18
+                "humidity": 70,
+                "temp_kf": -0.17
             },
             "weather": [
                 {
@@ -117,15 +117,15 @@
         {
             "dt": 1601488800,
             "main": {
-                "temp": 15.88,
-                "feels_like": 13.1,
-                "temp_min": 15.88,
+                "temp": 15.89,
+                "feels_like": 13.11,
+                "temp_min": 15.89,
                 "temp_max": 15.89,
                 "pressure": 1008,
                 "sea_level": 1008,
                 "grnd_level": 1005,
                 "humidity": 76,
-                "temp_kf": -0.01
+                "temp_kf": 0
             },
             "weather": [
                 {
