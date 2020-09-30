@@ -141,6 +141,10 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [The Core Nodes](<https://nodered.org/docs/user-guide/nodes>)
+* [Node-RED: Lecture 2 – Building your first flows](<http://noderedguide.com/node-red-lecture-2-building-your-first-flows-15/#more-1242>)
+* [node-red-node-openweathermap](<https://flows.nodered.org/node/node-red-node-openweathermap>)
+* [Node-RED. Ajouter un widget météo au Dashboard connecté à OpenWeatherMap avec du code HTML / Angular](<https://projetsdiy.fr/node-red-creer-dashboard-code-html-widget-meteo-openweathermap/>)
 * [Données JSON dans SQL Server](<https://docs.microsoft.com/fr-fr/sql/relational-databases/json/json-data-sql-server?view=sql-server-ver15>)
 * [Node-RED. Dashboard pour objet connecté. Jauges, graphiques, notifications, template HTML (Partie 2)](<https://projetsdiy.fr/node-red-dashboard-gauges-graphiques-notifications-html/)
 * [Guide de mise en marche du capteur de niveau d’eauST045](<https://www.gotronic.fr/pj2-35211-2264.pdf>)
