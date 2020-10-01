@@ -141,6 +141,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Node-RED. Créer un dashboard pour objet connecté. Bouton, liste, interrupteur, slider, formulaire (Partie 1)](<https://projetsdiy.fr/node-red-dashboard-interface-bouton-liste-interrupteur-slider-formulaire/>)
 * [The Core Nodes](<https://nodered.org/docs/user-guide/nodes>)
 * [Node-RED: Lecture 2 – Building your first flows](<http://noderedguide.com/node-red-lecture-2-building-your-first-flows-15/#more-1242>)
 * [node-red-node-openweathermap](<https://flows.nodered.org/node/node-red-node-openweathermap>)
