@@ -79,7 +79,7 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
         String payload = http.getString();
         USE_SERIAL.println(payload);
         if (payload == "30") {
-          for (int i = 0; i <= 1; i++){
+          for (int i = 0; i < 1; i++){
           Serial.println("Le programme éco est activé !");
           digitalWrite(led1,HIGH);
           digitalWrite(led2,LOW);
@@ -90,7 +90,7 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
         }
         }
         if (payload == "50") {
-          for (int i = 0; i <= 2; i++){
+          for (int i = 0; i < 2; i++){
           Serial.println("Le programme par défaut est activé !");
           digitalWrite(led1,LOW);
           digitalWrite(led2,HIGH);
@@ -98,10 +98,11 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
           digitalWrite(led4,LOW);
           delay(mn2);
           digitalWrite(led2,LOW);
+          delay(hour1);
         }
-        delay(hour1);}
+        }
         if (payload == "70") {
-          for (int i = 0; i <= 4; i++){
+          for (int i = 0; i < 4; i++){
           Serial.println("Le programme intensif est activé !");
           digitalWrite(led1,LOW);
           digitalWrite(led2,LOW);
@@ -109,10 +110,11 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
           digitalWrite(led4,LOW);
           delay(mn2);
           digitalWrite(led3,LOW);
+          delay(mn30);
         }
-        delay(mn30);}
+        }
         if (payload == "100") {
-          for (int i = 0; i <= 4; i++){
+          for (int i = 0; i < 4; i++){
           Serial.println("Le programme de démarrage est activé !");
           digitalWrite(led1,LOW);
           digitalWrite(led2,LOW);
@@ -120,8 +122,9 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
           digitalWrite(led4,HIGH);
           delay(mn3);
           digitalWrite(led4,HIGH);
+          delay(mn30);
         }
-        delay(mn30);}
+        }
         if (payload == "OFF") {
           Serial.println("Aucune valeur n'a été récupérée sur le payload...");
         }
