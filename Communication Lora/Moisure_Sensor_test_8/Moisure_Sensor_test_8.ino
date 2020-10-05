@@ -14,6 +14,7 @@ WiFiMulti wifiMulti;
 const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
 const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 
+int mn3 = 180000;
 int mn5 = 300000;
 int mn10 = 600000;
 int sensorPin1 = 32;
