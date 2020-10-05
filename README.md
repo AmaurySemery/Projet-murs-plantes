@@ -18,6 +18,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation programmation
 
+* [Font Awesome](<https://fontawesome.com/>)
 * [Les dictionnaires python](<https://python.doctor/page-apprendre-dictionnaire-python>)
 * [json — Encodage et décodage JSON](<https://docs.python.org/fr/3/library/json.html>)
 * [Python: Le module json](<https://www.quennec.fr/trucs-astuces/langages/python/python-le-module-json>)
