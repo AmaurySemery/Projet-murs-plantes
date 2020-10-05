@@ -9,6 +9,7 @@
 int mn2 = 120000;
 int mn10 = 600000;
 float hour1 = mn10 * 6;
+float hour2 = hour1 * 2;
 // defines pins numbers / definition des broches du capteur
 int led1 = 23;
 int led2 = 4;
@@ -76,21 +77,27 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
         String payload = http.getString();
         USE_SERIAL.println(payload);
         if (payload == "30") {
+          for (int i = 0; i < 1; i++){
           Serial.println("Le programme éco est activé !");
           digitalWrite(led1,HIGH);
           digitalWrite(led2,LOW);
           digitalWrite(led3,LOW);
           digitalWrite(led4,LOW);
           delay(mn2);
+          digitalWrite(led1,LOW);
         }
+        delay(mn10);}
         if (payload == "50") {
+          for (int i = 0; i < 2; i++){
           Serial.println("Le programme par défaut est activé !");
           digitalWrite(led1,LOW);
           digitalWrite(led2,HIGH);
           digitalWrite(led3,LOW);
           digitalWrite(led4,LOW);
           delay(mn2);
+          digitalWrite(led2,LOW);
         }
+        delay(mn10);}
         if (payload == "70") {
           Serial.println("Le programme intensif est activé !");
           digitalWrite(led1,LOW);
@@ -115,9 +122,5 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
       USE_SERIAL.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
     }
     http.end();}
-  delay(mn10);
-  delay(mn10);
-  delay(mn10);
-  delay(mn10);
-  delay(mn10);
+  delay(hour2);
 }
