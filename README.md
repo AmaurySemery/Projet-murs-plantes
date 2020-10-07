@@ -25,6 +25,7 @@ Arrosage automatique des murs végétalisés
 * [JSONLint - The JSON Validator](<https://jsonlint.com/>)
 * [Serveur web - LAMP](<https://doc.ubuntu-fr.org/lamp>)
 * [Opérateurs de comparaison | Javascript](<https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Op%C3%A9rateurs_de_comparaison>)
+* [Prendre des décisions dans le code — conditions | Javascript](<https://developer.mozilla.org/fr/docs/Apprendre/JavaScript/Building_blocks/conditionals>)
 
 # Documentation technique
 
