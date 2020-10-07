@@ -24,6 +24,7 @@ Arrosage automatique des murs végétalisés
 * [Python: Le module json](<https://www.quennec.fr/trucs-astuces/langages/python/python-le-module-json>)
 * [JSONLint - The JSON Validator](<https://jsonlint.com/>)
 * [Serveur web - LAMP](<https://doc.ubuntu-fr.org/lamp>)
+* [Opérateurs de comparaison | Javascript](<https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Op%C3%A9rateurs_de_comparaison>)
 
 # Documentation technique
 
