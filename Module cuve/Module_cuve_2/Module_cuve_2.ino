@@ -1,18 +1,15 @@
 #include <HCSR04.h>      
 #include <WiFi.h>  // Utilisation de la librairie WiFi.h
-#include <LiquidCrystal.h>
+#include <LiquidCrystal_I2C.h>
+#include <Wire.h> 
 #include <WiFiMulti.h>
 #include <HTTPClient.h>
 #include <Arduino.h>
 
 #define USE_SERIAL Serial
 
-int mn2 = 120000;
-int mn3 = 180000;
-int mn10 = 600000;
-float mn30 = mn10 * 2;
-float hour1 = mn10 * 6;
-float hour2 = hour1 * 2;
+LiquidCrystal_I2C lcd(0x27,16,2);
+
 // defines pins numbers / definition des broches du capteur
 int led1 = 23;
 int led2 = 4;
@@ -31,6 +28,19 @@ const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 // Initialize sensor that uses digital pins trigPin and echoPin / initialisation du capteur avec les broches utilisees.
 UltraSonicDistanceSensor distanceSensor(trigPin, echoPin);
 void setup() {
+
+lcd.init();                      // initialize the lcd 
+  // Print a message to the LCD.
+  lcd.backlight();
+  lcd.setCursor(3,0);
+  lcd.print("Hello, world!");
+  lcd.setCursor(2,1);
+  lcd.print("Ywrobot Arduino!");
+   lcd.setCursor(0,2);
+  lcd.print("Arduino LCM IIC 2004");
+   lcd.setCursor(2,3);
+  lcd.print("Power By Ec-yuan!");
+  
   pinMode(led1,OUTPUT);
   pinMode(led2,OUTPUT);
   pinMode(led3,OUTPUT);
