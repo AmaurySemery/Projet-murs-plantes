@@ -89,70 +89,11 @@ if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'i
       if (httpCode == HTTP_CODE_OK) { // Si ça s'est bien passé, il refait une variable où il met le getString puis affiche à l'écran => on a reçu un code 200
         String payload = http.getString();
         USE_SERIAL.println(payload);
-        if (payload == "10") {
-          for (int i = 0; i < 1; i++){
-          Serial.println("Le programme éco est activé !");
-          digitalWrite(led1,LOW);
-          digitalWrite(led2,LOW);
-          digitalWrite(led3,LOW);
-          digitalWrite(led4,LOW);
-        }
-        }
-        
-        if (payload == "30") {
-          for (int i = 0; i < 1; i++){
-          Serial.println("Le programme éco est activé !");
-          digitalWrite(led1,HIGH);
-          digitalWrite(led2,LOW);
-          digitalWrite(led3,LOW);
-          digitalWrite(led4,LOW);
-          delay(mn2);
-          digitalWrite(led1,LOW);
-        }
-        }
-        if (payload == "50") {
-          for (int i = 0; i < 2; i++){
-          Serial.println("Le programme par défaut est activé !");
-          digitalWrite(led1,LOW);
-          digitalWrite(led2,HIGH);
-          digitalWrite(led3,LOW);
-          digitalWrite(led4,LOW);
-          delay(mn2);
-          digitalWrite(led2,LOW);
-          delay(hour1);
-        }
-        }
-        if (payload == "70") {
-          for (int i = 0; i < 4; i++){
-          Serial.println("Le programme intensif est activé !");
-          digitalWrite(led1,LOW);
-          digitalWrite(led2,LOW);
-          digitalWrite(led3,HIGH);
-          digitalWrite(led4,LOW);
-          delay(mn2);
-          digitalWrite(led3,LOW);
-          delay(mn30);
-        }
-        }
-        if (payload == "100") {
-          for (int i = 0; i < 4; i++){
-          Serial.println("Le programme de démarrage est activé !");
-          digitalWrite(led1,LOW);
-          digitalWrite(led2,LOW);
-          digitalWrite(led3,LOW);
-          digitalWrite(led4,HIGH);
-          delay(mn3);
-          digitalWrite(led4,HIGH);
-          delay(mn30);
-        }
-        }
-        if (payload == "OFF") {
-          Serial.println("Aucune valeur n'a été récupérée sur le payload...");
-        }
+  
       }
     } else { // sinon, il dit que ça ne fonctionne pas
       USE_SERIAL.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
     }
     http.end();}
-  delay(hour2);
+  delay(5000);
 }
