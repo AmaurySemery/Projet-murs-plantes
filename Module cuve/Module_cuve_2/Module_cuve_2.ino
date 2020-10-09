@@ -1,32 +1,48 @@
-#include <HCSR04.h>
-#include <NewPing.h>   
+#include <HCSR04.h>      
 #include <WiFi.h>  // Utilisation de la librairie WiFi.h
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h> 
 #include <Arduino.h>
 
 //#define USE_SERIAL Serial
-#define TRIGGER_PIN  12  // Arduino pin tied to trigger pin on the ultrasonic sensor.
-#define ECHO_PIN     11  // Arduino pin tied to echo pin on the ultrasonic sensor.
-#define MAX_DISTANCE 200 // Maximum distance we want to ping for (in centimeters). Maximum sensor distance is rated at 400-500cm.
 
 LiquidCrystal_I2C lcd(0x2F,16,2);
 
-NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE); // NewPing setup of pins and maximum distance.
+// Le capteur SR04M a une portée de 20cm à 8m
+
+const int trigPin = 11;
+const int echoPin = 12;
+int maDistance = 0;
+int hauteur_maxi = 10;
+int hauteur_restante;
+float pourcentage;
+
+UltraSonicDistanceSensor distanceSensor(trigPin, echoPin);
 
 void setup() {
 lcd.init();
  lcd.backlight();
   lcd.setCursor(1,0);
-  lcd.print("Module cuve");
+  lcd.print("Lancement du");
+  lcd.setCursor(0,1);
+  lcd.print("programme !");
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
     Serial.begin(115200);
 
 
 }
-void loop() {
-  
- delay(5000);                     // Wait 50ms between pings (about 20 pings/sec). 29ms should be the shortest delay between pings.
-  Serial.print("Ping: ");
-  Serial.print(sonar.ping_cm()); // Send ping, get distance in cm and print result (0 = outside set distance range)
-  Serial.println("cm");
+void loop() {maDistance = distanceSensor.measureDistanceCm();
+  Serial.println(maDistance);
+  hauteur_restante = hauteur_maxi - maDistance;
+
+ Serial.print("Contenu : ");
+ Serial.print( hauteur_restante);
+ Serial.println(" cm.");
+
+pourcentage = (hauteur_restante * 100) / hauteur_maxi;
+
+Serial.print("Niveau de remplissage de la cuve : ");
+Serial.print( pourcentage, 2);
+delay(5000);
 }
