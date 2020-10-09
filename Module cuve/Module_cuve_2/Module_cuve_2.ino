@@ -6,7 +6,7 @@
 
 //#define USE_SERIAL Serial
 
-LiquidCrystal_I2C lcd(0x27,16,2);
+LiquidCrystal_I2C lcd(0x2F,16,2);
 
 
 void setup() {
@@ -15,11 +15,7 @@ lcd.init();
  lcd.backlight();
   lcd.setCursor(1,0);
   lcd.print("Hello, world!");
-  delay(5000);
 
 }
 void loop() {
-lcd.clear(); 
-lcd.setCursor(0,0); // positionne le curseur à la colonne 1 et à la ligne 2 lcd.print("Hello World!"); delay(1000);
-
 }
