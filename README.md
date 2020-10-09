@@ -27,6 +27,7 @@ Arrosage automatique des murs végétalisés
 * [Opérateurs de comparaison | Javascript](<https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Op%C3%A9rateurs_de_comparaison>)
 * [Prendre des décisions dans le code — conditions | Javascript](<https://developer.mozilla.org/fr/docs/Apprendre/JavaScript/Building_blocks/conditionals>)
 * [Opérateurs logiques | Javascript](<https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Op%C3%A9rateurs_logiques>)
+* [LiquidCrystal_I2C | librairie arduino](<https://github.com/johnrickman/LiquidCrystal_I2C>)
 
 # Documentation technique
 
@@ -145,6 +146,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [SPI Tutorial for Arduino, ESP8266 and ESP32](<https://diyi0t.com/spi-tutorial-for-arduino-and-esp8266/>)
 * [Node-RED. Créer un dashboard pour objet connecté. Bouton, liste, interrupteur, slider, formulaire (Partie 1)](<https://projetsdiy.fr/node-red-dashboard-interface-bouton-liste-interrupteur-slider-formulaire/>)
 * [The Core Nodes](<https://nodered.org/docs/user-guide/nodes>)
 * [Node-RED: Lecture 2 – Building your first flows](<http://noderedguide.com/node-red-lecture-2-building-your-first-flows-15/#more-1242>)
