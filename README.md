@@ -27,6 +27,7 @@ Arrosage automatique des murs végétalisés
 * [Opérateurs de comparaison | Javascript](<https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Op%C3%A9rateurs_de_comparaison>)
 * [Prendre des décisions dans le code — conditions | Javascript](<https://developer.mozilla.org/fr/docs/Apprendre/JavaScript/Building_blocks/conditionals>)
 * [Opérateurs logiques | Javascript](<https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Op%C3%A9rateurs_logiques>)
+* [LiquidCrystal_I2C | librairie arduino](<https://github.com/johnrickman/LiquidCrystal_I2C>)
 
 # Documentation technique
 
