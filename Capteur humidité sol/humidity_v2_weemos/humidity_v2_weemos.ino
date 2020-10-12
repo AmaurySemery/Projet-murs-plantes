@@ -94,6 +94,14 @@ void loop() {
   int somme = sensor1Convert + sensor2Convert + sensor3Convert;
   int moyenne = somme / g;
 
+alerte();
+lcd.print("Moyenne :");
+lcd.setCursor(0, 1);
+lcd.print(moyenne);
+lcd.print(" %");
+delay(5000);
+lcd.clear();
+
   Serial.print("{\"sensor1\":");
   Serial.print(sensor1Convert);
   Serial.print(",\"sensor2\":");
@@ -155,7 +163,7 @@ int alerte() {
     lcd.print(" ; ");
     lcd.print("Max:");
     lcd.print(maximum());
-    delay(3000);
+    delay(5000);
     lcd.clear();
     return (1);
   }
@@ -167,7 +175,7 @@ int alerte() {
     lcd.print(" ; ");
     lcd.print("Max:");
     lcd.print(maximum());
-    delay(3000);
+    delay(5000);
     lcd.clear();
     return (0);
   }
