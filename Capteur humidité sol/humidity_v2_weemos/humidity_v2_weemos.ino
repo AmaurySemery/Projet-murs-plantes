@@ -26,6 +26,7 @@ void setup(){
   lcd.print("Module capteurs :");
   lcd.setCursor(0,1);
   lcd.print("Activation !");
+  delay(3000);
   Serial.begin(115200);
   if (!gravity_sensor.Setup(sensorPin1)) {
     Serial.println("Le capteur 1 d'humidité au sol n'a pas été détecté.");
