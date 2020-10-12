@@ -84,13 +84,16 @@ void setup(){
     delay(3000);
     lcd.clear();
 }
+
+
+  lcd.clear();
   lcd.setCursor(0,0);
   lcd.print("Lancement du");
   lcd.setCursor(0,1);
   lcd.print("programme !");
   delay(3000);
   lcd.clear();
-  wifiMulti.addAP(ssid, password);
+  WiFi.begin(ssid, password);
   }
 
 void loop() {
@@ -131,7 +134,7 @@ delay(5000);
   int sen2 = sensor2Convert;
   int sen3 = sensor3Convert;
 
-  if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
+  if ((WiFi.status() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
 
     HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre de lancer des requêtes en HTTP
 
