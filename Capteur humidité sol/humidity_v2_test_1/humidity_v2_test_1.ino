@@ -14,11 +14,11 @@ void setup(){
 void loop() {
  //Read YL-69 value
    uint16_t value1 = analogRead(sensorPin1);
-   uint16_t value1 = analogRead(sensorPin2);
+   uint16_t value2 = analogRead(sensorPin2);
 
 Serial.print("Capteur 1 : ");
-Serial.println(sensorPin1); 
+Serial.println(value1); 
 Serial.print("Capteur 2 : ");
-Serial.println(sensorPin2);
+Serial.println(value2);
 delay(5000);
 }
