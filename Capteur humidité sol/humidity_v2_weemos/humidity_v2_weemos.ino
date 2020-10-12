@@ -10,7 +10,7 @@ LiquidCrystal_I2C lcd(0x27,16,2);
 
 
 int sensorPin1 = 4;
-int sensorPin2 = 36;
+int sensorPin2 = 39;
 int sensorPin3 = 34;
 float a = 40.95;
 float b = 100;
