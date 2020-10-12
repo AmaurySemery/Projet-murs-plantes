@@ -3,13 +3,27 @@
 
 GravitySoilMoistureSensor gravity_sensor;
 
-int sensorPin1 = A0;
-int sensorPin2 = A1;
-int sensorPin3 = A3;
+int sensorPin1 = 32;
+int sensorPin2 = 33;
+int sensorPin3 = 35;
 
 
 void setup(){
   Serial.begin(115200);
+  if (!gravity_sensor.Setup(sensorPin1)) {
+    Serial.println("Le capteur 1 d'humidité au sol n'a pas été détecté.");
+  } else {
+    Serial.println("Le capteur 1 d'humidité au sol est opérationnel !");
+  }
+  if (!gravity_sensor.Setup(sensorPin2)) {
+    Serial.println("Le capteur 2 d'humidité au sol n'a pas été détecté.");
+  } else {
+    Serial.println("Le capteur 2 d'humidité au sol est opérationnel !");
+  }
+  if (!gravity_sensor.Setup(sensorPin3)) {
+    Serial.println("Le capteur 3 d'humidité au sol n'a pas été détecté.");
+  } else {
+    Serial.println("Le capteur 3 d'humidité au sol est opérationnel !");
 }
 
 void loop() {
