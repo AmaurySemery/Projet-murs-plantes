@@ -3,13 +3,9 @@
 
 GravitySoilMoistureSensor gravity_sensor;
 
-int PinLed=2;
-
 void setup() {
-
-  pinMode(PinLed,OUTPUT);
   Serial.begin(115200);
-    uint8_t pin = 15;
+    uint8_t pin = 32;
 
     if (!gravity_sensor.Setup(pin)) {
         Serial.println("Gravity Soil Moisture Sensor was not detected. Check wiring!");
@@ -29,9 +25,6 @@ Serial.print("Ce qui donne ");
 Serial.print(sensorConvert1);
 Serial.println("% d'humidité.");
 
-if (sensorConvert1 < 35) {digitalWrite(PinLed,HIGH);}
-else {digitalWrite(PinLed,LOW);}
-    
 
     delay(5000);
 }
