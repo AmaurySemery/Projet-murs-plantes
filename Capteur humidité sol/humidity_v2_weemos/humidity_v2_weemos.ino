@@ -145,3 +145,30 @@ int minimum() {
     return (sensor3Convert);
   }
 }
+
+int alerte() {
+  if (maximum() - minimum() >= 10) {
+    lcd.print("Mesures Err :");
+    lcd.setCursor(0, 1);
+    lcd.print("Min:");
+    lcd.print(minimum());
+    lcd.print(" ; ");
+    lcd.print("Max:");
+    lcd.print(maximum());
+    delay(3000);
+    lcd.clear();
+    return (1);
+  }
+  else {
+    lcd.print("Mesures OK :");
+    lcd.setCursor(0, 1);
+    lcd.print("Min:");
+    lcd.print(minimum());
+    lcd.print(" ; ");
+    lcd.print("Max:");
+    lcd.print(maximum());
+    delay(3000);
+    lcd.clear();
+    return (0);
+  }
+}
