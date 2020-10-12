@@ -1,14 +1,22 @@
 #include <Arduino.h>
 #include <WiFi.h>
+#include <WiFiMulti.h>
+#include <HTTPClient.h>
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h> 
 #include "gravity_soil_moisture_sensor.h"
 
+#define USE_SERIAL Serial
+
+
 GravitySoilMoistureSensor gravity_sensor;
+WiFiMulti wifiMulti;
+
 
 LiquidCrystal_I2C lcd(0x27,16,2);
 
-
+const char* ssid = "POP_SENSORS";  // Mettre votre SSID Wifi
+const char* password = "P0PS3NS0RS!";  // Mettre votre mot de passe Wifi
 int sensorPin1 = 4;
 int sensorPin2 = 39;
 int sensorPin3 = 34;
@@ -81,7 +89,9 @@ void setup(){
   lcd.setCursor(0,1);
   lcd.print("programme !");
   delay(3000);
-  lcd.clear();}
+  lcd.clear();
+  wifiMulti.addAP(ssid, password);
+  }
 
 void loop() {
  //Read YL-69 value
@@ -116,6 +126,57 @@ lcd.clear();
   Serial.print(maximum());
   Serial.println("}");
 delay(5000);
+
+  int sen1 = sensor1Convert;
+  int sen2 = sensor2Convert;
+  int sen3 = sensor3Convert;
+
+  if ((wifiMulti.run() == WL_CONNECTED)) { // Si c'est connecté, ça fait ce qu'il y a en dessous
+
+    HTTPClient http; // va créer un objet qui s'appelle HTTPClient qui va permettre de lancer des requêtes en HTTP
+
+    Serial.println("[DEBG] " + String(sen1) + String(sen2) + String(sen3));
+
+    Serial.print("[HTTP] begin...\n");
+    // configure traged server and url
+    //http.begin("https://www.howsmyssl.com/a/check", ca); //HTTPS
+
+    http.begin("http://node03.popschool-willems.fr:1880/mod1/" + String(sen1)+ "/" + String(sen2) + "/" +String(sen3) ); //HTTP => démarre connexion vers le serveur mentionné/
+
+    Serial.print("[HTTP] GET...\n");
+    // start connection and send HTTP header
+    int httpCode = http.GET(); // soumet une requête de type "get", puis récupère résultat qui sera collée dans HTTP
+
+    // httpCode will be negative on error
+    if (httpCode > 0) { // si c'est supérieur à 0, il refait un test)
+      // HTTP header has been send and Server response header has been handled
+      Serial.printf("[HTTP] GET... code: %d\n", httpCode);
+
+      // file found at server
+      if (httpCode == HTTP_CODE_OK) { // Si ça s'est bien passé, il refait une variable où il met le getString puis affiche à l'écran => on a reçu un code 200
+        String payload = http.getString();
+      Serial.println(payload);
+      lcd.print("Retour HTTP :");
+      lcd.setCursor(0, 1);
+      lcd.print(payload);
+        if (payload == "50") {
+          Serial.println("Coucou");
+        }
+        if (payload == "OFF") {
+          digitalWrite(4, LOW);
+        }
+      }
+    } else { // sinon, il dit que ça ne fonctionne pas
+      Serial.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
+      lcd.print("Erreur :");
+      lcd.setCursor(0, 1);
+      lcd.print("Requete HTTP");
+    }
+    http.end();
+  }
+  delay(5000);
+  lcd.clear();
+
 }
 
 int maximum() {
