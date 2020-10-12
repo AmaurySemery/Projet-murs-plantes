@@ -6,6 +6,11 @@ GravitySoilMoistureSensor gravity_sensor;
 int sensorPin1 = 4;
 int sensorPin2 = 36;
 int sensorPin3 = 34;
+float a = 40.95;
+float b = 100;
+float c = 1200;
+float d = 29.304;
+float g = 3;
 
 
 void setup(){
@@ -29,14 +34,62 @@ void setup(){
 void loop() {
  //Read YL-69 value
    uint16_t value1 = analogRead(sensorPin1);
+   int sensor1Convert = value1 / a;
    uint16_t value2 = analogRead(sensorPin2);
+   int sensor2Convert = value2 / a;
    uint16_t value3 = analogRead(sensorPin3);
+   int sensor3Convert = value3 / a;
+  int somme = sensor1Convert + sensor2Convert + sensor3Convert;
+  int moyenne = somme / g;
 
-Serial.print("Capteur 1 : ");
-Serial.println(value1); 
-Serial.print("Capteur 2 : ");
-Serial.println(value2);
-Serial.print("Capteur 3 : ");
-Serial.println(value3);
+  Serial.print("{\"sensor1\":");
+  Serial.print(sensor1Convert);
+  Serial.print(",\"sensor2\":");
+  Serial.print(sensor2Convert);
+  Serial.print(",\"sensor3\":");
+  Serial.print(sensor3Convert);
+  Serial.print(",\"moyenne\":");
+  Serial.print(moyenne);
+  Serial.print(",\"minimum\":");
+  Serial.print(minimum());
+  Serial.print(",\"maximum\":");
+  Serial.print(maximum());
+  Serial.println("}");
 delay(5000);
+}
+
+int maximum() {
+  uint16_t value1 = analogRead(sensorPin1);
+  float sensor1Convert = value1 / a;
+  uint16_t value2 = analogRead(sensorPin2);
+  float sensor2Convert = value2 / a;
+  uint16_t value3 = analogRead(sensorPin3);
+  float sensor3Convert = value3 / a;
+  if (sensor1Convert > sensor2Convert and sensor1Convert > sensor3Convert) {
+    return (sensor1Convert);
+  }
+  if (sensor2Convert > sensor1Convert and sensor2Convert > sensor3Convert) {
+    return (sensor2Convert);
+  }
+  else {
+    return (sensor3Convert);
+  }
+}
+
+int minimum() {
+  uint16_t value1 = analogRead(sensorPin1);
+  float sensor1Convert = value1 / a;
+  uint16_t value2 = analogRead(sensorPin2);
+  float sensor2Convert = value2 / a;
+  uint16_t value3 = analogRead(sensorPin3);
+  float sensor3Convert = value3 / a;
+  if (sensor1Convert < sensor2Convert and sensor1Convert < sensor3Convert) {
+    return (sensor1Convert);
+  }
+  if (sensor2Convert < sensor1Convert and sensor2Convert < sensor3Convert) {
+    return (sensor2Convert);
+  }
+  else {
+    return (sensor3Convert);
+  }
 }
