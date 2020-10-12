@@ -3,9 +3,9 @@
 
 GravitySoilMoistureSensor gravity_sensor;
 
-int sensorPin1 = 32;
-int sensorPin2 = 33;
-int sensorPin3 = 35;
+int sensorPin1 = 4;
+int sensorPin2 = 36;
+int sensorPin3 = 34;
 
 
 void setup(){
@@ -24,7 +24,7 @@ void setup(){
     Serial.println("Le capteur 3 d'humidité au sol n'a pas été détecté.");
   } else {
     Serial.println("Le capteur 3 d'humidité au sol est opérationnel !");
-}
+}}
 
 void loop() {
  //Read YL-69 value
