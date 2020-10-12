@@ -180,7 +180,7 @@ lcd.clear();
 //    }
 //    http.end();
 //  }
-  delay(mn10);
+  delay(5000);
   lcd.clear();
   
 }
