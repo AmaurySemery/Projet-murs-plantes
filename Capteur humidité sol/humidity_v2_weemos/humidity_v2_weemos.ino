@@ -21,28 +21,65 @@ float g = 3;
 
 void setup(){
   lcd.init();
- lcd.backlight();
-  lcd.setCursor(0,0);
-  lcd.print("Module capteurs :");
-  lcd.setCursor(0,1);
-  lcd.print("Activation !");
-  delay(3000);
+  lcd.backlight();
   Serial.begin(115200);
   if (!gravity_sensor.Setup(sensorPin1)) {
     Serial.println("Le capteur 1 d'humidité au sol n'a pas été détecté.");
+    lcd.setCursor(0,0);
+    lcd.print("Capteur 1 :");
+    lcd.setCursor(0,1);
+    lcd.print("Ok !");
+    delay(3000);
+    lcd.clear();
   } else {
     Serial.println("Le capteur 1 d'humidité au sol est opérationnel !");
+    lcd.setCursor(0,0);
+    lcd.print("Capteur 1 :");
+    lcd.setCursor(0,1);
+    lcd.print("Erreur !");
+    delay(3000);
+    lcd.clear();
   }
   if (!gravity_sensor.Setup(sensorPin2)) {
     Serial.println("Le capteur 2 d'humidité au sol n'a pas été détecté.");
+    lcd.setCursor(0,0);
+    lcd.print("Capteur 2 :");
+    lcd.setCursor(0,1);
+    lcd.print("Ok !");
+    delay(3000);
+    lcd.clear();
   } else {
     Serial.println("Le capteur 2 d'humidité au sol est opérationnel !");
+    lcd.setCursor(0,0);
+    lcd.print("Capteur 2 :");
+    lcd.setCursor(0,1);
+    lcd.print("Erreur !");
+    delay(3000);
+    lcd.clear();
   }
   if (!gravity_sensor.Setup(sensorPin3)) {
     Serial.println("Le capteur 3 d'humidité au sol n'a pas été détecté.");
+    lcd.setCursor(0,0);
+    lcd.print("Capteur 3 :");
+    lcd.setCursor(0,1);
+    lcd.print("Ok !");
+    delay(3000);
+    lcd.clear();
   } else {
     Serial.println("Le capteur 3 d'humidité au sol est opérationnel !");
-}}
+    lcd.setCursor(0,0);
+    lcd.print("Capteur 3 :");
+    lcd.setCursor(0,1);
+    lcd.print("Erreur !");
+    delay(3000);
+    lcd.clear();
+}
+  lcd.setCursor(0,0);
+  lcd.print("Lancement du");
+  lcd.setCursor(0,1);
+  lcd.print("programme !");
+  delay(3000);
+  lcd.clear();}
 
 void loop() {
  //Read YL-69 value
