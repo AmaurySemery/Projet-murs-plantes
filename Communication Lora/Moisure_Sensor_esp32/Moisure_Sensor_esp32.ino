@@ -3,11 +3,11 @@
 #include <Arduino.h>
 #include <HTTPClient.h>
 #include "gravity_soil_moisture_sensor.h"
-#include <LiquidCrystal.h>
+#include <LiquidCrystal_I2C.h>
 
 #define USE_SERIAL Serial
 
-LiquidCrystal LCD (4, 23, 25, 14, 13, 15);
+LiquidCrystal_I2C lcd(0x27,16,2);
 
 GravitySoilMoistureSensor gravity_sensor;
 WiFiMulti wifiMulti;
@@ -27,67 +27,70 @@ float d = 29.304;
 float g = 3;
 
 void setup() {
+  lcd.init();
+  lcd.backlight();
   Serial.begin(115200);
-  LCD.begin(16, 2) ;
   if (!gravity_sensor.Setup(sensorPin1)) {
     Serial.println("Le capteur 1 d'humidité au sol n'a pas été détecté.");
-    LCD.print("Attention !");
-    LCD.setCursor(0, 1);
-    LCD.print("Erreur capteur 1");
+    lcd.setCursor(0,0);
+    lcd.print("Capteur 1 :");
+    lcd.setCursor(0,1);
+    lcd.print("Erreur !");
     delay(3000);
-    LCD.clear();
+    lcd.clear();
   } else {
     Serial.println("Le capteur 1 d'humidité au sol est opérationnel !");
-    LCD.print("Capteur 1 :");
-    LCD.setCursor(0, 1);
-    LCD.print("OK !");
+    lcd.setCursor(0,0);
+    lcd.print("Capteur 1 :");
+    lcd.setCursor(0,1);
+    lcd.print("Ok !");
     delay(3000);
-    LCD.clear();
+    lcd.clear();
   }
   if (!gravity_sensor.Setup(sensorPin2)) {
     Serial.println("Le capteur 2 d'humidité au sol n'a pas été détecté.");
-    LCD.print("Attention !");
-    LCD.setCursor(0, 1);
-    LCD.print("Erreur capteur 2");
+    lcd.setCursor(0,0);
+    lcd.print("Capteur 2 :");
+    lcd.setCursor(0,1);
+    lcd.print("Erreur !");
     delay(3000);
-    LCD.clear();
+    lcd.clear();
   } else {
     Serial.println("Le capteur 2 d'humidité au sol est opérationnel !");
-    LCD.print("Capteur 2 :");
-    LCD.setCursor(0, 1);
-    LCD.print("OK !");
+    lcd.setCursor(0,0);
+    lcd.print("Capteur 2 :");
+    lcd.setCursor(0,1);
+    lcd.print("Ok !");
     delay(3000);
-    LCD.clear();
+    lcd.clear();
   }
   if (!gravity_sensor.Setup(sensorPin3)) {
     Serial.println("Le capteur 3 d'humidité au sol n'a pas été détecté.");
-    LCD.print("Attention !");
-    LCD.setCursor(0, 1);
-    LCD.print("Erreur capteur 3");
+    lcd.setCursor(0,0);
+    lcd.print("Capteur 3 :");
+    lcd.setCursor(0,1);
+    lcd.print("Erreur !");
     delay(3000);
-    LCD.clear();
+    lcd.clear();
   } else {
     Serial.println("Le capteur 3 d'humidité au sol est opérationnel !");
-    LCD.print("Capteur 3 :");
-    LCD.setCursor(0, 1);
-    LCD.print("OK !");
+    lcd.setCursor(0,0);
+    lcd.print("Capteur 3 :");
+    lcd.setCursor(0,1);
+    lcd.print("Ok !");
     delay(3000);
-    LCD.clear();
+    lcd.clear();
   }
-
-
-  USE_SERIAL.println();
-  USE_SERIAL.println();
-  USE_SERIAL.println();
 
   wifiMulti.addAP(ssid, password);
 
-  LCD.print("Lancement du");
-  LCD.setCursor(0, 1);
-  LCD.print("programme !");
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("Lancement du");
+  lcd.setCursor(0,1);
+  lcd.print("programme !");
   delay(3000);
-  LCD.clear();
-
+  lcd.clear();
 }
 
 
@@ -101,7 +104,13 @@ void loop() {
   int somme = sensor1Convert + sensor2Convert + sensor3Convert;
   int moyenne = somme / g;
 
-  // Affichage des données sur le moniteur
+alerte();
+lcd.print("Moyenne :");
+lcd.setCursor(0, 1);
+lcd.print(moyenne);
+lcd.print(" %");
+delay(5000);
+lcd.clear();
 
   Serial.print("{\"sensor1\":");
   Serial.print(sensor1Convert);
@@ -153,9 +162,9 @@ void loop() {
       if (httpCode == HTTP_CODE_OK) { // Si ça s'est bien passé, il refait une variable où il met le getString puis affiche à l'écran => on a reçu un code 200
         String payload = http.getString();
         USE_SERIAL.println(payload);
-      LCD.print("Retour HTTP :");
-      LCD.setCursor(0, 1);
-      LCD.print(payload);
+      lcd.print("Retour HTTP :");
+      lcd.setCursor(0, 1);
+      lcd.print(payload);
         if (payload == "50") {
           USE_SERIAL.println("Coucou");
         }
@@ -165,14 +174,14 @@ void loop() {
       }
     } else { // sinon, il dit que ça ne fonctionne pas
       USE_SERIAL.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
-      LCD.print("Erreur :");
-      LCD.setCursor(0, 1);
-      LCD.print("Requete HTTP");
+      lcd.print("Erreur :");
+      lcd.setCursor(0, 1);
+      lcd.print("Requete HTTP");
     }
     http.end();
   }
   delay(mn10);
-  LCD.clear();
+  lcd.clear();
   
 }
 
@@ -214,27 +223,28 @@ int minimum() {
 
 int alerte() {
   if (maximum() - minimum() >= 10) {
-    LCD.print("Mesures Err :");
-    LCD.setCursor(0, 1);
-    LCD.print("Min:");
-    LCD.print(minimum());
-    LCD.print(" ; ");
-    LCD.print("Max:");
-    LCD.print(maximum());
-    delay(3000);
-    LCD.clear();
+    lcd.print("Mesures Err :");
+    lcd.setCursor(0, 1);
+    lcd.print("Min:");
+    lcd.print(minimum());
+    lcd.print(" ; ");
+    lcd.print("Max:");
+    lcd.print(maximum());
+    delay(5000);
+    lcd.clear();
     return (1);
   }
   else {
-    LCD.print("Mesures OK :");
-    LCD.setCursor(0, 1);
-    LCD.print("Min:");
-    LCD.print(minimum());
-    LCD.print(" ; ");
-    LCD.print("Max:");
-    LCD.print(maximum());
-    delay(3000);
-    LCD.clear();
+    lcd.print("Mesures OK :");
+    lcd.setCursor(0, 1);
+    lcd.print("Min:");
+    lcd.print(minimum());
+    lcd.print(" ; ");
+    lcd.print("Max:");
+    lcd.print(maximum());
+    delay(5000);
+    lcd.clear();
+    return (0);
     return (0);
   }
 }
