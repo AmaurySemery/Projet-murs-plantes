@@ -76,6 +76,7 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Carte Wemos](<https://disciplines.ac-toulouse.fr/sii/sites/sii.disciplines.ac-toulouse.fr/files/ressources/didacticiels/programmation/wemos/tuto-wemosd1r32-decouverte-programmation.pdf>)
 * [Plaque de montage rapide](<https://www.gotronic.fr/art-plaque-de-montage-rapide-22812.htm>)
 * [Module capteur de niveau d'eau ST045](<https://www.gotronic.fr/art-module-capteur-de-niveau-d-eau-st045-26116.htm>)
 * [Module 4 relais 5 Vcc GT108](<https://www.gotronic.fr/art-module-4-relais-5-vcc-gt108-26090.htm>)
