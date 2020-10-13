@@ -41,25 +41,22 @@ void loop() {
   Serial.println(" %");
   Serial.println("----------------");
 
+  int sen1 = sensor1convert;
+  int sen2 = sensor2convert;
+  int sen3 = sensor3convert;
+
     if((wifiMulti.run() == WL_CONNECTED)) {
 
         HTTPClient http;
-
+        
+        Serial.println("[DEBG] " + String(sen1) + String(sen2) + String(sen3));
+        
         Serial.print("[HTTP] begin...\n");
-        // configure traged server and url
-        //http.begin("https://www.howsmyssl.com/a/check", ca); //HTTPS
-        http.begin("http://example.com/index.html"); //HTTP
-
+        http.begin("http://node03.popschool-willems.fr:1880/mod1/" + String(sen1)+ "/" + String(sen2) + "/" +String(sen3));
         Serial.print("[HTTP] GET...\n");
-        // start connection and send HTTP header
         int httpCode = http.GET();
-
-        // httpCode will be negative on error
         if(httpCode > 0) {
-            // HTTP header has been send and Server response header has been handled
             Serial.printf("[HTTP] GET... code: %d\n", httpCode);
-
-            // file found at server
             if(httpCode == HTTP_CODE_OK) {
                 String payload = http.getString();
                 Serial.println(payload);
