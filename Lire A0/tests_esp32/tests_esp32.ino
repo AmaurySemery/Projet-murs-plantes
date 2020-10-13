@@ -50,19 +50,18 @@ void loop() {
         HTTPClient http;
         
         Serial.println("[DEBG] " + String(sen1) + String(sen2) + String(sen3));
-        
-        Serial.print("[HTTP] begin...\n");
         http.begin("http://node03.popschool-willems.fr:1880/mod1/" + String(sen1)+ "/" + String(sen2) + "/" +String(sen3));
-        Serial.print("[HTTP] GET...\n");
         int httpCode = http.GET();
         if(httpCode > 0) {
             Serial.printf("[HTTP] GET... code: %d\n", httpCode);
             if(httpCode == HTTP_CODE_OK) {
                 String payload = http.getString();
+                Serial.println("Réception du message à partir de Node-Red : ok");
                 Serial.println(payload);
             }
         } else {
             Serial.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
+            Serial.println("Réception du message à partir de Node-Red : échec");
         }
 
         http.end();
