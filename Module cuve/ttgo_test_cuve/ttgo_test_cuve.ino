@@ -1,7 +1,7 @@
 #include <HCSR04.h>    
 
-const int trigPin = 32;
-const int echoPin = 33;
+const int trigPin = RX;
+const int echoPin = TX;
 int maDistance = 0;
 
 UltraSonicDistanceSensor distanceSensor(trigPin, echoPin);
