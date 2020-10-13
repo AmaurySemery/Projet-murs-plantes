@@ -1,8 +1,4 @@
-#include <Arduino.h>
-#include "gravity_soil_moisture_sensor.h"
 
-
-GravitySoilMoistureSensor gravity_sensor;
 
 int sensorPin1 = 13;
 int sensorPin2 = 27;
@@ -32,7 +28,7 @@ void loop() {
   uint16_t value3 = analogRead(sensorPin3);
   float division3 = value3 / a;
   int sensor3convert = b - division3;
-  Serial.print("Capteur 2 : ");
+  Serial.print("Capteur 3 : ");
   Serial.print(sensor3convert);
   Serial.println(" %");
   Serial.println("----------------");
