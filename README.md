@@ -31,6 +31,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [GPIO réservés](<https://translate.googleusercontent.com/translate_c?depth=1&hl=fr&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://desire.giesecke.tk/index.php/2018/07/06/reserved-gpios/&usg=ALkJrhjonK1UdVnr_BogWLfvLewQedX_DA>)
 * [A Dozen Ways to Measure Fluid Level and How They Work](<https://www.fierceelectronics.com/components/a-dozen-ways-to-measure-fluid-level-and-how-they-work>)
 * [Branchement et utilisation d’un écran LCD](<http://rtmfm.cnrs.fr/IMG/pdf/fiche_6_branchement_et_utilisation_d_un_ecran_LCD.pdf>)
 * [Les capteurs d'humidité](<http://www.wimesure.fr/cbx/_ftp/hb303f.pdf>)
