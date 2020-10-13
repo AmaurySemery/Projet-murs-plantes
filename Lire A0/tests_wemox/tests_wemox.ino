@@ -9,7 +9,7 @@ LiquidCrystal_I2C lcd(0x27,16,2);
 
 GravitySoilMoistureSensor gravity_sensor;
 
-int sensorPin1 = 2;
+int sensorPin1 = 36;
 
 void setup() {
   Serial.begin(115200);
