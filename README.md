@@ -28,9 +28,13 @@ Arrosage automatique des murs végétalisés
 * [Prendre des décisions dans le code — conditions | Javascript](<https://developer.mozilla.org/fr/docs/Apprendre/JavaScript/Building_blocks/conditionals>)
 * [Opérateurs logiques | Javascript](<https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Op%C3%A9rateurs_logiques>)
 * [LiquidCrystal_I2C | librairie arduino](<https://github.com/johnrickman/LiquidCrystal_I2C>)
+* [arduino-esp32](<https://translate.googleusercontent.com/translate_c?depth=1&hl=fr&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://github.com/espressif/arduino-esp32&usg=ALkJrhi2chFIC7ClZeMw9D-ZhQcoL2NDiQ>)
+* [Systèmes Espressif](<https://translate.googleusercontent.com/translate_c?depth=1&hl=fr&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://github.com/espressif&usg=ALkJrhjvD31jXCsp5vJDJVeTEfkty1h4eA>)
+* [esp32-wifi-lib](<https://translate.googleusercontent.com/translate_c?depth=1&hl=fr&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://github.com/espressif/esp32-wifi-lib&usg=ALkJrhjKTXRnQgpPT9f_Ca-Z1pyi9vlTcQ>)
 
 # Documentation technique
 
+* [Esp32 datasheet](<https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf>)
 * [GPIO réservés](<https://translate.googleusercontent.com/translate_c?depth=1&hl=fr&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://desire.giesecke.tk/index.php/2018/07/06/reserved-gpios/&usg=ALkJrhjonK1UdVnr_BogWLfvLewQedX_DA>)
 * [A Dozen Ways to Measure Fluid Level and How They Work](<https://www.fierceelectronics.com/components/a-dozen-ways-to-measure-fluid-level-and-how-they-work>)
 * [Branchement et utilisation d’un écran LCD](<http://rtmfm.cnrs.fr/IMG/pdf/fiche_6_branchement_et_utilisation_d_un_ecran_LCD.pdf>)
