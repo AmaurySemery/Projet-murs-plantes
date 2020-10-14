@@ -1,20 +1,21 @@
-#include <HCSR04.h>    
 
-const int trigPin = 12;
-const int echoPin = 34;
-int maDistance = 0;
-
-UltraSonicDistanceSensor distanceSensor(trigPin, echoPin);
-
-
-void setup() {
-pinMode(trigPin, OUTPUT);
-pinMode(echoPin, INPUT);
-Serial.begin(115200);
+#define ECHOPIN 0// Pin to receive echo pulse
+#define TRIGPIN 4// Pin to send trigger pulse
+void setup(){
+  Serial.begin(115200);
+  pinMode(ECHOPIN, INPUT);
+  pinMode(TRIGPIN, OUTPUT);
+  digitalWrite(ECHOPIN, HIGH);
 }
-
-void loop() {
-maDistance = distanceSensor.measureDistanceCm();
-Serial.println(maDistance);
-delay(5000);
+void loop(){
+  digitalWrite(TRIGPIN, LOW); // Set the trigger pin to low for 2uS
+  delayMicroseconds(2);
+  digitalWrite(TRIGPIN, HIGH); // Send a 10uS high to trigger ranging
+  delayMicroseconds(10);
+  digitalWrite(TRIGPIN, LOW); // Send pin low again
+  int distance = pulseIn(ECHOPIN, HIGH,26000); // Read in times pulse
+  distance= distance/58;
+  Serial.print(distance);
+  Serial.println("   cm");
+  delay(50);// Wait 50mS before next ranging
 }
