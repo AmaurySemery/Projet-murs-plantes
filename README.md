@@ -16,6 +16,10 @@ Arrosage automatique des murs végétalisés
 * [Powermoss](<https://www.powerofmoss.com/>)
 * [Vertuo | bocages urbains](<https://www.vertuo.city/bocage-urbain.html>)
 
+# Hardware
+
+* [Comment créer un schéma P&ID professionnel avec les symboles pré-dessinés](<https://www.edrawsoft.com/fr/create-pid.html>)
+
 # Documentation programmation
 
 * [Font Awesome](<https://fontawesome.com/>)
