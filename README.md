@@ -21,6 +21,8 @@ Arrosage automatique des murs végétalisés
 * [Comment créer un schéma P&ID professionnel avec les symboles pré-dessinés](<https://www.edrawsoft.com/fr/create-pid.html>)
 * [Inkscape](<https://inkscape.org/fr/>)
 * [Introduction au développement d'Inkscape](<https://inkscape.org/fr/developper/demarrer/>)
+* [Manuel Utilisateur Inkscape](<https://blogs.lyceecfadumene.fr/wp-content/blogs.dir/2/files/2012/02/inkscape2.pdf>)
+* [Dia (logiciel)](<https://fr.wikipedia.org/wiki/Dia_(logiciel)>)
 
 # Documentation programmation
 
