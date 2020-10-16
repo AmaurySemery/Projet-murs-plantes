@@ -470,11 +470,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.2535262"
-     inkscape:cx="1356.6737"
-     inkscape:cy="1122.5197"
+     inkscape:zoom="1.4341608"
+     inkscape:cx="1799.5849"
+     inkscape:cy="1330.4557"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g13908"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="704"
@@ -2559,7 +2559,7 @@
            style="font-size:11.45336533px;text-align:start;text-anchor:start;stroke-width:0.19118911"
            y="421.39203"
            x="842.32959"
-           sodipodi:role="line">RESERVOIR DE STOCKAGE</tspan><tspan
+           sodipodi:role="line">CUVE</tspan><tspan
            id="tspan1989"
            style="font-size:11.45336533px;text-align:start;text-anchor:start;stroke-width:0.19118911"
            y="435.70874"
@@ -3507,6 +3507,71 @@
            y="89.215012"
            x="-192.87798"
            id="tspan18872-1-6-2-8-0-5-1-6-8-7"
+           sodipodi:role="line">00</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15.61822414px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1911891"
+         x="747.2901"
+         y="781.85992"
+         id="text1600-3"
+         transform="scale(0.94081016,1.0629137)"><tspan
+           sodipodi:role="line"
+           id="tspan1598-67"
+           x="747.2901"
+           y="781.85992"
+           style="font-size:6.06340313px;stroke-width:0.1911891">CA-00</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:15.61822414px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1911891"
+         x="744.33893"
+         y="739.78375"
+         id="text1600-5"
+         transform="scale(0.94081016,1.0629137)"><tspan
+           sodipodi:role="line"
+           id="tspan1598-3"
+           x="744.33893"
+           y="739.78375"
+           style="font-size:6.06340313px;stroke-width:0.1911891">CAR-00</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path18868-2-6-9-37-0-5"
+         d="m 1009.2609,314.5969 11.4553,-0.0875"
+         style="opacity:1;fill:none;stroke:#000000;stroke-width:0.74026787;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         transform="matrix(0,0.98655134,-1.013632,0,0,0)"
+         id="text18874-83-1-9-3-2-6"
+         y="-1020.1996"
+         x="319.26102"
+         style="font-style:normal;font-weight:normal;font-size:5.71534872px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.23976342"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.23976342"
+           y="-1020.1996"
+           x="319.26102"
+           id="tspan18872-1-6-0-7-4-2"
+           sodipodi:role="line">FT</tspan></text>
+      <ellipse
+         ry="10.354989"
+         rx="10.601304"
+         cy="315.02151"
+         cx="1031.2385"
+         id="path18851-2-1-2-5-9"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#000100;stroke-width:0.92533493;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path18868-2-0-7-0-4-5-0-1"
+         d="m 1031.1073,325.65496 -0.088,-20.91718"
+         style="opacity:1;fill:none;stroke:#000000;stroke-width:0.74026787;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         transform="matrix(0,1.0675923,-0.93668716,0,0,0)"
+         id="text18874-83-1-13-8-7-0-9-2-7-2"
+         y="-1094.3057"
+         x="295.36899"
+         style="font-style:normal;font-weight:normal;font-size:5.14540482px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14439598"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.14439598"
+           y="-1094.3057"
+           x="295.36899"
+           id="tspan18872-1-6-2-8-0-5-1-6-9-7"
            sodipodi:role="line">00</tspan></text>
     </g>
   </g>
