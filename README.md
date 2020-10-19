@@ -166,6 +166,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Monitorer votre infra avec Telegraf, InfluxDB et Grafana](<https://blog.octo.com/monitorer-votre-infra-avec-telegraf-influxdb-et-grafana/>)
 * [Tutoriel d'installation du stack TICK de InfluxData et de Grafana (Ubuntu)](<https://gist.github.com/gyassine/27dd5bc1ff84bc3e98f6d0ec5cb549f4>)
 * [Installer InfluxDB sur Raspberry Pi, Windows, macOS. Découverte du Shell. Créer une base de données, rétention](<https://projetsdiy.fr/tutoriel-influxdb-installation-configuration-macos/>)
 * [SPI Tutorial for Arduino, ESP8266 and ESP32](<https://diyi0t.com/spi-tutorial-for-arduino-and-esp8266/>)
