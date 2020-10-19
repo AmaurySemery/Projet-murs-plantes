@@ -42,6 +42,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [Arduino - Station météo autonome](<http://www.egloff.eu/index.php/fr/la-technique/arduino/station-meteo>)
 * [AJ-SR04M](<https://wiki.dfrobot.com/Weather_-_proof_Ultrasonic_Sensor_with_Separate_Probe_SKU___SEN0208>)
 * [Esp32 datasheet](<https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf>)
 * [GPIO réservés](<https://translate.googleusercontent.com/translate_c?depth=1&hl=fr&prev=search&pto=aue&rurl=translate.google.com&sl=en&sp=nmt4&u=https://desire.giesecke.tk/index.php/2018/07/06/reserved-gpios/&usg=ALkJrhjonK1UdVnr_BogWLfvLewQedX_DA>)
