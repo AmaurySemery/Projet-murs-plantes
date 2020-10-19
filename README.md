@@ -26,6 +26,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation programmation
 
+* [InfluxDB Cloud & InfluxDB v2.0 OSS](<https://docs.influxdata.com/>)
 * [InfluxDB : une base de données time series open source ultra-rapide](<https://www.journaldunet.fr/web-tech/guide-de-l-entreprise-digitale/1443846-influxdb-une-base-de-donnees-time-series-open-source-sur-optimisee/>)
 * [InfluxDB | site](<https://www.influxdata.com/>)
 * [InfluxDB](<https://en.wikipedia.org/wiki/InfluxDB>)
