@@ -26,6 +26,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation programmation
 
+* [InfluxDB : une base de données time series open source ultra-rapide](<https://www.journaldunet.fr/web-tech/guide-de-l-entreprise-digitale/1443846-influxdb-une-base-de-donnees-time-series-open-source-sur-optimisee/>)
 * [InfluxDB | site](<https://www.influxdata.com/>)
 * [InfluxDB](<https://en.wikipedia.org/wiki/InfluxDB>)
 * [Font Awesome](<https://fontawesome.com/>)
@@ -164,6 +165,8 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Tutoriel d'installation du stack TICK de InfluxData et de Grafana (Ubuntu)](<https://gist.github.com/gyassine/27dd5bc1ff84bc3e98f6d0ec5cb549f4>)
+* [Installer InfluxDB sur Raspberry Pi, Windows, macOS. Découverte du Shell. Créer une base de données, rétention](<https://projetsdiy.fr/tutoriel-influxdb-installation-configuration-macos/>)
 * [SPI Tutorial for Arduino, ESP8266 and ESP32](<https://diyi0t.com/spi-tutorial-for-arduino-and-esp8266/>)
 * [Node-RED. Créer un dashboard pour objet connecté. Bouton, liste, interrupteur, slider, formulaire (Partie 1)](<https://projetsdiy.fr/node-red-dashboard-interface-bouton-liste-interrupteur-slider-formulaire/>)
 * [The Core Nodes](<https://nodered.org/docs/user-guide/nodes>)
