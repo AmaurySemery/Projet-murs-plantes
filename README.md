@@ -26,6 +26,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation programmation
 
+* [InfluxDB | site](<https://www.influxdata.com/>)
 * [InfluxDB](<https://en.wikipedia.org/wiki/InfluxDB>)
 * [Font Awesome](<https://fontawesome.com/>)
 * [Les dictionnaires python](<https://python.doctor/page-apprendre-dictionnaire-python>)
