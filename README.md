@@ -42,6 +42,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [La mesure des précipitations avec les Pluviomètres à Auget](<https://www.capteurs-et-mesures-agralis.com/pluviometre-augets/>)
 * [Arduino - Station météo autonome](<http://www.egloff.eu/index.php/fr/la-technique/arduino/station-meteo>)
 * [AJ-SR04M](<https://wiki.dfrobot.com/Weather_-_proof_Ultrasonic_Sensor_with_Separate_Probe_SKU___SEN0208>)
 * [Esp32 datasheet](<https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf>)
