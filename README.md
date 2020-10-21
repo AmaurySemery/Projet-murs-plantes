@@ -18,6 +18,8 @@ Arrosage automatique des murs végétalisés
 
 # Hardware
 
+* [KiCad EDA](<https://kicad-pcb.org/>)
+* [KiCad](<https://fr.wikipedia.org/wiki/KiCad>)
 * [Comment créer un schéma P&ID professionnel avec les symboles pré-dessinés](<https://www.edrawsoft.com/fr/create-pid.html>)
 * [Inkscape](<https://inkscape.org/fr/>)
 * [Introduction au développement d'Inkscape](<https://inkscape.org/fr/developper/demarrer/>)
