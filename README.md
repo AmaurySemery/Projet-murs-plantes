@@ -170,6 +170,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Prise en main d'InfluxDB Utilisation d'une base de données time series (Étienne Michon)](<https://www.youtube.com/watch?v=8t72hjsmn_g>)
 * [Monitorer votre infra avec Telegraf, InfluxDB et Grafana](<https://blog.octo.com/monitorer-votre-infra-avec-telegraf-influxdb-et-grafana/>)
 * [Tutoriel d'installation du stack TICK de InfluxData et de Grafana (Ubuntu)](<https://gist.github.com/gyassine/27dd5bc1ff84bc3e98f6d0ec5cb549f4>)
 * [Installer InfluxDB sur Raspberry Pi, Windows, macOS. Découverte du Shell. Créer une base de données, rétention](<https://projetsdiy.fr/tutoriel-influxdb-installation-configuration-macos/>)
