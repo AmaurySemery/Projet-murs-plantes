@@ -28,6 +28,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation programmation
 
+* [Data exploration using InfluxQL](<https://docs.influxdata.com/influxdb/v1.7/query_language/data_exploration/>)
 * [Install and Configure Telegraf on Debian 10 (Buster)](<https://computingforgeeks.com/install-and-configure-telegraf-on-debian-linux/>)
 * [How To Install InfluxDB on Debian 10 (Buster) Linux](<https://computingforgeeks.com/install-influxdb-on-debian-10-buster-linux/>)
 * [InfluxDB Cloud & InfluxDB v2.0 OSS](<https://docs.influxdata.com/>)
