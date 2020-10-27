@@ -102,6 +102,8 @@ Arrosage automatique des murs végétalisés
 # Matériels
 
 * [KY-009 RGB Full color LED SMD Module](<https://arduinomodules.info/ky-009-rgb-full-color-led-smd-module/>)
+* [Carte de base ESP32-DevKitC ESP32 carte de développement ESP32-WROOM-32D ESP32-WROOM-32U pour Arduino](<https://fr.aliexpress.com/item/4001076883280.html?src=google&albch=shopping&acnt=248-630-5778&isdl=y&slnk=&plac=&mtctp=&albbt=Gploogle_7_shopping&aff_atform=google&aff_short_key=UneMJZVf&gclsrc=aw.ds&&albagn=888888&&ds_e_adid=438856512718&ds_e_matchtype=&ds_e_device=c&ds_e_network=u&ds_e_product_group_id=743612850714&ds_e_product_id=fr4001076883280&ds_e_product_merchant_id=107376759&ds_e_product_country=FR&ds_e_product_language=fr&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&ds_dest_url=https://fr.aliexpress.com/item/4001076883280.html?&albcp=10191220514&albag=107473525128&gclid=Cj0KCQjwit_8BRCoARIsAIx3Rj5mgnXghQDNkiri5CWk0QoJFGxQxs-PgWbwdXHlDSB3VWbQgIhCUu8aApMaEALw_wcB>)
+* [KY-009 RGB Full color LED SMD Module](<https://arduinomodules.info/ky-009-rgb-full-color-led-smd-module/>)
 * [Plaque de montage rapide](<https://www.gotronic.fr/art-plaque-de-montage-rapide-22812.htm>)
 * [Module capteur de niveau d'eau ST045](<https://www.gotronic.fr/art-module-capteur-de-niveau-d-eau-st045-26116.htm>)
 * [Module 4 relais 5 Vcc GT108](<https://www.gotronic.fr/art-module-4-relais-5-vcc-gt108-26090.htm>)
