@@ -4,6 +4,8 @@ int alerte = 32;
 int redpin = 18; //select the pin for the red LED
 int bluepin =19; // select the pin for the  blue LED
 int greenpin = 21;// select the pin for the green LED
+int a=22;
+
 
 void setup() {
   Serial.begin(9600);
@@ -11,7 +13,9 @@ void setup() {
   pinMode(alerte,OUTPUT);
   pinMode(redpin, OUTPUT);
    pinMode(bluepin, OUTPUT);
-   pinMode(greenpin, OUTPUT);}
+   pinMode(greenpin, OUTPUT);
+      pinMode(a,OUTPUT);}
+
 
  
 
@@ -28,6 +32,8 @@ void loop() {
    digitalWrite(redpin,HIGH);
    digitalWrite(bluepin,LOW);
    digitalWrite(greenpin,LOW);
+      digitalWrite(a,HIGH);
+
    delay(2000);
     }
  if (value>800 and value<1500) {
@@ -36,6 +42,8 @@ void loop() {
  digitalWrite(greenpin,HIGH);
    digitalWrite(redpin,LOW);
    digitalWrite(bluepin,LOW);
+      digitalWrite(a,HIGH);
+
  delay(2000);}
 
  if (value>1500){
@@ -44,6 +52,8 @@ void loop() {
   digitalWrite(bluepin,HIGH);
    digitalWrite(redpin,LOW);
    digitalWrite(greenpin,LOW);
+      digitalWrite(a,HIGH);
+
    delay(2000);
  }
 }
