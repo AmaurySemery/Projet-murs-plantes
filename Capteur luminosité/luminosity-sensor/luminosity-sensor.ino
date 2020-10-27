@@ -18,7 +18,7 @@ void setup() {
 void loop() {
   value = analogRead(sensorPin); 
 
-  if (value<1000)
+  if (value<800)
   {
     Serial.println(value, DEC);
      // light intensity
@@ -30,7 +30,7 @@ void loop() {
    digitalWrite(greenpin,LOW);
    delay(2000);
     }
- if (value>1000 and value<1000) {
+ if (value>800 and value<1500) {
   Serial.println(value, DEC);
  digitalWrite(alerte,LOW);
  digitalWrite(greenpin,HIGH);
@@ -38,7 +38,7 @@ void loop() {
    digitalWrite(bluepin,LOW);
  delay(2000);}
 
- if (value>2000){
+ if (value>1500){
   Serial.println(value, DEC);
   digitalWrite(alerte,LOW);
   digitalWrite(bluepin,HIGH);
@@ -46,6 +46,4 @@ void loop() {
    digitalWrite(greenpin,LOW);
    delay(2000);
  }
-
-  delay(5000); 
 }
