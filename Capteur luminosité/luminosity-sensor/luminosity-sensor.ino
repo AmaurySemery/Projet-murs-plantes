@@ -1,10 +1,9 @@
-int sensorPin = 35;
-
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
+  Serial.println("On ouvre le programme pour capter la lumière !");
 }
 void loop() {
-  int valeur = analogRead(sensorPin);
+  int valeur = analogRead(A0);
 
   Serial.println(valeur);
   delay(250);
