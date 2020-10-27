@@ -101,6 +101,7 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Pour Arduino NRF24L01 émetteur-récepteur Wifi sans fil + Module d'antenne 2.4GHz pour Microcontroll](<https://fr.aliexpress.com/item/33042906058.html?spm=a2g0o.productlist.0.0.314754edMyZHzk&algo_pvid=17437760-51a3-49c3-b977-a2aeb5982ca7&algo_expid=17437760-51a3-49c3-b977-a2aeb5982ca7-40&btsid=2100bb4716037987435327872e49c9&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
 * [Module sans fil NodeMcu v3 CH340 Lua, carte de développement pour l'internet des objets, WIFI, ESP8266, antenne pcb, port usb pour Arduino](<https://fr.aliexpress.com/item/33012270682.html?spm=a2g0o.productlist.0.0.314754edMyZHzk&algo_pvid=17437760-51a3-49c3-b977-a2aeb5982ca7&algo_expid=17437760-51a3-49c3-b977-a2aeb5982ca7-9&btsid=2100bb4716037987435327872e49c9&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
 * [Le Module de sonnerie de haut-parleur actif Keyes pour Arduino fonctionne avec les cartes Arduino officielles](<https://fr.aliexpress.com/item/32849730395.html?spm=a2g0o.productlist.0.0.314754edMyZHzk&algo_pvid=17437760-51a3-49c3-b977-a2aeb5982ca7&algo_expid=17437760-51a3-49c3-b977-a2aeb5982ca7-4&btsid=2100bb4716037987435327872e49c9&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
 * [KY-009 RGB Full color LED SMD Module](<https://arduinomodules.info/ky-009-rgb-full-color-led-smd-module/>)
