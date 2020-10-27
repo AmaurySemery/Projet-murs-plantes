@@ -101,6 +101,7 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [KY-009 RGB Full color LED SMD Module](<https://arduinomodules.info/ky-009-rgb-full-color-led-smd-module/>)
 * [Plaque de montage rapide](<https://www.gotronic.fr/art-plaque-de-montage-rapide-22812.htm>)
 * [Module capteur de niveau d'eau ST045](<https://www.gotronic.fr/art-module-capteur-de-niveau-d-eau-st045-26116.htm>)
 * [Module 4 relais 5 Vcc GT108](<https://www.gotronic.fr/art-module-4-relais-5-vcc-gt108-26090.htm>)
@@ -171,6 +172,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Mesurer la luminosité ambiante avec une photorésistance et une carte Arduino / Genuino](<https://www.carnetdumaker.net/articles/mesurer-la-luminosite-ambiante-avec-une-photoresistance-et-une-carte-arduino-genuino/>)
 * [Node-Red et MySQL](<http://silanus.fr/sin/?p=1071>)
 * [#255 Node-Red, InfluxDB, and Grafana Tutorial on a Raspberry Pi](<https://www.youtube.com/watch?v=JdV4x925au0>)
 * [InfluxDB, une base de donnée orientée « séries temporelles » pour vos capteurs](<https://mars-hack-lab.fr/?p=453>)
