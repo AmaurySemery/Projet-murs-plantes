@@ -175,6 +175,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Créer un son avec un microcontrôleur et l’analyser](<https://www.lelivrescolaire.fr/page/6225285>)
 * [Mesurer la luminosité ambiante avec une photorésistance et une carte Arduino / Genuino](<https://www.carnetdumaker.net/articles/mesurer-la-luminosite-ambiante-avec-une-photoresistance-et-une-carte-arduino-genuino/>)
 * [Node-Red et MySQL](<http://silanus.fr/sin/?p=1071>)
 * [#255 Node-Red, InfluxDB, and Grafana Tutorial on a Raspberry Pi](<https://www.youtube.com/watch?v=JdV4x925au0>)
