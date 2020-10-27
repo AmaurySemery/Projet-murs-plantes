@@ -18,15 +18,14 @@ void loop()
   Distance=(Duration/2)/29.1;
   Serial.print(Distance);
   Serial.println("cm");
-  delay(500);
-//Vous pouvez changer la distance de détection dessous.
+  delay(5000);
   if (Distance<50)
   {
    digitalWrite(a,HIGH);
    delay(1000);
     }
- else 
+ else {
  digitalWrite(a,LOW);
-  delay(200);
+  delay(200);}
   
 }
