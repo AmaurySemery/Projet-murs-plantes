@@ -11,7 +11,7 @@ LiquidCrystal_I2C lcd(0x27,16,2);
 WiFiMulti wifiMulti;
 
 int hauteur_totale = 105; // modifier suivant la hauteur de la cuve
-int hauteur_cuve = 35;
+int hauteur_cuve = 30;
 const char* ssid = "POP_SENSORS";
 const char* password = "P0PS3NS0RS!";
 
@@ -24,6 +24,7 @@ void loop() {
   int distance = ultrasonic.distanceInCentimeters();
   int hauteur_restante = hauteur_totale - distance;
   int hauteur_restante_cuve = hauteur_cuve - hauteur_restante;
+  Serial.println(hauteur_restante_cuve);
   int pourcentage = (hauteur_restante_cuve * 100) / hauteur_cuve;
   Serial.print("Distance capteur/surface: ");
   Serial.print(distance);
