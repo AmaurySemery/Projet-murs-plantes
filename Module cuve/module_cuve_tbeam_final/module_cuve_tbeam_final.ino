@@ -10,7 +10,7 @@ LiquidCrystal_I2C lcd(0x27,16,2);
 
 WiFiMulti wifiMulti;
 
-int hauteur_maxi = 100; // modifier suivant la hauteur de la cuve
+int hauteur_maxi = 130; // modifier suivant la hauteur de la cuve
 const char* ssid = "POP_SENSORS";
 const char* password = "P0PS3NS0RS!";
 
