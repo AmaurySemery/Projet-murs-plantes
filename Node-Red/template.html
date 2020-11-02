@@ -1,0 +1,41 @@
+<h3>Météo du jour</h3>
+<p>Météo à Lille le {{time}}</p>
+<div layout="row">
+    <div layout="column" style="padding:25px">
+        <div layout="column" layout-align="center center">
+            <span style="color:#3a3a3a!important">Température</span>
+            <div layout="row" layout-align="start center">
+                <i class="fa fa-thermometer fa-fw"></i>
+                <p style="color: black">{{payload.tempc}}°C</p>
+            </div>
+        </div>    
+        <div layout="row" layout-align="center" style="padding:5px">
+            <i style="color:blue" class="fa fa-thermometer-empty fa-fw" aria-hidden="true"></i>
+            <span flex style="color: blue;font-size:10px!important">{{msg.payload.temp_minc}}°C</span>
+    
+            <i style="color:red" class="fa fa-thermometer-full fa-fw" aria-hidden="true"></i>
+            <span flex style="color: red;font-size:10px!important">{{msg.payload.temp_maxc}}°C</span>
+        </div>
+    </div>
+    <div layout="column" style="padding:25px" layout-align="center center">
+        <span flex>Humidité</span>
+        <span flex style="color: black">{{payload.humidity}} %</span>
+    </div>
+    <div layout="column" style="padding:25px" layout-align="center center">
+        <span flex>Pression Atm.</span>
+        <span flex style="color: black">{{payload.pressure}} mbar</span>
+    </div>
+    <div layout="column" style="padding:25px" layout-align="center center">
+        <p flex>Tendance</p>
+        <p flex style="color: black">{{payload.detail| uppercase}}</p>
+        <i ng-if="payload.icon=='01d'" class="fa fa-sun-o fa-2x" style="color:yellow"></i>
+        <i ng-if="payload.icon=='02d'" class="fa fa-cloud fa-2x" style="color:grey"></i>
+        <i ng-if="payload.icon=='03d'" class="fa fa-cloud fa-2x" style="color:grey"></i>
+        <i ng-if="payload.icon=='04d'" class="fa fa-cloud fa-2x" style="color:grey"></i>
+        <i ng-if="payload.icon=='09d'" class="fa fa-tint fa-2x" style="color:grey"></i>
+        <i ng-if="payload.icon=='10d'" class="fa fa-tint fa-2x" style="color:grey"></i>
+        <i ng-if="payload.icon=='11d'" class="fa fa-bolt fa-2x" style="color:grey"></i>
+        <i ng-if="payload.icon=='13d'" class="fa fa-snowflake-o fa-2x" style="color:grey"></i>
+        <i ng-if="payload.icon=='50d'" class="fa fa-cloud fa-2x" style="color:grey"></i>
+    </div>
+</div>

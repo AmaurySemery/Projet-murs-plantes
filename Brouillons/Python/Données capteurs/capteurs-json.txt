@@ -1,0 +1,9 @@
+{"sensor1":90,"sensor2":89,"sensor3":82,"minimum":82,"maximum":81,"alerte":0,"moyenne":87}
+{"sensor1":90,"sensor2":90,"sensor3":82,"minimum":82,"maximum":90,"alerte":0,"moyenne":87}
+{"sensor1":90,"sensor2":90,"sensor3":82,"minimum":81,"maximum":89,"alerte":0,"moyenne":87}
+{"sensor1":90,"sensor2":90,"sensor3":81,"minimum":81,"maximum":89,"alerte":0,"moyenne":87}
+{"sensor1":88,"sensor2":88,"sensor3":81,"minimum":80,"maximum":88,"alerte":0,"moyenne":85}
+{"sensor1":89,"sensor2":88,"sensor3":81,"minimum":80,"maximum":88,"alerte":0,"moyenne":86}
+{"sensor1":88,"sensor2":88,"sensor3":81,"minimum":80,"maximum":88,"alerte":0,"moyenne":85}
+{"sensor1":88,"sensor2":88,"sensor3":81,"minimum":80,"maximum":80,"alerte":0,"moyenne":85}
+
