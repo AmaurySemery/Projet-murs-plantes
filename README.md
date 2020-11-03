@@ -263,6 +263,7 @@ Arrosage automatique des murs végétalisés
 
 * [Comment fonctionne la culture hydroponique ?](<https://www.futura-sciences.com/planete/questions-reponses/eau-fonctionne-culture-hydroponique-4828/>)
 * [Mesure de l’eau du sol : questions, méthodes et outils Exemples d’application sur deux plateformes champs du réseau « PHENOME »](<https://www6.inrae.fr/cahier_des_techniques/content/download/4936/49941/version/1/file/CT90-Art2-Delalande.pdf>)
+* [Lumière et plante](<https://fr.aliexpress.com/item/1005001356169282.html?spm=a2g0o.productlist.0.0.7a5e5368gAIxBt&algo_pvid=53846460-813a-404c-8651-5df1f44754ef&algo_expid=53846460-813a-404c-8651-5df1f44754ef-17&btsid=2100bddb16044181517086390ee386&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
 
 # Liens intéressants
 
