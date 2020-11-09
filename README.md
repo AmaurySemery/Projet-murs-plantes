@@ -3,6 +3,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation sur les murs végétalisés
 
+* [Floraled](<https://www.floraled.fr/>)
 * [Mur végétal : Tous les systèmes pour faire un jardin vertical](<http://www.jardinsdebabylone.fr/blog/mur-vegetal-jardin-vertical/>)
 * [Isolants en laines végétales](<https://www.samse.fr/isolation-combles-amenageables/laine-vegetale>)
 * [Que valent les isolants végétaux ?](<https://www.quelleenergie.fr/magazine/isolation/que-valent-isolants-vegetaux-27198/>)
@@ -102,6 +103,9 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Raspberry Pi 3 modèle B Plus Kit carte + adaptateur d'alimentation + boîtier ABS + dissipateurs + écran tactile 3.5 pouces pour Raspberry Pi 3B +](<https://fr.aliexpress.com/item/32917388033.html?spm=a2g0o.productlist.0.0.b03458fe3jsOlz&algo_pvid=92f717db-777e-4259-a073-3789dad36a04&algo_expid=92f717db-777e-4259-a073-3789dad36a04-28&btsid=0b0a0ae216049225854823393ebc76&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
+* [Phyto Led B22 lumière de croissance hydroponique E27 Led ampoule de croissance MR16 spectre complet 220V lampe UV plante E14 fleur semis Fitolamp GU10](<https://fr.aliexpress.com/item/32973123948.html?spm=a2g0o.productlist.0.0.385a521ceyLb6O&algo_pvid=1b7d5748-8a93-423d-ac65-87f987c914b5&algo_expid=1b7d5748-8a93-423d-ac65-87f987c914b5-1&btsid=2100bde116049354997413337edc5d&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
+* [TSL2591 IIC I2C Module de rupture de capteur de lumière intégré ADC Module de capteur à spectre complet infrarouge numérique haute dynamique 3.3V 5V](<https://fr.aliexpress.com/item/1005001356169282.html?spm=a2g0o.productlist.0.0.7a5e5368gAIxBt&algo_pvid=53846460-813a-404c-8651-5df1f44754ef&algo_expid=53846460-813a-404c-8651-5df1f44754ef-17&btsid=2100bddb16044181517086390ee386&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
 * [Carte d'extension de Module de panneau de commande de relais RPi à 6 canaux pour Raspberry Pi 3 2 A + B + 2B 3B](<https://fr.aliexpress.com/item/1005001565207157.html?spm=a2g0o.productlist.0.0.47567ca0JCo8nr&algo_pvid=e2e9e941-a2d4-4040-8359-32246b1a9de7&algo_expid=e2e9e941-a2d4-4040-8359-32246b1a9de7-0&btsid=0b0a0ae216043375304786792ebc83&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
 * [Elecrow LCD 5 pouces Raspberry Pi 3 écran tactile HDMI 800x480 5 "moniteur TFT avec stylo tactile pour banane Pi Raspberry Pi 2 3](<https://fr.aliexpress.com/item/32732615315.html?spm=a2g0o.detail.1000060.3.471438f15OrBX6&gps-id=pcDetailBottomMoreThisSeller&scm=1007.13339.169870.0&scm_id=1007.13339.169870.0&scm-url=1007.13339.169870.0&pvid=a1414074-cca6-4d4d-a8d0-6bbf54dc100b&_t=gps-id:pcDetailBottomMoreThisSeller,scm-url:1007.13339.169870.0,pvid:a1414074-cca6-4d4d-a8d0-6bbf54dc100b,tpp_buckets:668%230%23131923%230_668%23808%233772%23906_668%23888%233325%2316_668%234328%2319941%23989_668%232846%238109%23252_668%232717%237563%23547_668%231000022185%231000066058%230_668%233468%2315613%23404>)
 * [Raspberry Pi 3 modèle B, kit de démarrage, avec étui, prise d'alimentation ue avec logo, dissipateur thermique, avec wifi et bluetooth](<https://fr.aliexpress.com/item/32840048378.html?spm=a2g0o.productlist.0.0.22cf58feAgsymR&algo_pvid=5e0cfda8-d121-434d-8ff4-7de06f2f28e5&algo_expid=5e0cfda8-d121-434d-8ff4-7de06f2f28e5-1&btsid=0b0a0ae216043376486637619ebc83&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
@@ -261,6 +265,7 @@ Arrosage automatique des murs végétalisés
 
 * [Comment fonctionne la culture hydroponique ?](<https://www.futura-sciences.com/planete/questions-reponses/eau-fonctionne-culture-hydroponique-4828/>)
 * [Mesure de l’eau du sol : questions, méthodes et outils Exemples d’application sur deux plateformes champs du réseau « PHENOME »](<https://www6.inrae.fr/cahier_des_techniques/content/download/4936/49941/version/1/file/CT90-Art2-Delalande.pdf>)
+* [Lumière et plante](<https://fr.aliexpress.com/item/1005001356169282.html?spm=a2g0o.productlist.0.0.7a5e5368gAIxBt&algo_pvid=53846460-813a-404c-8651-5df1f44754ef&algo_expid=53846460-813a-404c-8651-5df1f44754ef-17&btsid=2100bddb16044181517086390ee386&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
 
 # Liens intéressants
 
