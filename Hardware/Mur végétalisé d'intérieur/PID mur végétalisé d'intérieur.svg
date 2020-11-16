@@ -527,8 +527,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.67739034"
-     inkscape:cx="1471.4807"
-     inkscape:cy="1244.477"
+     inkscape:cx="1198.1599"
+     inkscape:cy="831.12596"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -547,7 +547,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2790,5 +2790,27 @@
          d="m 544.84783,994.66082 c -0.0507,-0.15454 -0.19499,-0.76025 -0.3207,-1.34645 l -0.22879,-1.06569 h -1.22756 -1.22757 v -3.40705 c 0,-2.73752 0.061,-3.54244 0.31095,-4.09498 0.32498,-0.71881 1.02256,-1.27198 1.82062,-1.44408 0.55663,-0.1196 11.95448,2.98696 12.70729,3.46394 1.54215,0.97723 1.51097,4.06589 -0.0481,4.83021 -0.38714,0.1896 -2.45071,0.78415 -9.53197,2.74604 -1.91175,0.5297 -2.17201,0.56636 -2.25337,0.31806 z"
          style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.83685684;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:25.51181221;stroke-opacity:1;paint-order:stroke fill markers" />
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="373.79666"
+       y="-247.87601"
+       id="text5071"><tspan
+         sodipodi:role="line"
+         id="tspan5069"
+         x="373.79666"
+         y="-247.87601"
+         style="font-size:4.23333311px;stroke-width:0.26458332">3/8'</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="449.13568"
+       y="132.37294"
+       id="text5071-6"><tspan
+         sodipodi:role="line"
+         id="tspan5069-0"
+         x="449.13568"
+         y="132.37294"
+         style="font-size:4.23333311px;stroke-width:0.26458332">3/4'</tspan></text>
   </g>
 </svg>
