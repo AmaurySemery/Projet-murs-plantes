@@ -67,4 +67,4 @@ void loop() {
         http.end();
     }
 
-  delay(10000);}
+  delay(600000);}
