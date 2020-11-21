@@ -189,6 +189,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Node-Red et MySQL](<http://silanus.fr/sin/?p=1071>)
 * [Connecting a Rain Gauge](<https://pi.gate.ac.uk/posts/2014/01/25/raingauge/>)
 * [Créer un son avec un microcontrôleur et l’analyser](<https://www.lelivrescolaire.fr/page/6225285>)
 * [Mesurer la luminosité ambiante avec une photorésistance et une carte Arduino / Genuino](<https://www.carnetdumaker.net/articles/mesurer-la-luminosite-ambiante-avec-une-photoresistance-et-une-carte-arduino-genuino/>)
