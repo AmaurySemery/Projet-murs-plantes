@@ -1,6 +1,11 @@
 #include <WiFi.h>
 #include <WiFiMulti.h>
 #include <HTTPClient.h>
+#include <Adafruit_Sensor.h>
+#include "cactus_io_DHT22.h"
+
+#define DHT22_PIN 33
+DHT22 dht(DHT22_PIN);
 
 WiFiMulti wifiMulti;
 
@@ -17,9 +22,18 @@ int b = 100;
 void setup() {
   Serial.begin(115200);
 wifiMulti.addAP(ssid, password);
+  dht.begin();
   }
 
 void loop() {
+  dht.readHumidity();
+  dht.readTemperature();
+
+  if (isnan(dht.humidity) || isnan(dht.temperature_C)) {
+  Serial.println("DHT sensor read failure!");
+  return;}
+  Serial.println(dht.temperature_C); Serial.print(" *C\t");
+  
   uint16_t value1 = analogRead(sensorPin1);
   float division1 = value1 / a;
   int sensor1convert = b - division1;
