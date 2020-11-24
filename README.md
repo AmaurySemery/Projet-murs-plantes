@@ -189,6 +189,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [KiCad 5, l'essentiel. Partie 1 : Dessiner le schéma électronique](<https://www.youtube.com/watch?v=C9EWrKw9Qz8&list=PLuQznwVAhY2VoayfSraJjI-Yr2OSGmFKt&ab_channel=EricPeronnin>)
 * [Node-Red et MySQL](<http://silanus.fr/sin/?p=1071>)
 * [Connecting a Rain Gauge](<https://pi.gate.ac.uk/posts/2014/01/25/raingauge/>)
 * [Créer un son avec un microcontrôleur et l’analyser](<https://www.lelivrescolaire.fr/page/6225285>)
