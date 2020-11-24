@@ -2,11 +2,13 @@
 #include <WiFiMulti.h>
 #include <HTTPClient.h>
 #include <Adafruit_Sensor.h>
-#include "cactus_io_DHT22.h"
+#include <DHT.h>
+#include <DHT_U.h>
 
-#define DHT22_PIN 33
-DHT22 dht(DHT22_PIN);
+#define DHTPIN 4
+#define DHTTYPE    DHT22
 
+DHT_Unified dht(DHTPIN, DHTTYPE);
 WiFiMulti wifiMulti;
 
 const char* ssid = "freebox_IPLMWO";
@@ -23,16 +25,22 @@ void setup() {
   Serial.begin(115200);
 wifiMulti.addAP(ssid, password);
   dht.begin();
+  sensor_t sensor;
+  dht.temperature().getSensor(&sensor);
   }
 
 void loop() {
-  dht.readHumidity();
-  dht.readTemperature();
+  sensors_event_t event;
+  dht.temperature().getEvent(&event);
 
-  if (isnan(dht.humidity) || isnan(dht.temperature_C)) {
-  Serial.println("DHT sensor read failure!");
-  return;}
-  Serial.println(dht.temperature_C); Serial.print(" *C\t");
+  if (isnan(event.temperature)) {
+    Serial.println(F("Error reading temperature!"));
+  }
+  else {
+    Serial.print(F("Temperature: "));
+    Serial.print(event.temperature);
+    Serial.println(F("°C"));
+  }
   
   uint16_t value1 = analogRead(sensorPin1);
   float division1 = value1 / a;
