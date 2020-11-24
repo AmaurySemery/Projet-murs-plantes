@@ -37,7 +37,7 @@ void loop() {
     Serial.println(F("Error reading temperature!"));
   }
   else {
-    Serial.print(F("Temperature: "));
+    Serial.print(F("Temperature : "));
     Serial.print(event.temperature);
     Serial.println(F("°C"));
   }
@@ -66,13 +66,14 @@ void loop() {
   int sen1 = sensor1convert;
   int sen2 = sensor2convert;
   int sen3 = sensor3convert;
+  int temp = event.temperature;
 
     if((wifiMulti.run() == WL_CONNECTED)) {
 
         HTTPClient http;
         
-        Serial.println("[DEBG] " + String(sen1) + String(sen2) + String(sen3));
-        http.begin("http://node03.popschool-willems.fr:1880/mod1/" + String(sen1)+ "/" + String(sen2) + "/" +String(sen3));
+        Serial.println("[DEBG] " + String(sen1) + String(sen2) + String(sen3) + String(temp));
+        http.begin("http://node03.popschool-willems.fr:1880/mod1/" + String(sen1)+ "/" + String(sen2) + "/" +String(sen3)+ "/" +String(temp));
         int httpCode = http.GET();
         if(httpCode > 0) {
             Serial.printf("[HTTP] GET... code: %d\n", httpCode);
