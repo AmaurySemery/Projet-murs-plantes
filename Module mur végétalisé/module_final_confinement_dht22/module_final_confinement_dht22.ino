@@ -90,5 +90,5 @@ void loop() {
         http.end();
     }
 
-  delay(10000);
+  delay(10000000);
   }
