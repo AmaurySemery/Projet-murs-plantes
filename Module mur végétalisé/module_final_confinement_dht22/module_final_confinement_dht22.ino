@@ -89,5 +89,7 @@ void loop() {
 
         http.end();
     }
-
-  delay(720000);}
+  Serial.end;
+  dht.end;
+  delay(10000);
+  }
