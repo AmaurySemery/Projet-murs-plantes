@@ -50,8 +50,6 @@ void loop() {
   Serial.println("----------------");
 
   int sen = sensorconvert;
-  int sen2 = sensor2convert;
-  int sen3 = sensor3convert;
   int temp = event.temperature;
 
     if((wifiMulti.run() == WL_CONNECTED)) {
