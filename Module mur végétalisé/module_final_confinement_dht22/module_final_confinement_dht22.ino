@@ -43,8 +43,7 @@ void loop() {
   uint16_t value = analogRead(sensorPin);
   float division = value / a;
   int sensorconvert = b - division;
-  Serial.println("Pourcentage d'humidité du mur végétalisé :");
-  Serial.print("Capteur : ");
+  Serial.print("Pourcentage d'humidité du mur végétalisé : ");
   Serial.print(sensorconvert);
   Serial.println(" %");
   Serial.println("----------------");
