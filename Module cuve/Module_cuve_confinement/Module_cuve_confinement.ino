@@ -9,7 +9,6 @@ UltrasonicSensor ultrasonic(0, 4);
 WiFiMulti wifiMulti;
 
 int hauteur_totale = 105; // modifier suivant la hauteur de la cuve
-int hauteur_cuve = 30;
 const char* ssid = "freebox_IPLMWO";
 const char* password = "F4CAE54A9B34";
 
@@ -21,14 +20,12 @@ void setup() {
 void loop() {
   int distance = ultrasonic.distanceInCentimeters();
   int hauteur_restante = hauteur_totale - distance;
-  int hauteur_perdue = hauteur_cuve - hauteur_restante;
-  int hauteur_restante_cuve = hauteur_cuve - hauteur_perdue;
-  int pourcentage = (hauteur_restante_cuve * 100) / hauteur_cuve;
+  int pourcentage = (hauteur_restante * 100) / hauteur_totale;
   Serial.print("Distance capteur/surface: ");
   Serial.print(distance);
   Serial.println(" cm");
-  Serial.print("Niveau de liquide restant estimé dans la cuve : ");
-  Serial.print(hauteur_restante_cuve);
+  Serial.print("Niveau de liquide restant estimé dans la cuve : ");  
+  Serial.print(hauteur_restante);
   Serial.println(" cm");
   Serial.print("Niveau de remplissage de la cuve : ");
   Serial.print(pourcentage);
