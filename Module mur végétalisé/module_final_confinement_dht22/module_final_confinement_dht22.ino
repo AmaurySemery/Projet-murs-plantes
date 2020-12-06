@@ -1,13 +1,11 @@
-#include <UltrasonicSensor.h>
 #include <WiFi.h>
-#include <Wire.h>
 #include <WiFiMulti.h>
 #include <HTTPClient.h>
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
 #include <DHT_U.h>
 
-#define DHTPIN 2
+#define DHTPIN 4
 #define DHTTYPE    DHT22
 
 DHT_Unified dht(DHTPIN, DHTTYPE);
