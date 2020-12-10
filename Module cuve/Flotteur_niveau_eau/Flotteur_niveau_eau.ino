@@ -1,51 +1,26 @@
-const int flotteurbasPin = 7;     // the number of the pushbutton pin
-const int flotteurhautPin = 2;
-//const int relaisPin =  13;      // the number of the LED pin
-
-// variables will change:
-int flotteurbasState = 0;         // variable for reading the pushbutton status
-int flotteurhautState = 1;
-
-void setup() {
-  // initialize the relais pin as an output:
-//  pinMode(relaisPin, OUTPUT);
-  // initialize the pushbutton pin as an input:
-  pinMode(flotteurbasPin, INPUT);
-  pinMode(flotteurhautPin, INPUT);
+const unsigned long DUREE_MIN_OSMOL = 20000; // Durée minimum d'osmolation en milliseconde (20000ms = 20s)
+ 
+// Déclarations des connexions sur carte et des variables
+const byte PIN_RELAIS = 12; // Numéro du pin pour le relais
+const byte PIN_CAPTEUR = 9; // Numéro du pin pour les capteurs de niveau
+unsigned long temps_debut_osmolation; // Variable de type long non signée pour enregristrer un temps
+ 
+void setup() { // Initialisation du programme
+  pinMode(PIN_CAPTEUR, INPUT_PULLUP); // Affecte le mode Entrée au pin capteur. En l'absence de branchement, la résistance interne Pullup tire vers un état HIGH non aléatoire.
+  pinMode(PIN_RELAIS, OUTPUT); // Affecte le mode Sortie (envoi d'un signal) au pin du relais
   Serial.begin(115200);
 }
-
-void loop() {
-  // read the state of the flotteur value:
-  flotteurbasState = digitalRead(flotteurbasPin);
-  Serial.print("Lecture flotteur bas : ");
-  Serial.println(flotteurbasState);
-  flotteurhautState = digitalRead(flotteurhautPin);
-  Serial.print("Lecture flotteur haut : ");
-  Serial.println(flotteurhautState);
-
-  // check if the flotteurbas is up
-  // if it is, the flotteurbasState is HIGH:
-  if (flotteurbasState == LOW) {
-    // turn LED on:
-    //digitalWrite(relaisPin, HIGH); // pompe en marche
-    Serial.print("Fonctionnement flotteur bas : ");
-    Serial.println("On !");
-  } if (flotteurbasState == HIGH) {
-    // turn LED off:
-    //digitalWrite(relaisPin, LOW);
-    Serial.print("Fonctionnement flotteur bas : ");
-    Serial.println("Off !");
+ 
+void loop() { // Programme en boucle
+  if (digitalRead(PIN_CAPTEUR) == LOW) { // Si le pin du capteur est LOW (contact pullup fermé, flotteur bas)
+    digitalWrite(PIN_RELAIS, HIGH); // Envoie du courant au pin relais, la pompe injecte de l'eau
+    Serial.println("Off");
+    temps_debut_osmolation = millis(); // Affecte le temps actuel au début d'osmolation
   }
-  if (flotteurhautState == LOW) {
-   // turn led off
-  //  digitalWrite(relaisPin, LOW);
-  Serial.print("Fonctionnement flotteur haut : On !");
-  } if (flotteurhautState == HIGH) {
-   // turn LED on
-    //digitalWrite(relaisPin, HIGH);
-    Serial.print("Fonctionnement flotteur haut : ");
-    Serial.println("Off !");
+  else { // Sinon, si le flotteur est en haut
+    if (millis() > temps_debut_osmolation + DUREE_MIN_OSMOL) { // Si la durée d'osmolation dépasse la durée min
+      digitalWrite(PIN_RELAIS, LOW); // N'envoie plus de courant sur le pin relais, la pompe s'arrête
+      Serial.println("On");
+    }
   }
-  delay(2000);
 }
