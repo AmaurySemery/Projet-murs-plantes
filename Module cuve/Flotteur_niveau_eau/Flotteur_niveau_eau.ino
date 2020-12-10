@@ -1,4 +1,4 @@
-int switchPin = 7; // Bouton connecté à la pin 2 (pull-up, LOW=bouton pressé)
+int switchPin = 2; // Bouton connecté à la pin 2 (pull-up, LOW=bouton pressé)
 
   int val;        // variable pour lire l'état de l'entrée
   int val2;       // variable pour lire l'état de l'entrée (après un delai)
