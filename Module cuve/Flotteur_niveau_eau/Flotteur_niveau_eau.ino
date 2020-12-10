@@ -13,9 +13,11 @@ void setup() {
 
 void loop(){
   val = digitalRead(switchPin);      // Lecture de la valeur d'entrée
+  Serial.print("Valeur 1 : ");
   Serial.println(val);
   delay(10);                         // 10 millisecondes
   val2 = digitalRead(switchPin);     // Relecture de l'entrée pour vérification de parasitage
+  Serial.print("Valeur 2 : ");
   Serial.println(val2);
 
   if (val == val2) {                 // S'assurer que l'on a 2 lectures successives consistante!
