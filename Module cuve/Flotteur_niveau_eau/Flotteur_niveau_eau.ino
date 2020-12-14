@@ -1,4 +1,4 @@
-const int Pushbutton = 4; //bouton-poussoir connecté à la broche D4
+const int Pushbutton = 12; //bouton-poussoir connecté à la broche D4
 const int LED = 7; //LED connectée à la broche D7
 int value = 0;     // Variable pour lire l'état du bouton-poussoir
 
