@@ -1,24 +1,28 @@
-const int Pushbutton = 12; //bouton-poussoir connecté à la broche D4
-const int LED = 7; //LED connectée à la broche D7
-int value = 0;     // Variable pour lire l'état du bouton-poussoir
+/*
+Lorsqu'on appui sur le bouton (broche 12), la DEL «L» (broche 13) de la carte s'illumine.
+*/
+
+int etatInterrupteur;
 
 void setup() {
-  // put your setup code here, to run once:
- pinMode (LED, OUTPUT); //La broche du LED est configurée comme sortie
- pinMode (Pushbutton, INPUT); //La broche du bouton-poussoir est configurée comme entrée avec une resistance pull-up externe
+        // Configuration de la broche 12 en tant qu'entree numerique.
+        pinMode(12,INPUT);
+
+        // Configuration de la broche 13 en tant que sortie numerique
+        pinMode(7,OUTPUT);
 }
 
 void loop() {
-  // mettre votre code principal ici, qui va s'exécuter de façon répétée:
-value = digitalRead(Pushbutton); //Lire l'état du bouton-poussoir
-if (value == LOW) //Si le bouton est appuyé
-    {
-       delay(10); //10 milliseconds anti-rebond
-       if (value == LOW) //vérifier encore so le bouton est toujours appuyé
-    {
-        digitalWrite(LED, HIGH); //LED est allumée
-        delay(5000); //pause de 5 Second 
-        digitalWrite(LED, LOW); //LED est éteinte
-    }
-    }
+
+        // Lire l'etat de la broche 12.
+        etatInterrupteur = digitalRead(12);
+
+        // Changer l'etat de la broche 13 selon
+        // l'etat de l'interrupteur
+        if ( etatInterrupteur == LOW ) {
+                digitalWrite(7,HIGH);
+        } else if ( etatInterrupteur == HIGH ) {
+                digitalWrite(7,LOW);
+        }
+
 }
