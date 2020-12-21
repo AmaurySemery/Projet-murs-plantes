@@ -5,7 +5,7 @@
 #include <DHT.h>
 #include <DHT_U.h>
 
-#define DHTPIN 2
+#define DHTPIN 4
 #define DHTTYPE    DHT22
 
 DHT_Unified dht(DHTPIN, DHTTYPE);
@@ -14,7 +14,7 @@ WiFiMulti wifiMulti;
 const char* ssid = "freebox_IPLMWO";
 const char* password = "F4CAE54A9B34";
 
-int sensorPin = 4;
+int sensorPin = 19;
 float a = 40.95;
 int b = 100;
 
