@@ -14,7 +14,7 @@ WiFiMulti wifiMulti;
 const char* ssid = "freebox_IPLMWO";
 const char* password = "F4CAE54A9B34";
 
-int sensorPin = 4;
+int sensorPin = 14;
 float a = 40.95;
 int b = 100;
 
