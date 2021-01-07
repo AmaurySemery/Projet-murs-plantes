@@ -15,6 +15,7 @@ int hauteur_totale = 105; // modifier suivant la hauteur de la cuve
 
 void setup() {
   Serial.begin(115200);
+  dht.begin();
   sensor_t sensor;
   dht.temperature().getSensor(&sensor);
 }
