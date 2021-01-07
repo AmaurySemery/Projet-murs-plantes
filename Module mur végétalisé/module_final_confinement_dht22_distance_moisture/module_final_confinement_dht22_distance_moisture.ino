@@ -11,7 +11,9 @@ DHT_Unified dht(DHTPIN, DHTTYPE);
 UltrasonicSensor ultrasonic(2, 4);
 
 int hauteur_totale = 105; // modifier suivant la hauteur de la cuve
-
+int sensorPin = 8;
+float a = 40.95;
+int b = 100;
 
 void setup() {
   Serial.begin(115200);
@@ -45,5 +47,14 @@ void loop() {
   Serial.print(pourcentage);
   Serial.println(" %");
   Serial.println("-----------------");
+
+  uint16_t value = analogRead(sensorPin);
+  float division = value / a;
+  int sensorconvert = b - division;
+  Serial.print("Pourcentage d'humidité du mur végétalisé : ");
+  Serial.print(sensorconvert);
+  Serial.println(" %");
+  Serial.println("----------------");
+  
   delay(5000);
 }
