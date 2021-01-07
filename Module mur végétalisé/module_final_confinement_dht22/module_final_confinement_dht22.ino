@@ -5,7 +5,7 @@
 #include <DHT.h>
 #include <DHT_U.h>
 
-#define DHTPIN 4
+#define DHTPIN A0
 #define DHTTYPE    DHT22
 
 DHT_Unified dht(DHTPIN, DHTTYPE);
@@ -20,7 +20,7 @@ int b = 100;
 
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
 wifiMulti.addAP(ssid, password);
   dht.begin();
   sensor_t sensor;
