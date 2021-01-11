@@ -189,6 +189,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [[FR] NRF24L01 tutoriel francais arduino](<https://www.youtube.com/watch?v=FA0NdSaMyIM>)
 * [Arduino Rain Gauge Calibration](<https://www.instructables.com/Arduino-Rain-Gauge-Calibration/>)
 * [KiCad 5, l'essentiel. Partie 1 : Dessiner le schéma électronique](<https://www.youtube.com/watch?v=C9EWrKw9Qz8&list=PLuQznwVAhY2VoayfSraJjI-Yr2OSGmFKt&ab_channel=EricPeronnin>)
 * [Node-Red et MySQL](<http://silanus.fr/sin/?p=1071>)
