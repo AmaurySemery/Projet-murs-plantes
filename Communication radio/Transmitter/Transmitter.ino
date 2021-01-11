@@ -15,6 +15,22 @@ GND   -> GND
 
 #include <SPI.h>
 #include <NRFLite.h>
+#include <UltrasonicSensor.h>
+#include <Adafruit_Sensor.h>
+#include <DHT.h>
+#include <DHT_U.h>
+
+#define DHTPIN A0
+#define DHTTYPE    DHT22
+
+DHT_Unified dht(DHTPIN, DHTTYPE);
+
+UltrasonicSensor ultrasonic(2, 4);
+
+int hauteur_totale = 105; // modifier suivant la hauteur de la cuve
+int sensorPin = A1;
+float a = 40.95;
+int b = 100;
 
 const static uint8_t RADIO_ID = 1;             // Our radio's id.
 const static uint8_t DESTINATION_RADIO_ID = 0; // Id of the radio we will transmit to.
@@ -26,6 +42,9 @@ struct RadioPacket // Any packet up to 32 bytes can be sent.
     uint8_t FromRadioId;
     uint32_t OnTimeMillis;
     uint32_t FailedTxCount;
+    uint32_t Moisture;
+    uint32_t Temperature;
+    uint32_t LvlWater;
 };
 
 NRFLite _radio;
@@ -34,7 +53,9 @@ RadioPacket _radioData;
 void setup()
 {
    Serial.begin(115200);
-    
+    dht.begin();
+  sensor_t sensor;
+  dht.temperature().getSensor(&sensor);
     // By default, 'init' configures the radio to use a 2MBPS bitrate on channel 100 (channels 0-125 are valid).
     // Both the RX and TX radios must have the same bitrate and channel to communicate with each other.
     // You can run the 'ChannelScanner' example to help select the best channel for your environment.
@@ -54,7 +75,45 @@ void setup()
 
 void loop()
 {
+  sensors_event_t event;
+  dht.temperature().getEvent(&event);
+
+  if (isnan(event.temperature)) {
+    Serial.println(F("Error reading temperature!"));
+  }
+  else {
+    Serial.print(F("Temperature : "));
+    Serial.print(event.temperature);
+    Serial.println(F("°C"));
+  }
+  int distance = ultrasonic.distanceInCentimeters();
+  int hauteur_restante = hauteur_totale - distance;
+  int pourcentage = (hauteur_restante * 100) / hauteur_totale;
+  Serial.print("Distance capteur/surface: ");
+  Serial.print(distance);
+  Serial.println(" cm");
+  Serial.print("Niveau de liquide restant estimé dans la cuve : ");  
+  Serial.print(hauteur_restante);
+  Serial.println(" cm");
+  Serial.print("Niveau de remplissage de la cuve : ");
+  Serial.print(pourcentage);
+  Serial.println(" %");
+
+  uint16_t value = analogRead(sensorPin);
+  float division = value / a;
+  int sensorconvert = b - division;
+  Serial.print("Pourcentage d'humidité du mur végétalisé : ");
+  Serial.print(sensorconvert);
+  Serial.println(" %");
+  Serial.println("----------------");
+
+  int mois = sensorconvert;
+  int temp = event.temperature;
+  
     _radioData.OnTimeMillis = millis();
+    _radioData.Moisture = mois;
+    _radioData.Temperature = temp;
+    _radioData.LvlWater = pourcentage;
 
     Serial.print("Sending ");
     Serial.print(_radioData.OnTimeMillis);
@@ -78,5 +137,5 @@ void loop()
         _radioData.FailedTxCount++;
     }
 
-    delay(1000);
+    delay(5000);
     }
