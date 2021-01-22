@@ -104,6 +104,13 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Accu LiPo 3,7 V 1000 mAh PR523450](<https://www.gotronic.fr/art-accu-lipo-3-7-v-1000-mah-pr523450-5813.htm>)
+* [Shield batterie Photon DEV-13626](<https://www.gotronic.fr/art-shield-batterie-photon-dev-13626-27983.htm>)
+* [Carte Particle Photon](<https://www.gotronic.fr/art-carte-particle-photon-27329.htm>)
+* [Cordon 75 cm RS617](<https://www.gotronic.fr/art-cordon-75-cm-rs617-25112.htm>)
+* [Shield Météo DEV-13674](<https://www.gotronic.fr/art-shield-meteo-dev-13674-27982.htm>)
+* [Shield 4G, LTE, 3G et 2G TEL0124](<https://www.gotronic.fr/art-shield-4g-lte-3g-et-2g-tel0124-32043.htm#complte_desc>)
+* [NRF24L01+PA+LNA Module Emetteur Récepteur sans Fil](<https://www.amazon.fr/WayinTop-NRF24L01-R%C3%A9cepteur-Adaptateur-R%C3%A9gulateur/dp/B07P95X6HM/ref=psdc_2908498031_t2_B07ZCJPJ8B>)
 * [Raspberry Pi 3 modèle B Plus Kit carte + adaptateur d'alimentation + boîtier ABS + dissipateurs + écran tactile 3.5 pouces pour Raspberry Pi 3B +](<https://fr.aliexpress.com/item/32917388033.html?spm=a2g0o.productlist.0.0.b03458fe3jsOlz&algo_pvid=92f717db-777e-4259-a073-3789dad36a04&algo_expid=92f717db-777e-4259-a073-3789dad36a04-28&btsid=0b0a0ae216049225854823393ebc76&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
 * [Phyto Led B22 lumière de croissance hydroponique E27 Led ampoule de croissance MR16 spectre complet 220V lampe UV plante E14 fleur semis Fitolamp GU10](<https://fr.aliexpress.com/item/32973123948.html?spm=a2g0o.productlist.0.0.385a521ceyLb6O&algo_pvid=1b7d5748-8a93-423d-ac65-87f987c914b5&algo_expid=1b7d5748-8a93-423d-ac65-87f987c914b5-1&btsid=2100bde116049354997413337edc5d&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
 * [TSL2591 IIC I2C Module de rupture de capteur de lumière intégré ADC Module de capteur à spectre complet infrarouge numérique haute dynamique 3.3V 5V](<https://fr.aliexpress.com/item/1005001356169282.html?spm=a2g0o.productlist.0.0.7a5e5368gAIxBt&algo_pvid=53846460-813a-404c-8651-5df1f44754ef&algo_expid=53846460-813a-404c-8651-5df1f44754ef-17&btsid=2100bddb16044181517086390ee386&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_>)
@@ -190,6 +197,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Connexion NRF24L01 & carte photon](<https://www.hackster.io/cowensb4/iot-project-9f6ea5>)
 * [[FR] NRF24L01 tutoriel francais arduino](<https://www.youtube.com/watch?v=FA0NdSaMyIM>)
 * [Arduino Rain Gauge Calibration](<https://www.instructables.com/Arduino-Rain-Gauge-Calibration/>)
 * [KiCad 5, l'essentiel. Partie 1 : Dessiner le schéma électronique](<https://www.youtube.com/watch?v=C9EWrKw9Qz8&list=PLuQznwVAhY2VoayfSraJjI-Yr2OSGmFKt&ab_channel=EricPeronnin>)
