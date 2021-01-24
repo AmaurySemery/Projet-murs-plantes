@@ -25,9 +25,17 @@ void setup() {
 void loop() {
  setDate();
  readRTC();
- if(Clock.getMinute() == 2 and Clock.getSecond() == 0){Serial.println("Hello !");
+ if(Clock.getHour(h12, PM) == 8 and Clock.getMinute() == 0 and Clock.getSecond() == 0){Serial.println("Ouverture de la vanne !");
  digitalWrite(ledpin, HIGH);
- delay(5000);
+ delay(10000);
+ digitalWrite(ledpin, LOW);}
+ if(Clock.getHour(h12, PM) == 12 and Clock.getMinute() == 0 and Clock.getSecond() == 0){Serial.println("Ouverture de la vanne !");
+ digitalWrite(ledpin, HIGH);
+ delay(10000);
+ digitalWrite(ledpin, LOW);}
+ if(Clock.getHour(h12, PM) == 16 and Clock.getMinute() == 0 and Clock.getSecond() == 0){Serial.println("Ouverture de la vanne !");
+ digitalWrite(ledpin, HIGH);
+ delay(10000);
  digitalWrite(ledpin, LOW);}
 }
 void readRTC( ) { /* function readRTC */
