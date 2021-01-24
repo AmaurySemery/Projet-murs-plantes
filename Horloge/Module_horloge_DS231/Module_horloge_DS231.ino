@@ -9,7 +9,7 @@ byte DoW ;
 byte Hour ;
 byte Minute ;
 byte Second ;
-bool Century=false;
+bool Century = false;
 bool h12 ;
 bool PM ;
 //Objects
