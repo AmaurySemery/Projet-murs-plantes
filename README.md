@@ -197,6 +197,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Utilisation d’un Module DS3231 avec Arduino](<https://www.aranacorp.com/fr/utilisation-dun-module-ds3231-avec-arduino/>)
 * [Connexion NRF24L01 & carte photon](<https://www.hackster.io/cowensb4/iot-project-9f6ea5>)
 * [[FR] NRF24L01 tutoriel francais arduino](<https://www.youtube.com/watch?v=FA0NdSaMyIM>)
 * [Arduino Rain Gauge Calibration](<https://www.instructables.com/Arduino-Rain-Gauge-Calibration/>)
