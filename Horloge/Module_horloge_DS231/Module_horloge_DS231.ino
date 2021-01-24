@@ -22,6 +22,7 @@ void setup() {
 }
 void loop() {
  readRTC();
+ if(Clock.getMinute() == 2 and Clock.getSecond() == 0){Serial.println("Hello !");}
 }
 void readRTC( ) { /* function readRTC */
  ////Read Real Time Clock
