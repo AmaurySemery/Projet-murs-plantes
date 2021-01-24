@@ -12,17 +12,22 @@ byte Second ;
 bool Century  = false;
 bool h12 ;
 bool PM ;
+const int ledpin = 13;
 //Objects
 DS3231 Clock;
 void setup() {
  //Init Serial USB
+ pinMode(ledpin, OUTPUT);
  Serial.begin(9600);
  Serial.println(F("Initialize System"));
  Wire.begin();
 }
 void loop() {
  readRTC();
- if(Clock.getMinute() == 2 and Clock.getSecond() == 0){Serial.println("Hello !");}
+ if(Clock.getMinute() == 2 and Clock.getSecond() == 0){Serial.println("Hello !");
+ digitalWrite(ledpin, HIGH);
+ delay(5000);
+ digitalWrite(ledpin, LOW);}
 }
 void readRTC( ) { /* function readRTC */
  ////Read Real Time Clock
