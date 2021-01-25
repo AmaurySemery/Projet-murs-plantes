@@ -54,6 +54,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [Alimenter un ARDUINO sur Pile ou Batterie](<http://riton-duino.blogspot.com/2019/02/alimenter-un-arduino-sur-pile-ou.html>)
 * [https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf](<https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf>)
 * [La mesure des précipitations avec les Pluviomètres à Auget](<https://www.capteurs-et-mesures-agralis.com/pluviometre-augets/>)
 * [Arduino - Station météo autonome](<http://www.egloff.eu/index.php/fr/la-technique/arduino/station-meteo>)
