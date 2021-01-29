@@ -199,6 +199,7 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [https://letmeknow.fr/blog/author/bachir/](<https://letmeknow.fr/blog/author/bachir/>)
 * [Pluviomètre & Raspberry | Eni](<https://www.editions-eni.fr/open/mediabook.aspx?idR=a7f1cbc9043b3e5a51940dd447995717>)
 * [Utilisation d’un Module DS3231 avec Arduino](<https://www.aranacorp.com/fr/utilisation-dun-module-ds3231-avec-arduino/>)
 * [Connexion NRF24L01 & carte photon](<https://www.hackster.io/cowensb4/iot-project-9f6ea5>)
