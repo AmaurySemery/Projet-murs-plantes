@@ -25,9 +25,7 @@ struct RadioPacket // Any packet up to 32 bytes can be sent.
     uint8_t FromRadioId;
     uint32_t OnTimeMillis;
     uint32_t FailedTxCount;
-    uint32_t Moisture;
     uint32_t Temperature;
-    uint32_t LvlWater;
 };
 
 NRFLite _radio;
@@ -63,12 +61,8 @@ void loop()
         msg += ", ";
         msg += _radioData.FailedTxCount;
         msg += " Failed TX, ";
-        msg += _radioData.Moisture;
-        msg += "% Moisture Humidity, ";
         msg += _radioData.Temperature;
-        msg += "° Temperature, ";
-        msg += _radioData.LvlWater;
-        msg += "% Water level.";
+        msg += "° Temperature.";
         
         
 
