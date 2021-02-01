@@ -200,6 +200,9 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Connecting the Radio](<https://www.mysensors.org/build/connect_radio>)
+* [Tests de modules nRF24L01+](<https://ouilogique.com/tests_nRF24L01+/#:~:text=Port%C3%A9e%20%3A%20quelques%20m%C3%A8tres%20avec%20une,(et%20beaucoup%20de%20chance).>)
+* [Getting Started with nRF24L01+ on Arduino](<https://maniacbug.wordpress.com/2011/11/02/getting-started-rf24/>)
 * [ARDUINO PRO MINI & basse consommation](<https://riton-duino.blogspot.com/2018/02/arduino-pro-mini-basse-consommation.html>)
 * [NRF24L01 et ARDUINO UNO, NANO, MINI](<http://riton-duino.blogspot.com/2018/08/le-nrf24l01-avec-arduino-uno-nano-et.html>)
 * [https://letmeknow.fr/blog/author/bachir/](<https://letmeknow.fr/blog/author/bachir/>)
