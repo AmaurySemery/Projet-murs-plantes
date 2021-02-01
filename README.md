@@ -106,6 +106,7 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [WayinTop 2Set Emetteur Récepteur sans Fil RF avec Tutoriel, NRF24L01+PA+LNA Module avec SMA Antenne 2.4 GHz 1100m + NRF24L01 Régulateur de Tension + Board pour Arduino](<https://www.amazon.fr/WayinTop-Emetteur-R%C3%A9cepteur-Tutoriel-R%C3%A9gulateur/dp/B07ZCJPJ8B/ref=pd_day0_3?pd_rd_w=1Xo4q&pf_rd_p=5a3d874f-f0eb-4ad9-ac25-35518704bcec&pf_rd_r=H7PJJS2BHZW0854MNAYV&pd_rd_r=794fe707-1b68-4683-82f9-8e17ff91754d&pd_rd_wg=TIvr3&pd_rd_i=B07ZCJPJ8B&psc=1>)
 * [Accu LiPo 3,7 V 1000 mAh PR523450](<https://www.gotronic.fr/art-accu-lipo-3-7-v-1000-mah-pr523450-5813.htm>)
 * [Shield batterie Photon DEV-13626](<https://www.gotronic.fr/art-shield-batterie-photon-dev-13626-27983.htm>)
 * [Carte Particle Photon](<https://www.gotronic.fr/art-carte-particle-photon-27329.htm>)
@@ -199,6 +200,11 @@ Arrosage automatique des murs végétalisés
 
 # Tutoriels
 
+* [Connecting the Radio](<https://www.mysensors.org/build/connect_radio>)
+* [Tests de modules nRF24L01+](<https://ouilogique.com/tests_nRF24L01+/#:~:text=Port%C3%A9e%20%3A%20quelques%20m%C3%A8tres%20avec%20une,(et%20beaucoup%20de%20chance).>)
+* [Getting Started with nRF24L01+ on Arduino](<https://maniacbug.wordpress.com/2011/11/02/getting-started-rf24/>)
+* [ARDUINO PRO MINI & basse consommation](<https://riton-duino.blogspot.com/2018/02/arduino-pro-mini-basse-consommation.html>)
+* [NRF24L01 et ARDUINO UNO, NANO, MINI](<http://riton-duino.blogspot.com/2018/08/le-nrf24l01-avec-arduino-uno-nano-et.html>)
 * [https://letmeknow.fr/blog/author/bachir/](<https://letmeknow.fr/blog/author/bachir/>)
 * [Pluviomètre & Raspberry | Eni](<https://www.editions-eni.fr/open/mediabook.aspx?idR=a7f1cbc9043b3e5a51940dd447995717>)
 * [Utilisation d’un Module DS3231 avec Arduino](<https://www.aranacorp.com/fr/utilisation-dun-module-ds3231-avec-arduino/>)
