@@ -1,6 +1,14 @@
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
+#include <Adafruit_Sensor.h>
+#include <DHT.h>
+#include <DHT_U.h>
+
+#define DHTPIN A0
+#define DHTTYPE    DHT22
+
+DHT_Unified dht(DHTPIN, DHTTYPE);
 
 //create an RF24 object
 RF24 radio(9, 10);  // CE, CSN
@@ -19,9 +27,21 @@ void setup()
 }
 void loop()
 {
+  sensors_event_t event;
+  dht.temperature().getEvent(&event);
+
+  if (isnan(event.temperature)) {
+    Serial.println(F("Error reading temperature!"));
+  }
+  else {
+    Serial.print(F("Temperature : "));
+    Serial.print(event.temperature);
+    Serial.println(F("°C"));
+  }
+  int temp = event.temperature;
   //Send message to receiver
-  const char text[] = "Hello World";
-  radio.write(&text, sizeof(text));
+  const char text[] = temp;
+  radio.write(&text);
   
   delay(1000);
 }
