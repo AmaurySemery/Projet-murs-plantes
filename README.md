@@ -29,6 +29,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation programmation
 
+* [Doc nRF24L01+](<https://nrf24.github.io/RF24/index.html>)
 * [La Programmerie](<https://www.aranacorp.com/fr/la-programmerie/>)
 * [Librairie NRFLite](<https://github.com/dparson55/NRFLite>)
 * [Data exploration using InfluxQL](<https://docs.influxdata.com/influxdb/v1.7/query_language/data_exploration/>)
