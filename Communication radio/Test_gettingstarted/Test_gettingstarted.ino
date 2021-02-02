@@ -1,154 +1,129 @@
-/*
- * See documentation at https://nRF24.github.io/RF24
- * See License information at root directory of this library
- * Author: Brendan Doherty (2bndy5)
- */
+//Libraries
+#include <RF24.h>//https://github.com/nRF24/RF24
+#include <nRF24L01.h>//https://github.com/nRF24/RF24/blob/master/nRF24L01.h
+#include <SPI.h>//https://www.arduino.cc/en/reference/SPI
 
-/**
- * A simple example of sending data from 1 nRF24L01 transceiver to another.
- *
- * This example was written to be used on 2 devices acting as "nodes".
- * Use the Serial Monitor to change each node's behavior.
- */
-#include <SPI.h>
-#include "printf.h"
-#include "RF24.h"
+//Parameters
+byte addresses[2] [6] = {"Node1", "Node2"};
+bool radioNumber  = 0;
+bool role  = 0;
 
-// instantiate an object for the nRF24L01 transceiver
-RF24 radio(9, 10); // using pin 7 for the CE pin, and pin 8 for the CSN pin
+//Variables
+int masterStatus  = 0;
+byte cmd  = 0;
+int slaveStatus  = 0;
+unsigned long myData  = 0;
 
-// Let these addresses be used for the pair
-uint8_t address[][6] = {"1Node", "2Node"};
-// It is very helpful to think of an address as a path instead of as
-// an identifying device destination
-
-// to use different addresses on a pair of radios, we need a variable to
-// uniquely identify which address this radio will use to transmit
-bool radioNumber = 1; // 0 uses address[0] to transmit, 1 uses address[1] to transmit
-
-// Used to control whether this node is sending or receiving
-bool role = false;  // true = TX role, false = RX role
-
-// For this example, we'll be using a payload containing
-// a single float number that will be incremented
-// on every successful transmission
-float payload = 0.0;
+//Objects
+RF24 radio(9, 10);
 
 void setup() {
+  //Init Serial USB
+  Serial.begin(9600);
+  Serial.println(F("Initialize System"));
+  //Init radio rf24
 
-  Serial.begin(115200);
-  while (!Serial) {
-    // some boards need to wait to ensure access to serial over USB
-  }
+  radio.begin();
+  //radio.setChannel(125);
+  radio.setPALevel(RF24_PA_LOW); // Set the PA Level low to prevent power supply related issues. RF24_PA_MAX is default.
+  //radio.setDataRate(RF24_250KBPS);//(RF24_250KBPS);//(RF24_2MBPS);
+  //radio.setAutoAck(1);                    // Ensure autoACK is enabled
+  //radio.enableAckPayload();               // Allow optional ack payloads
+  //radio.setRetries(2,15);                 // Smallest time between retries, max no. of retries
+  //radio.setAddressWidth(3);
+  //radio.setCRCLength(RF24_CRC_8);          // Use 8-bit CRC for performance
+  //radio.setPayloadSize(16);                // Here we are sending 1-byte payloads to test the call-response speed
+  //radio.printDetails();                   // Dump the configuration of the rf unit for debugging. Not working on nano
 
-  // initialize the transceiver on the SPI bus
-  if (!radio.begin()) {
-    Serial.println(F("radio hardware is not responding!!"));
-    while (1) {} // hold in infinite loop
-  }
 
-  // print example's introductory prompt
-  Serial.println(F("RF24/examples/GettingStarted"));
 
-  // To set the radioNumber via the Serial monitor on startup
-  Serial.println(F("Which radio is this? Enter '0' or '1'. Defaults to '0'"));
-  while (!Serial.available()) {
-    // wait for user input
-  }
-  char input = Serial.parseInt();
-  radioNumber = input == 1;
-  Serial.print(F("radioNumber = "));
-  Serial.println((int)radioNumber);
-
-  // role variable is hardcoded to RX behavior, inform the user of this
-  Serial.println(F("*** PRESS 'T' to begin transmitting to the other node"));
-
-  // Set the PA Level low to try preventing power supply related problems
-  // because these examples are likely run with nodes in close proximity to
-  // each other.
-  radio.setPALevel(RF24_PA_LOW);  // RF24_PA_MAX is default.
-
-  // save on transmission time by setting the radio to only transmit the
-  // number of bytes we need to transmit a float
-  radio.setPayloadSize(sizeof(payload)); // float datatype occupies 4 bytes
-
-  // set the TX address of the RX node into the TX pipe
-  radio.openWritingPipe(address[radioNumber]);     // always uses pipe 0
-
-  // set the RX address of the TX node into a RX pipe
-  radio.openReadingPipe(1, address[!radioNumber]); // using pipe 1
-
-  // additional setup specific to the node's role
-  if (role) {
-    radio.stopListening();  // put radio in TX mode
+  // Open a writing and reading pipe on each radio, with opposite addresses
+  if (radioNumber) {
+    radio.openWritingPipe(addresses[1]);
+    radio.openReadingPipe(1, addresses[0]);
   } else {
-    radio.startListening(); // put radio in RX mode
+    radio.openWritingPipe(addresses[0]);
+    radio.openReadingPipe(1, addresses[1]);
   }
 
-  // For debugging info
-  // printf_begin();             // needed only once for printing details
-  // radio.printDetails();       // (smaller) function that prints raw register values
-  // radio.printPrettyDetails(); // (larger) function that prints human readable data
-
-} // setup
+  myData = 1.22;
+  // Start the radio listening for data
+  radio.startListening();
+}
 
 void loop() {
+  testRF24();
+}
 
-  if (role) {
-    // This device is a TX node
-
-    unsigned long start_timer = micros();                    // start the timer
-    bool report = radio.write(&payload, sizeof(float));      // transmit & save the report
-    unsigned long end_timer = micros();                      // end the timer
-
-    if (report) {
-      Serial.print(F("Transmission successful! "));          // payload was delivered
-      Serial.print(F("Time to transmit = "));
-      Serial.print(end_timer - start_timer);                 // print the timer result
-      Serial.print(F(" us. Sent: "));
-      Serial.println(payload);                               // print payload sent
-      payload += 0.01;                                       // increment float payload
-    } else {
-      Serial.println(F("Transmission failed or timed out")); // payload was not delivered
-    }
-
-    // to make this example readable in the serial monitor
-    delay(1000);  // slow transmissions down by 1 second
-
+void testRF24( ) { /* function testRF24 */
+  ////Test RF24communication change radioNumber and radio to 0(receiver) or 1(transmitter)
+  if (role == 1) {
+    masterRole();
   } else {
-    // This device is a RX node
+    slaveRole();
+  }
+}
 
-    uint8_t pipe;
-    if (radio.available(&pipe)) {             // is there a payload? get the pipe number that recieved it
-      uint8_t bytes = radio.getPayloadSize(); // get the size of the payload
-      radio.read(&payload, bytes);            // fetch payload from FIFO
-      Serial.print(F("Received "));
-      Serial.print(bytes);                    // print the size of the payload
-      Serial.print(F(" bytes on pipe "));
-      Serial.print(pipe);                     // print the pipe number
-      Serial.print(F(": "));
-      Serial.println(payload);                // print the payload's value
-    }
-  } // role
+void masterRole( ) { /* function masterRole */
+  ////emit data
+  radio.stopListening();                                    // First, stop listening so we can talk.
 
-  if (Serial.available()) {
-    // change the role via the serial monitor
 
-    char c = toupper(Serial.read());
-    if (c == 'T' && !role) {
-      // Become the TX node
+  Serial.println(F("Now sending"));
 
-      role = true;
-      Serial.println(F("*** CHANGING TO TRANSMIT ROLE -- PRESS 'R' TO SWITCH BACK"));
-      radio.stopListening();
+  myData = micros();
+  if (!radio.write( &myData, sizeof(myData) )) {
+    Serial.println(F("failed"));
+  }
+  //Serial.print("width :  ");Serial.println(radio.R_RX_PL_WID );
+  radio.startListening();                                    // Now, continue listening
 
-    } else if (c == 'R' && role) {
-      // Become the RX node
+  unsigned long started_waiting_at = micros();               // Set up a timeout period, get the current microseconds
+  boolean timeout = false;                                   // Set up a variable to indicate if a response was received or not
 
-      role = false;
-      Serial.println(F("*** CHANGING TO RECEIVE ROLE -- PRESS 'T' TO SWITCH BACK"));
-      radio.startListening();
+  while ( ! radio.available() ) {                            // While nothing is received
+    if (micros() - started_waiting_at > 200000 ) {           // If waited longer than 200ms, indicate timeout and exit while loop
+      timeout = true;
+      break;
     }
   }
 
-} // loop
+  if ( timeout ) {                                            // Describe the results
+    Serial.println(F("Failed, response timed out."));
+  } else {
+    // Grab the response, compare, and send to debugging spew
+    radio.read( &myData, sizeof(myData) );
+    myData = micros();
+
+    // Spew it
+    Serial.print(F("Sent "));
+    Serial.print(myData);
+    Serial.print(F(", Got response "));
+    Serial.print(myData);
+    //Serial.println(myData.value);
+  }
+
+  // Try again 1s later
+  delay(1000);
+}
+
+void slaveRole( ) { /* function slaveRole */
+  ////recieve data
+  if ( radio.available()) {
+    // Variable for the received timestamp
+    while (radio.available()) {                          // While there is data ready
+      radio.read( &myData, sizeof(myData) );             // Get the payload
+    }
+
+    radio.stopListening();                               // First, stop listening so we can talk
+    Serial.print(F("Transmission "));
+    Serial.println(myData);
+    //myData.value += 0.01;                                // Increment the float value
+    radio.write( &myData, sizeof(myData) );              // Send the final one back.
+    radio.startListening();                              // Now, resume listening so we catch the next packets.
+    Serial.print(F(" - Sent response "));
+    Serial.println(myData);
+    //Serial.print(F(" : "));
+    //Serial.println();
+  }
+}
