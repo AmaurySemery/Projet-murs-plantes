@@ -57,6 +57,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [Communiquer sans fil en 433MHz avec la bibliothèque VirtualWire et une carte Arduino / Genuino](<https://www.carnetdumaker.net/articles/communiquer-sans-fil-en-433mhz-avec-la-bibliotheque-virtualwire-et-une-carte-arduino-genuino/>)
 * [Comment augmenter la portée des modules radio nRF24L01 des projets MySensors v2 (matériel, configuration)](<https://projetsdiy.fr/mysensors-v2-materiel-configuration-augmenter-portee-nrf24l01/>)
 * [Alimenter un ARDUINO sur Pile ou Batterie](<http://riton-duino.blogspot.com/2019/02/alimenter-un-arduino-sur-pile-ou.html>)
 * [https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf](<https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf>)
