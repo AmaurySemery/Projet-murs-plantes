@@ -300,6 +300,8 @@ Arrosage automatique des murs végétalisés
 
 # Liens intéressants
 
+* [Loriot | opérateur réseau ouvert IoT](<https://loriot.io/>)
+* [The Things Network | opérateur réseau ouvert IoT](<https://www.thethingsnetwork.org/>)
 * [Internet Engineering Task Force](<https://www.fun-mooc.fr/courses/course-v1:inria+41020+session02/courseware/2bd6fa6815204f73ad5f2f46ed005fb9/38b33c66f2ad402189d838dd1c2f4aa5/>)
 * [Autorité de Régulation des Communications Electroniques et des Postes](<https://www.arcep.fr/>)
 * [La frise des bandes de fréquences](<https://www.anfr.fr/gestion-des-frequences-sites/tnrbf/frise-interactive/>)
