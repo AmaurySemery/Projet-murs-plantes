@@ -300,6 +300,7 @@ Arrosage automatique des murs végétalisés
 
 # Liens intéressants
 
+* [learn-c.org | apprendre le langage C](<https://www.learn-c.org/>)
 * [FIT IoT-LAB](<https://www.iot-lab.info/learn/>)
 * [Loriot | opérateur réseau ouvert IoT](<https://loriot.io/>)
 * [The Things Network | opérateur réseau ouvert IoT](<https://www.thethingsnetwork.org/>)
