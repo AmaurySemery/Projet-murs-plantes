@@ -301,6 +301,7 @@ Arrosage automatique des murs végétalisés
 
 # Liens intéressants
 
+* [Le réseau LoRa : indispensable pour les agriculteurs connectés !](<https://www.eleveursdedemain.fr/actualites-blog/detail-actualites/le-reseau-lora-indispensable-pour-les-agriculteurs-connectes.html>)
 * [learn-c.org | apprendre le langage C](<https://www.learn-c.org/>)
 * [FIT IoT-LAB](<https://www.iot-lab.info/learn/>)
 * [Loriot | opérateur réseau ouvert IoT](<https://loriot.io/>)
