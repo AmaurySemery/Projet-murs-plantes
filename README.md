@@ -57,6 +57,7 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [Test comparatif de la consommation électrique à vide de diverses cartes Arduino et compatible](<https://www.carnetdumaker.net/articles/test-comparatif-de-la-consommation-electrique-vide-de-diverses-cartes-arduino-et-compatible/>)
 * [Raspberry Pi PICO la carte Microcontrôleur de la Fondation](<https://www.framboise314.fr/raspberry-pi-pico-la-carte-microcontroleur-de-la-fondation/>)
 * [Quelle technologie sans fil utiliser pour fabriquer des objets connectés DIY](<https://projetsdiy.fr/quelle-technologie-sans-fil-objets-connectes-diy/#:~:text=Il%20y%20a%20deux%20solutions,biblioth%C3%A8ques%20(Mirf%2C%20Radio%E2%80%A6)>)
 * [Communiquer sans fil en 433MHz avec la bibliothèque VirtualWire et une carte Arduino / Genuino](<https://www.carnetdumaker.net/articles/communiquer-sans-fil-en-433mhz-avec-la-bibliotheque-virtualwire-et-une-carte-arduino-genuino/>)
