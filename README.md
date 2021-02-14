@@ -29,6 +29,10 @@ Arrosage automatique des murs végétalisés
 
 # Documentation programmation
 
+* [rtos](<https://www.freertos.org/index.html>)
+* [armmbed](<https://os.mbed.com/blog/entry/Optimizing-memory-usage-in-mbed-OS-52/>)
+* [Zephyr](<https://docs.zephyrproject.org/latest/introduction/index.html>)
+* [Riot](<http://riot-os.org/>)
 * [RadioHead Github](<https://github.com/PaulStoffregen/RadioHead>)
 * [RadioHead](<https://www.airspayce.com/mikem/arduino/RadioHead/index.html>)
 * [Doc nRF24L01+](<https://nrf24.github.io/RF24/index.html>)
