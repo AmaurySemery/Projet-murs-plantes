@@ -19,6 +19,7 @@ Arrosage automatique des murs végétalisés
 
 # Hardware
 
+* [IP67, IP68 : que signifient les certifications d'étanchéité ?](<https://www.zdnet.fr/pratique/ip67-ip68-que-signifient-les-certifications-d-etancheite-39864984.htm>)
 * [L'indice de protection IP65](<https://www.silamp.fr/indice-de-protection-ip65-c1200x64765>)
 * [KiCad EDA](<https://kicad-pcb.org/>)
 * [KiCad](<https://fr.wikipedia.org/wiki/KiCad>)
