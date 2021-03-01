@@ -19,6 +19,7 @@ Arrosage automatique des murs végétalisés
 
 # Hardware
 
+* [L'indice de protection IP65](<https://www.silamp.fr/indice-de-protection-ip65-c1200x64765>)
 * [KiCad EDA](<https://kicad-pcb.org/>)
 * [KiCad](<https://fr.wikipedia.org/wiki/KiCad>)
 * [Comment créer un schéma P&ID professionnel avec les symboles pré-dessinés](<https://www.edrawsoft.com/fr/create-pid.html>)
