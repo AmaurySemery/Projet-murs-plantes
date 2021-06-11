@@ -19,6 +19,7 @@ sleephour=3600
 
 # Dataframes du Sensor 1 dans le Can Bus 1 pour la Sensor Box 1
 dfC1SB1S1 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
+dfC1SB1S2 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
 while i < range:
     i = i + 1
     Type = 'Moisture Sensor'
@@ -35,21 +36,16 @@ while i < range:
     if(i >= range):
         FormatDateLog = '%d-%m-%y' + '-' + '%H-%M-%S'
         lognow = time.strftime(FormatDateLog)
-        LogdfC1SB1S1 = '/Users/Fuan/Desktop/Solioti/test/soliotitest'+lognow+'.csv'
+        LogdfC1SB1S1 = '/Users/Fuan/Desktop/Solioti/test/dfC1SB1S1/soliotitest'+lognow+'.csv'
         print(LogdfC1SB1S1)
         df = pd.DataFrame(dfC1SB1S1) # placer la liste des dataframes ici
         df.to_csv(LogdfC1SB1S1) # placer l'adresse du fichier ici
         i = 0
+        print(dfC1SB1S1)
         del dfC1SB1S1
         dfC1SB1S1 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
 
 
-print(dfC1SB1S1)
-
-
-
-
-# Ajouter fonction if quand on atteint une range de 10 pour générer le fichier
 
 
 # Un nouveau fichier d'historiques est généré dans le dossier visé
