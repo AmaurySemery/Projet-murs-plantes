@@ -22,6 +22,7 @@ sleephour=3600
 dfC1SB1S1 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
 dfC1SB1S2 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
 dfC1SB1S3 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
+dfC1SB1S4 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
 
 while i < range:
     i = i + 1
@@ -44,7 +45,7 @@ while i < range:
     InputTypeC1SB1S2 = Entree420mA
     ProductRefC1SB1S2 = ProductRefVMSB
     BrandC1SB1S2 = BrandAdafruit
-    NameC1SB1S2 = 'Regis'
+    NameC1SB1S2 = 'Francis'
     dfC1SB1S2 = dfC1SB1S2.append({'Type': TypeC1SB1S2,'Value': ValueC1SB1S2,'Input Type': InputTypeC1SB1S2,'Product Ref': ProductRefC1SB1S2,'Brand': BrandC1SB1S2,'Name': NameC1SB1S2,'Date': Date}, ignore_index=True)
     #print(dfC1SB1S1)
 
@@ -54,17 +55,17 @@ while i < range:
     InputTypeC1SB1S3 = Entree420mA
     ProductRefC1SB1S3 = ProductRefVMSB
     BrandC1SB1S3 = BrandAdafruit
-    NameC1SB1S3 = 'Regis'
+    NameC1SB1S3 = 'Robert'
     dfC1SB1S3 = dfC1SB1S3.append({'Type': TypeC1SB1S3,'Value': ValueC1SB1S3,'Input Type': InputTypeC1SB1S3,'Product Ref': ProductRefC1SB1S3,'Brand': BrandC1SB1S3,'Name': NameC1SB1S3,'Date': Date}, ignore_index=True)
     #print(dfC1SB1S1)
 
     # Dataframes du Sensor 1 dans le Can Bus 1 pour la Sensor Box 4
     TypeC1SB1S4 = 'Moisture Sensor'
-    ValueC1SB1S4 = 3 # Placer la valeur du return de la fonction get du sensor ici
+    ValueC1SB1S4 = 4 # Placer la valeur du return de la fonction get du sensor ici
     InputTypeC1SB1S4 = Entree420mA
     ProductRefC1SB1S4 = ProductRefVMSB
     BrandC1SB1S4 = BrandAdafruit
-    NameC1SB1S4 = 'Regis'
+    NameC1SB1S4 = 'Dupont'
     dfC1SB1S4 = dfC1SB1S4.append({'Type': TypeC1SB1S4,'Value': ValueC1SB1S4,'Input Type': InputTypeC1SB1S4,'Product Ref': ProductRefC1SB1S4,'Brand': BrandC1SB1S4,'Name': NameC1SB1S4,'Date': Date}, ignore_index=True)
     #print(dfC1SB1S1)
 
