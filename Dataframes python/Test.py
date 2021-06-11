@@ -3,7 +3,7 @@ from time import sleep
 import csv
 from datetime import datetime
 
-ra= 5
+ra= 10
 Entree420mA = '4-20mA'
 EntréeTension = '0-20V'
 EntréeAutre = 'Autre'
@@ -20,14 +20,23 @@ sleephour=3600
 dfC1SB1S1 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
 for i in range(ra):
     Type = 'Moisture Sensor'
-    Value = 2 # Placer le return de la fonction get du sensor ici
+    Value = 2 # Placer la valeur du return de la fonction get du sensor ici
     InputType = Entree420mA
     ProductRef = ProductRefVMSB
     Brand = BrandAdafruit
-    Name = 'Régis'
+    Name = 'Regis'
     Date = datetime.now()
     dfC1SB1S1 = dfC1SB1S1.append({'Type': Type,'Value': Value,'Input Type': InputType,'Product Ref': ProductRef,'Brand': Brand,'Name': Name,'Date': Date}, ignore_index=True)
     #print(dfC1SB1S1)
     sleep(sleepsecond)
 
 print(dfC1SB1S1)
+
+now = datetime.now()
+lognow = '-' + str(now.day) + '-' + str(now.month) + '-' + str(now.year) + '-' + str(now.hour) + 'h-' + str(now.minute) + 'm-' + str(now.second) + 's'
+LogdfC1SB1S1 = '/Users/Fuan/Desktop/Solioti/test/soliotitest'+lognow+'.csv'
+print(LogdfC1SB1S1)
+df = pd.DataFrame(dfC1SB1S1) # placer la liste des dataframes ici
+df.to_csv(LogdfC1SB1S1) # placer l'adresse du fichier ici
+
+# Un nouveau fichier d'historiques est généré dans le dossier visé
