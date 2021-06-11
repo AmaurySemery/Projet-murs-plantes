@@ -4,7 +4,7 @@ import csv
 import time
 
 i = 0
-range = 10
+range = 60
 Entree420mA = '4-20mA'
 EntréeTension = '0-20V'
 EntréeAutre = 'Autre'
@@ -69,13 +69,15 @@ while i < range:
     dfC1SB1S4 = dfC1SB1S4.append({'Type': TypeC1SB1S4,'Value': ValueC1SB1S4,'Input Type': InputTypeC1SB1S4,'Product Ref': ProductRefC1SB1S4,'Brand': BrandC1SB1S4,'Name': NameC1SB1S4,'Date': Date}, ignore_index=True)
     #print(dfC1SB1S1)
 
-    sleep(sleepsecond)
+    sleep(sleepminut)
     # Changer le délai entre chaque enregistrement de ligne
 
 
     if(i >= range):
         FormatDateLog = '%d-%m-%y' + '-' + '%H-%M-%S'
         lognow = time.strftime(FormatDateLog)
+
+        # Sur le raspberry, créer autant de dossiers que de listes (ex : dfC1SB1S1, dfC1SB1S2, etc)
 
         LogdfC1SB1S1 = '/Users/Fuan/Desktop/Solioti/test/dfC1SB1S1/soliotitest'+lognow+'.csv'
         #print(LogdfC1SB1S1)
@@ -95,7 +97,7 @@ while i < range:
         df.to_csv(LogdfC1SB1S3) # placer l'adresse du fichier ici
         print(dfC1SB1S3)
 
-        LogdfC1SB1S4 = '/Users/Fuan/Desktop/Solioti/test/dfC1SB1S3/soliotitest'+lognow+'.csv'
+        LogdfC1SB1S4 = '/Users/Fuan/Desktop/Solioti/test/dfC1SB1S4/soliotitest'+lognow+'.csv'
         #print(LogdfC1SB1S4)
         df = pd.DataFrame(dfC1SB1S4) # placer la liste des dataframes ici
         df.to_csv(LogdfC1SB1S4) # placer l'adresse du fichier ici
