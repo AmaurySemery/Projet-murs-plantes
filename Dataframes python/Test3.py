@@ -10,6 +10,8 @@ EntréeTension = '0-20V'
 EntréeAutre = 'Autre'
 BrandAdafruit = 'Adafruit'
 ProductRefVMSB = 'VM-SB'
+
+# Variables déclarés pour la gestion des délais
 sleepmillisecond=0.1
 sleepsecond=1
 sleep10second=10
@@ -56,7 +58,18 @@ while i < range:
     dfC1SB1S3 = dfC1SB1S3.append({'Type': TypeC1SB1S3,'Value': ValueC1SB1S3,'Input Type': InputTypeC1SB1S3,'Product Ref': ProductRefC1SB1S3,'Brand': BrandC1SB1S3,'Name': NameC1SB1S3,'Date': Date}, ignore_index=True)
     #print(dfC1SB1S1)
 
+    # Dataframes du Sensor 1 dans le Can Bus 1 pour la Sensor Box 4
+    TypeC1SB1S4 = 'Moisture Sensor'
+    ValueC1SB1S4 = 3 # Placer la valeur du return de la fonction get du sensor ici
+    InputTypeC1SB1S4 = Entree420mA
+    ProductRefC1SB1S4 = ProductRefVMSB
+    BrandC1SB1S4 = BrandAdafruit
+    NameC1SB1S4 = 'Regis'
+    dfC1SB1S4 = dfC1SB1S4.append({'Type': TypeC1SB1S4,'Value': ValueC1SB1S4,'Input Type': InputTypeC1SB1S4,'Product Ref': ProductRefC1SB1S4,'Brand': BrandC1SB1S4,'Name': NameC1SB1S4,'Date': Date}, ignore_index=True)
+    #print(dfC1SB1S1)
+
     sleep(sleepsecond)
+    # Changer le délai entre chaque enregistrement de ligne
 
 
     if(i >= range):
@@ -75,11 +88,17 @@ while i < range:
         df.to_csv(LogdfC1SB1S2) # placer l'adresse du fichier ici
         print(dfC1SB1S2)
 
-        LogdfC1SB1S3 = '/Users/Fuan/Desktop/Solioti/test/dfC1SB1S2/soliotitest'+lognow+'.csv'
-        #print(LogdfC1SB1S2)
+        LogdfC1SB1S3 = '/Users/Fuan/Desktop/Solioti/test/dfC1SB1S3/soliotitest'+lognow+'.csv'
+        #print(LogdfC1SB1S3)
         df = pd.DataFrame(dfC1SB1S3) # placer la liste des dataframes ici
         df.to_csv(LogdfC1SB1S3) # placer l'adresse du fichier ici
         print(dfC1SB1S3)
+
+        LogdfC1SB1S4 = '/Users/Fuan/Desktop/Solioti/test/dfC1SB1S3/soliotitest'+lognow+'.csv'
+        #print(LogdfC1SB1S4)
+        df = pd.DataFrame(dfC1SB1S4) # placer la liste des dataframes ici
+        df.to_csv(LogdfC1SB1S4) # placer l'adresse du fichier ici
+        print(dfC1SB1S4)
 
 
         del dfC1SB1S1
@@ -88,6 +107,8 @@ while i < range:
         dfC1SB1S2 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
         del dfC1SB1S3
         dfC1SB1S3 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
+        del dfC1SB1S4
+        dfC1SB1S4 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
 
         i = 0
 
