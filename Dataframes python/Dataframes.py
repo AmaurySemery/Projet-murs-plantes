@@ -94,4 +94,17 @@ dfC1SB3Op = pd.DataFrame(data=dC1SB3Op)
 dfC1SB3Op
 
 # Dataframes de la Sensor Box 3 dans le Can Bus 1
-dC1SB3 = {'Name': [1], 'Power supplies': [2], 'Relai EV state': [3], 'Relai terminaison': [4],'Relai alim': [5]}
+dC1SB3 = {'Name': [], 'Power supplies': [], 'Relai EV state': [], 'Relai terminaison': [],'Relai alim': []}
+
+for column in dC1SB3:
+    a = int(column['Name'])
+    b = int(column['Power supplies'])
+    c = int(column['Relai EV state'])
+    d = int(column['Relai terminaison'])
+    e = int(column['Relai alim'])
+    f = 1
+    a.append(f)
+    b.append(f)
+    c.append(f)
+    d.append(f)
+    e.append(f)
