@@ -1,7 +1,6 @@
 import pandas as pd
 from time import sleep
 import csv
-from datetime import datetime
 import time
 
 i = 0
@@ -17,7 +16,6 @@ sleep10second=10
 sleep30second=30
 sleepminut=60
 sleephour=3600
-now = datetime.now()
 
 # Dataframes du Sensor 1 dans le Can Bus 1 pour la Sensor Box 1
 dfC1SB1S1 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
