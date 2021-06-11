@@ -31,7 +31,7 @@ while i < range:
     Date = time.strftime(FormatDate)
     sleep(sleepsecond)
     dfC1SB1S1 = dfC1SB1S1.append({'Type': Type,'Value': Value,'Input Type': InputType,'Product Ref': ProductRef,'Brand': Brand,'Name': Name,'Date': Date}, ignore_index=True)
-    print(dfC1SB1S1)
+    #print(dfC1SB1S1)
     if(i >= range):
         FormatDateLog = '%d-%m-%y' + '-' + '%H-%M-%S'
         lognow = time.strftime(FormatDateLog)
