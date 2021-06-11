@@ -19,6 +19,9 @@ Arrosage automatique des murs végétalisés
 
 # Hardware
 
+* [Normes de compatibilité électromagnétique (CEM). Leur mise en oeuvre lors de la validation du niveau de sécurité des systèmes électroniques](<https://www.inrs.fr/media.html?refINRS=ND%202139>)
+* [IP67, IP68 : que signifient les certifications d'étanchéité ?](<https://www.zdnet.fr/pratique/ip67-ip68-que-signifient-les-certifications-d-etancheite-39864984.htm>)
+* [L'indice de protection IP65](<https://www.silamp.fr/indice-de-protection-ip65-c1200x64765>)
 * [KiCad EDA](<https://kicad-pcb.org/>)
 * [KiCad](<https://fr.wikipedia.org/wiki/KiCad>)
 * [Comment créer un schéma P&ID professionnel avec les symboles pré-dessinés](<https://www.edrawsoft.com/fr/create-pid.html>)
@@ -29,6 +32,10 @@ Arrosage automatique des murs végétalisés
 
 # Documentation programmation
 
+* [rtos](<https://www.freertos.org/index.html>)
+* [armmbed](<https://os.mbed.com/blog/entry/Optimizing-memory-usage-in-mbed-OS-52/>)
+* [Zephyr](<https://docs.zephyrproject.org/latest/introduction/index.html>)
+* [Riot](<http://riot-os.org/>)
 * [RadioHead Github](<https://github.com/PaulStoffregen/RadioHead>)
 * [RadioHead](<https://www.airspayce.com/mikem/arduino/RadioHead/index.html>)
 * [Doc nRF24L01+](<https://nrf24.github.io/RF24/index.html>)
@@ -57,6 +64,8 @@ Arrosage automatique des murs végétalisés
 
 # Documentation technique
 
+* [Test comparatif de la consommation électrique à vide de diverses cartes Arduino et compatible](<https://www.carnetdumaker.net/articles/test-comparatif-de-la-consommation-electrique-vide-de-diverses-cartes-arduino-et-compatible/>)
+* [Raspberry Pi PICO la carte Microcontrôleur de la Fondation](<https://www.framboise314.fr/raspberry-pi-pico-la-carte-microcontroleur-de-la-fondation/>)
 * [Quelle technologie sans fil utiliser pour fabriquer des objets connectés DIY](<https://projetsdiy.fr/quelle-technologie-sans-fil-objets-connectes-diy/#:~:text=Il%20y%20a%20deux%20solutions,biblioth%C3%A8ques%20(Mirf%2C%20Radio%E2%80%A6)>)
 * [Communiquer sans fil en 433MHz avec la bibliothèque VirtualWire et une carte Arduino / Genuino](<https://www.carnetdumaker.net/articles/communiquer-sans-fil-en-433mhz-avec-la-bibliotheque-virtualwire-et-une-carte-arduino-genuino/>)
 * [Comment augmenter la portée des modules radio nRF24L01 des projets MySensors v2 (matériel, configuration)](<https://projetsdiy.fr/mysensors-v2-materiel-configuration-augmenter-portee-nrf24l01/>)
@@ -112,6 +121,7 @@ Arrosage automatique des murs végétalisés
 
 # Matériels
 
+* [Capteur environnemental SEN0335](<https://www.gotronic.fr/art-capteur-environnemental-sen0335-32245.htm>)
 * [WayinTop 2Set Emetteur Récepteur sans Fil RF avec Tutoriel, NRF24L01+PA+LNA Module avec SMA Antenne 2.4 GHz 1100m + NRF24L01 Régulateur de Tension + Board pour Arduino](<https://www.amazon.fr/WayinTop-Emetteur-R%C3%A9cepteur-Tutoriel-R%C3%A9gulateur/dp/B07ZCJPJ8B/ref=pd_day0_3?pd_rd_w=1Xo4q&pf_rd_p=5a3d874f-f0eb-4ad9-ac25-35518704bcec&pf_rd_r=H7PJJS2BHZW0854MNAYV&pd_rd_r=794fe707-1b68-4683-82f9-8e17ff91754d&pd_rd_wg=TIvr3&pd_rd_i=B07ZCJPJ8B&psc=1>)
 * [Accu LiPo 3,7 V 1000 mAh PR523450](<https://www.gotronic.fr/art-accu-lipo-3-7-v-1000-mah-pr523450-5813.htm>)
 * [Shield batterie Photon DEV-13626](<https://www.gotronic.fr/art-shield-batterie-photon-dev-13626-27983.htm>)
@@ -300,6 +310,7 @@ Arrosage automatique des murs végétalisés
 
 # Liens intéressants
 
+* [Le réseau LoRa : indispensable pour les agriculteurs connectés !](<https://www.eleveursdedemain.fr/actualites-blog/detail-actualites/le-reseau-lora-indispensable-pour-les-agriculteurs-connectes.html>)
 * [learn-c.org | apprendre le langage C](<https://www.learn-c.org/>)
 * [FIT IoT-LAB](<https://www.iot-lab.info/learn/>)
 * [Loriot | opérateur réseau ouvert IoT](<https://loriot.io/>)
