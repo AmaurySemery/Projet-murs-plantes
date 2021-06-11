@@ -2,6 +2,7 @@ import pandas as pd
 from time import sleep
 import csv
 from datetime import datetime
+import time
 
 ra= 10
 Entree420mA = '4-20mA'
