@@ -3,7 +3,8 @@ from time import sleep
 import csv
 from datetime import datetime
 
-ra= 10
+i = 0
+
 Entree420mA = '4-20mA'
 EntréeTension = '0-20V'
 EntréeAutre = 'Autre'
@@ -19,14 +20,16 @@ now = datetime.now()
 
 # Dataframes du Sensor 1 dans le Can Bus 1 pour la Sensor Box 1
 dfC1SB1S1 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
-while(1):
+while i < 1:
+    i = i + 1
     Type = 'Moisture Sensor'
     Value = 2 # Placer la valeur du return de la fonction get du sensor ici
     InputType = Entree420mA
     ProductRef = ProductRefVMSB
     Brand = BrandAdafruit
     Name = 'Regis'
-    Date = str(now.day) + '/' + str(now.month) + '/'+ str(now.year) + '-' + str(now.hour) + ':' + str(now.minute) + ':' + str(now.second)
+    FormatDate = '%d/%m/%y' + '-' + '%H:%M:%S'
+    Date = time.strftime(FormatDate)
     sleep(sleepsecond)
     dfC1SB1S1 = dfC1SB1S1.append({'Type': Type,'Value': Value,'Input Type': InputType,'Product Ref': ProductRef,'Brand': Brand,'Name': Name,'Date': Date}, ignore_index=True)
     #print(dfC1SB1S1)
@@ -34,7 +37,7 @@ while(1):
 
 print(dfC1SB1S1)
 
-def Historique_dfC1SB1S1_CSC():
+
 
 
 # Ajouter fonction if quand on atteint une range de 10 pour générer le fichier
