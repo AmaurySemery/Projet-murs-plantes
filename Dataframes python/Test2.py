@@ -19,7 +19,7 @@ now = datetime.now()
 
 # Dataframes du Sensor 1 dans le Can Bus 1 pour la Sensor Box 1
 dfC1SB1S1 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
-for i in range(ra):
+while(1):
     Type = 'Moisture Sensor'
     Value = 2 # Placer la valeur du return de la fonction get du sensor ici
     InputType = Entree420mA
@@ -34,7 +34,10 @@ for i in range(ra):
 
 print(dfC1SB1S1)
 
+def Historique_dfC1SB1S1_CSC():
 
+
+# Ajouter fonction if quand on atteint une range de 10 pour générer le fichier
 lognow = '-' + str(now.day) + '-' + str(now.month) + '-' + str(now.year) + '-' + str(now.hour) + 'h-' + str(now.minute) + 'm-' + str(now.second) + 's'
 LogdfC1SB1S1 = '/Users/Fuan/Desktop/Solioti/test/soliotitest'+lognow+'.csv'
 print(LogdfC1SB1S1)
