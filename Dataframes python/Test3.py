@@ -4,7 +4,7 @@ import csv
 import time
 
 i = 0
-range = 60
+range = 5
 Entree420mA = '4-20mA'
 EntréeTension = '0-20V'
 EntréeAutre = 'Autre'
@@ -17,12 +17,14 @@ sleepsecond=1
 sleep10second=10
 sleep30second=30
 sleepminut=60
+sleep10minut=600
 sleephour=3600
 
 dfC1SB1S1 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
 dfC1SB1S2 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
 dfC1SB1S3 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
 dfC1SB1S4 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
+dfC1SB1Op = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
 
 while i < range:
     i = i + 1
@@ -47,7 +49,7 @@ while i < range:
     BrandC1SB1S2 = BrandAdafruit
     NameC1SB1S2 = 'Francis'
     dfC1SB1S2 = dfC1SB1S2.append({'Type': TypeC1SB1S2,'Value': ValueC1SB1S2,'Input Type': InputTypeC1SB1S2,'Product Ref': ProductRefC1SB1S2,'Brand': BrandC1SB1S2,'Name': NameC1SB1S2,'Date': Date}, ignore_index=True)
-    #print(dfC1SB1S1)
+    #print(dfC1SB1S2)
 
     # Dataframes du Sensor 1 dans le Can Bus 1 pour la Sensor Box 3
     TypeC1SB1S3 = 'Moisture Sensor'
@@ -57,7 +59,7 @@ while i < range:
     BrandC1SB1S3 = BrandAdafruit
     NameC1SB1S3 = 'Robert'
     dfC1SB1S3 = dfC1SB1S3.append({'Type': TypeC1SB1S3,'Value': ValueC1SB1S3,'Input Type': InputTypeC1SB1S3,'Product Ref': ProductRefC1SB1S3,'Brand': BrandC1SB1S3,'Name': NameC1SB1S3,'Date': Date}, ignore_index=True)
-    #print(dfC1SB1S1)
+    #print(dfC1SB1S3)
 
     # Dataframes du Sensor 1 dans le Can Bus 1 pour la Sensor Box 4
     TypeC1SB1S4 = 'Moisture Sensor'
@@ -67,9 +69,19 @@ while i < range:
     BrandC1SB1S4 = BrandAdafruit
     NameC1SB1S4 = 'Dupont'
     dfC1SB1S4 = dfC1SB1S4.append({'Type': TypeC1SB1S4,'Value': ValueC1SB1S4,'Input Type': InputTypeC1SB1S4,'Product Ref': ProductRefC1SB1S4,'Brand': BrandC1SB1S4,'Name': NameC1SB1S4,'Date': Date}, ignore_index=True)
+    #print(dfC1SB1S4)
+
+    # Dataframes du Optionnal dans le Can Bus 1 pour la Sensor Box 4
+    TypeC1SB1Op = 'Moisture Sensor'
+    ValueC1SB1Op = 5 # Placer la valeur du return de la fonction get du sensor ici
+    InputTypeC1SB1Op = Entree420mA
+    ProductRefC1SB1Op = ProductRefVMSB
+    BrandC1SB1Op = BrandAdafruit
+    NameC1SB1Op = 'Henry'
+    dfC1SB1Op = dfC1SB1Op.append({'Type': TypeC1SB1S4,'Value': ValueC1SB1S4,'Input Type': InputTypeC1SB1S4,'Product Ref': ProductRefC1SB1S4,'Brand': BrandC1SB1S4,'Name': NameC1SB1S4,'Date': Date}, ignore_index=True)
     #print(dfC1SB1S1)
 
-    sleep(sleepminut)
+    sleep(sleepsecond)
     # Changer le délai entre chaque enregistrement de ligne
 
 
@@ -103,6 +115,12 @@ while i < range:
         df.to_csv(LogdfC1SB1S4) # placer l'adresse du fichier ici
         print(dfC1SB1S4)
 
+        LogdfC1SB1Op = '/Users/Fuan/Desktop/Solioti/test/dfC1SB1Op/soliotitest'+lognow+'.csv'
+        #print(LogdfC1SB1Op)
+        df = pd.DataFrame(dfC1SB1Op) # placer la liste des dataframes ici
+        df.to_csv(LogdfC1SB1Op) # placer l'adresse du fichier ici
+        print(dfC1SB1Op)
+
 
         del dfC1SB1S1
         dfC1SB1S1 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
@@ -112,6 +130,8 @@ while i < range:
         dfC1SB1S3 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
         del dfC1SB1S4
         dfC1SB1S4 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
+        del dfC1SB1Op
+        dfC1SB1Op = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
 
         i = 0
 
