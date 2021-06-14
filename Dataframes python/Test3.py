@@ -12,7 +12,7 @@ range = 5
 
 # Variables déclarées pour standardiser les items descriptifs
 Entree420mA = '4-20mA'
-EntréeTension = '0-20V'
+EntréeTension = '0-10V'
 EntréeAutre = 'Autre'
 BrandAdafruit = 'Adafruit'
 ProductRefVMSB = 'VM-SB'
