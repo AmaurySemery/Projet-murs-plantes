@@ -4,14 +4,20 @@ import csv
 import time
 
 i = 0
+
+# Nombre de lignes pour chaque fichier csv
+## Ce range doit être modifié en binôme avec la fonction sleep dans le corps du programme
+# Ces modifications détermineront la fréquence d'actualisation des dataframes dans les fichiers ainsi que leur volume
 range = 5
+
+# Variables déclarées pour standardiser les items descriptifs
 Entree420mA = '4-20mA'
 EntréeTension = '0-20V'
 EntréeAutre = 'Autre'
 BrandAdafruit = 'Adafruit'
 ProductRefVMSB = 'VM-SB'
 
-# Variables déclarés pour la gestion des délais
+# Variables déclarées pour la gestion des délais
 sleepmillisecond=0.1
 sleepsecond=1
 sleep10second=10
@@ -20,6 +26,7 @@ sleepminut=60
 sleep10minut=600
 sleephour=3600
 
+# Création des listes
 dfC1SB1S1 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
 dfC1SB1S2 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
 dfC1SB1S3 = pd.DataFrame(columns=['Type','Value','Input Type','Product Ref','Brand','Name','Date'])
@@ -138,13 +145,16 @@ while i < range:
 
     sleep(sleepsecond)
     # Changer le délai entre chaque enregistrement de ligne
+    ## Cette partie doit être modifiée en interaction avec le range en début de programme
 
 
     if(i >= range):
         FormatDateLog = '%d-%m-%y' + '-' + '%H-%M-%S'
         lognow = time.strftime(FormatDateLog)
 
-        # Sur le raspberry, créer autant de dossiers que de listes (ex : dfC1SB1S1, dfC1SB1S2, etc)
+        ## Sur le raspberry, créer autant de dossiers que de listes (ex : dfC1SB1S1, dfC1SB1S2, etc)
+        # Attention à bien modifier les différents champs pour qu'ils correspondent aux bonnes adresses / listes
+        # Ici, des fichiers CSV sont produits dans le dossier correspondant pour stocker les dataframes
 
         # Fichier dfC1SB1S1
         LogdfC1SB1S1 = '/Users/Fuan/Desktop/Solioti/test/dfC1SB1S1/soliotitest'+lognow+'.csv'
